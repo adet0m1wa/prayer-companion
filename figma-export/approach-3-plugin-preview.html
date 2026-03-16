@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=402, initial-scale=1.0">
+  <title>Approach 3 — Plugin API Preview | Screen 1 Daily View v3</title>
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 520px;
+      min-height: 1100px;
+      background: #f5f0e8;
+      font-family: 'DM Sans', sans-serif;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      color: #3D2E1F;
+      text-align: center;
+    }
+    .subtitle {
+      font-size: 13px;
+      color: #5C4A38;
+      text-align: center;
+      max-width: 400px;
+      line-height: 1.6;
+    }
+    .code-block {
+      background: #1a1a2e;
+      border-radius: 12px;
+      padding: 20px;
+      width: 460px;
+      overflow-x: auto;
+    }
+    .code-block pre {
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 11px;
+      color: #e0d8cc;
+      line-height: 1.6;
+      white-space: pre;
+    }
+    .keyword { color: #c792ea; }
+    .string { color: #c3e88d; }
+    .comment { color: #546e7a; }
+    .func { color: #82aaff; }
+    .number { color: #f78c6c; }
+    .label {
+      background: rgba(230, 52, 52, 0.9);
+      color: white;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      letter-spacing: 0.5px;
+    }
+    .note-box {
+      background: #ede6d8;
+      border: 1px solid #d4c9b8;
+      border-radius: 12px;
+      padding: 16px 20px;
+      width: 460px;
+    }
+    .note-box p {
+      font-size: 13px;
+      color: #3D2E1F;
+      line-height: 1.6;
+    }
+    .note-box strong { color: #E63434; }
+  </style>
+</head>
+<body>
+  <span class="label">APPROACH 3: FIGMA PLUGIN API</span>
+  <h1>Screen 1 — Daily View v3</h1>
+  <p class="subtitle">
+    This approach uses the Figma Plugin API to programmatically create
+    every frame, text node, and shape. The full script is saved at:<br>
+    <strong>figma-export/approach-3-figma-plugin-script.js</strong>
+  </p>
+
+  <div class="note-box">
+    <p><strong>How to use:</strong> Open Figma → Plugins → Development → New Plugin → paste the script from <strong>approach-3-figma-plugin-script.js</strong> → Run. It creates the full Screen 1 v3 layout with auto-layout frames, proper typography, and color tokens.</p>
+  </div>
+
+  <div class="code-block">
+    <pre><span class="comment">// Key structure created by the plugin:</span>
+
+<span class="keyword">const</span> screen = figma.<span class="func">createFrame</span>();
+screen.name = <span class="string">"screen-1-daily-view-v3"</span>;
+screen.<span class="func">resize</span>(<span class="number">402</span>, <span class="number">874</span>);
+screen.fills = [{ color: <span class="string">"#E4DED5"</span> }];
+screen.layoutMode = <span class="string">"VERTICAL"</span>;
+
+<span class="comment">// Status Bar (52px)</span>
+<span class="comment">// ├── "9:41" — Inter Bold 15px</span>
+<span class="comment">// └── signal / wifi / battery icons</span>
+
+<span class="comment">// Content Wrapper (flex: 1)</span>
+<span class="comment">// ├── Greeting: "Good Morning, Jamie"</span>
+<span class="comment">// │   Playfair Display Bold 22px #3D2E1F</span>
+<span class="comment">// │   + fire streak icon + "7"</span>
+<span class="comment">// ├── Verse Card (rounded 16px)</span>
+<span class="comment">// │   bg: waterfall image @ 60% opacity</span>
+<span class="comment">// │   "Verse of the day" label</span>
+<span class="comment">// │   Jeremiah 29:11 text</span>
+<span class="comment">// │   like(12) share(5) comment(3)</span>
+<span class="comment">// ├── Discover Section</span>
+<span class="comment">// │   heading + search bar (44px, r12)</span>
+<span class="comment">// ├── Topic Card Stack (328px)</span>
+<span class="comment">// │   Love    (y:0,   normal 2.png)</span>
+<span class="comment">// │   Faith   (y:60,  normal 1.png)</span>
+<span class="comment">// │   Sin     (y:118, normal 1.png)</span>
+<span class="comment">// │   Theology(y:180, normal 1.png)</span>
+<span class="comment">// └── Page Nav: ‹ 1/10 ›</span>
+
+<span class="comment">// Bottom Nav (62px)</span>
+<span class="comment">// HOME(#E63434) BIBLE COMMUNITY ALERTS</span></pre>
+  </div>
+
+  <div class="note-box">
+    <p><strong>Limitations:</strong> The Figma REST API is read-only — it cannot create or modify design nodes. The Plugin API (shown here) is the only way to programmatically build Figma designs. Icons use placeholder shapes since Phosphor font isn't available in plugins. Images (parchment textures, waterfall) require manual import after the plugin runs.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=402, initial-scale=1.0">
+  <title>Approach 1 — Pencil Design Reference | Screen 1 Daily View v3</title>
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css" rel="stylesheet">
+  <link href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css" rel="stylesheet">
+  <link href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      width: 402px;
+      height: 874px;
+      overflow: hidden;
+      font-family: 'DM Sans', sans-serif;
+      background: #E4DED5;
+    }
+
+    .screen {
+      width: 402px;
+      height: 874px;
+      background: #E4DED5;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Status Bar */
+    .status-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 52px;
+      padding: 0 24px;
+      flex-shrink: 0;
+    }
+    .status-time {
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: #3D2E1F;
+    }
+    .status-right {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .battery {
+      width: 27px; height: 12px;
+      border: 1px solid #3D2E1F;
+      border-radius: 3px;
+      padding: 2px;
+      display: flex;
+    }
+    .battery-level {
+      flex: 1;
+      background: #3D2E1F;
+      border-radius: 1px;
+    }
+
+    /* Content Wrapper */
+    .content-wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 0 24px 20px 24px;
+      overflow: hidden;
+    }
+
+    /* Greeting */
+    .greeting-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .greeting-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: #3D2E1F;
+    }
+    .greeting-actions {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .streak-icon { color: #E63434; font-size: 20px; }
+    .streak-count {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      color: #3D2E1F;
+    }
+
+    /* Verse Card */
+    .verse-card {
+      border-radius: 16px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      flex-shrink: 0;
+      position: relative;
+      overflow: hidden;
+      background-color: #f3ece2;
+    }
+    .verse-card-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('../src/images/verse of the day.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0.15;
+      z-index: 0;
+    }
+    .verse-card > *:not(.verse-card-bg) { position: relative; z-index: 1; }
+    .verse-label { font-size: 14px; color: rgba(0, 0, 0, 0.7); }
+    .verse-text {
+      font-size: 14px;
+      font-weight: 500;
+      color: #000;
+      line-height: 1.5;
+    }
+    .verse-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .verse-actions { display: flex; gap: 10px; }
+    .action-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 44px;
+    }
+    .action-item i { font-size: 20px; color: rgba(0, 0, 0, 0.5); }
+    .action-count { font-size: 11px; color: rgba(0, 0, 0, 0.5); font-weight: 500; }
+    .verse-reference { font-size: 14px; font-weight: 500; color: #000; }
+
+    /* Discover */
+    .discover-section {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+    .discover-heading { font-size: 14px; color: rgba(0, 0, 0, 0.7); }
+    .search-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      height: 44px;
+      padding: 0 14px;
+      border: 1px solid #D4C9B8;
+      border-radius: 12px;
+    }
+    .search-bar i { font-size: 16px; color: rgba(0, 0, 0, 0.5); }
+    .search-placeholder { font-size: 12px; color: rgba(0, 0, 0, 0.5); }
+
+    /* Topic Cards */
+    .topic-card-stack {
+      position: relative;
+      height: 328px;
+      flex-shrink: 0;
+    }
+    .topic-card {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background-size: cover;
+      background-position: center;
+    }
+    .topic-card-love {
+      top: 0;
+      height: 137px;
+      border-radius: 16px 16px 0 0;
+      background-image: url('../src/images/normal 2.png');
+    }
+    .topic-card-faith {
+      top: 60px;
+      border-radius: 16px 16px 0 0;
+      background-image: url('../src/images/normal 1.png');
+    }
+    .topic-card-sin {
+      top: 118px;
+      border-radius: 16px 16px 0 0;
+      background-image: url('../src/images/normal 1.png');
+    }
+    .topic-card-theology {
+      top: 180px;
+      border-radius: 16px;
+      background-image: url('../src/images/normal 1.png');
+    }
+    .topic-content {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .topic-icon { width: 30px; height: 30px; object-fit: contain; }
+    .topic-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 16px;
+      font-style: italic;
+      font-weight: 600;
+      color: #3D2E1F;
+    }
+    .topic-preview {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.7);
+      line-height: 1.5;
+      letter-spacing: 0.1px;
+    }
+
+    /* Page Nav */
+    .page-navigation {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-shrink: 0;
+    }
+    .chevron-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+    }
+    .chevron-left { background: #EDE6D8; opacity: 0.4; }
+    .chevron-right { background: #F0E8DB; }
+    .chevron-btn svg { width: 20px; height: 20px; }
+    .page-counter { font-size: 14px; font-weight: 500; color: #5C4A38; }
+
+    /* Bottom Nav */
+    .bottom-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 62px;
+      padding: 4px 24px 10px 24px;
+      background: rgba(243, 236, 226, 0.75);
+      flex-shrink: 0;
+    }
+    .nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+      height: 100%;
+      justify-content: center;
+    }
+    .nav-item i { font-size: 22px; }
+    .nav-item span {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .nav-active i, .nav-active span { color: #E63434; }
+    .nav-inactive i, .nav-inactive span { color: rgba(0, 0, 0, 0.5); }
+
+    .approach-label {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: rgba(230, 52, 52, 0.9);
+      color: white;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 4px 8px;
+      border-radius: 6px;
+      z-index: 100;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="screen">
+    <div class="approach-label">APPROACH 1: PENCIL SOURCE</div>
+
+    <div class="status-bar">
+      <span class="status-time">9:41</span>
+      <div class="status-right">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#3D2E1F"><path d="M3 18h3v-6H3v6zm5 0h3V4H8v14zm5 0h3v-9h-3v9zm5 0h3v-3h-3v3z"/></svg>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#3D2E1F"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/></svg>
+        <div class="battery"><div class="battery-level"></div></div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="greeting-header">
+        <span class="greeting-text">Good Morning, Jamie</span>
+        <div class="greeting-actions">
+          <i class="ph-fill ph-fire streak-icon"></i>
+          <span class="streak-count">7</span>
+        </div>
+      </div>
+
+      <div class="verse-card">
+        <div class="verse-card-bg"></div>
+        <span class="verse-label">Verse of the day</span>
+        <p class="verse-text">"For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you a hope and a future."</p>
+        <div class="verse-footer">
+          <div class="verse-actions">
+            <div class="action-item">
+              <i class="ph-light ph-heart"></i>
+              <span class="action-count">12</span>
+            </div>
+            <div class="action-item">
+              <i class="ph-light ph-share-network"></i>
+              <span class="action-count">5</span>
+            </div>
+            <div class="action-item">
+              <i class="ph-light ph-chat-centered"></i>
+              <span class="action-count">3</span>
+            </div>
+          </div>
+          <span class="verse-reference">Jeremiah 29:11</span>
+        </div>
+      </div>
+
+      <div class="discover-section">
+        <span class="discover-heading">Discover what God's Word says about...</span>
+        <div class="search-bar">
+          <i class="ph ph-magnifying-glass"></i>
+          <span class="search-placeholder">Search for an aspect</span>
+        </div>
+      </div>
+
+      <div class="topic-card-stack">
+        <div class="topic-card topic-card-love">
+          <div class="topic-content">
+            <img class="topic-icon" src="../src/images/love.png" alt="Love">
+            <span class="topic-title">Love</span>
+          </div>
+        </div>
+        <div class="topic-card topic-card-faith">
+          <div class="topic-content">
+            <img class="topic-icon" src="../src/images/faith.png" alt="Faith">
+            <span class="topic-title">Faith</span>
+          </div>
+        </div>
+        <div class="topic-card topic-card-sin">
+          <div class="topic-content">
+            <img class="topic-icon" src="../src/images/sin.png" alt="Sin">
+            <span class="topic-title">Sin</span>
+          </div>
+        </div>
+        <div class="topic-card topic-card-theology">
+          <div class="topic-content">
+            <img class="topic-icon" src="../src/images/theology.png" alt="Theology">
+            <span class="topic-title">Theology</span>
+          </div>
+          <p class="topic-preview">For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you a hope and a future.</p>
+        </div>
+      </div>
+
+      <div class="page-navigation">
+        <button class="chevron-btn chevron-left">
+          <svg viewBox="0 0 24 24" fill="#8A7D6B"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+        </button>
+        <span class="page-counter">1 / 10</span>
+        <button class="chevron-btn chevron-right">
+          <svg viewBox="0 0 24 24" fill="#5C4A38"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="bottom-nav">
+      <div class="nav-item nav-active">
+        <i class="ph-fill ph-house"></i>
+        <span>HOME</span>
+      </div>
+      <div class="nav-item nav-inactive">
+        <i class="ph ph-book-open"></i>
+        <span>BIBLE</span>
+      </div>
+      <div class="nav-item nav-inactive">
+        <i class="ph ph-users"></i>
+        <span>COMMUNITY</span>
+      </div>
+      <div class="nav-item nav-inactive">
+        <i class="ph ph-bell"></i>
+        <span>ALERTS</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
