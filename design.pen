@@ -1,5 +1,5 @@
 {
-  "version": "2.8",
+  "version": "2.9",
   "children": [
     {
       "type": "frame",
@@ -37,7 +37,7 @@
                   "type": "text",
                   "id": "rvGZc",
                   "name": "status-time",
-                  "fill": "#3D2E1F",
+                  "fill": "#3d2e1f",
                   "content": "9:41",
                   "fontFamily": "Inter",
                   "fontSize": 15,
@@ -60,7 +60,7 @@
                   "height": 16,
                   "iconFontName": "signal",
                   "iconFontFamily": "lucide",
-                  "fill": "#3D2E1F"
+                  "fill": "#3d2e1f"
                 },
                 {
                   "type": "icon_font",
@@ -70,7 +70,7 @@
                   "height": 16,
                   "iconFontName": "wifi",
                   "iconFontFamily": "lucide",
-                  "fill": "#3D2E1F"
+                  "fill": "#3d2e1f"
                 },
                 {
                   "type": "frame",
@@ -92,7 +92,7 @@
                       "cornerRadius": 1,
                       "id": "Vjzaw",
                       "name": "battery-level",
-                      "fill": "#3D2E1F",
+                      "fill": "#3d2e1f",
                       "width": "fill_container",
                       "height": "fill_container"
                     }
@@ -110,12 +110,7 @@
           "height": "fill_container",
           "layout": "vertical",
           "gap": 36,
-          "padding": [
-            0,
-            24,
-            24,
-            24
-          ],
+          "padding": 24,
           "alignItems": "center",
           "children": [
             {
@@ -124,12 +119,6 @@
               "name": "header-area",
               "width": "fill_container",
               "gap": 10,
-              "padding": [
-                20,
-                0,
-                0,
-                0
-              ],
               "alignItems": "center",
               "children": [
                 {
@@ -186,7 +175,7 @@
                       "type": "text",
                       "id": "IQ3mt",
                       "name": "topic-title",
-                      "fill": "#3D2E1Fff",
+                      "fill": "#3d2e1f",
                       "content": "Love",
                       "fontFamily": "Playfair Display",
                       "fontSize": 22,
@@ -202,20 +191,20 @@
               "name": "content-toggle",
               "width": "fill_container",
               "gap": 20,
-              "justifyContent": "space_between",
               "alignItems": "center",
               "children": [
                 {
                   "type": "frame",
                   "id": "o7USz",
                   "name": "toggle-group",
-                  "gap": 20,
+                  "gap": 10,
                   "children": [
                     {
                       "type": "text",
                       "id": "H28n2",
                       "name": "toggle-articles",
-                      "fill": "#3D2E1F80",
+                      "opacity": 0.7,
+                      "fill": "#3d2e1f",
                       "content": "Articles",
                       "fontFamily": "DM Sans",
                       "fontSize": 16,
@@ -233,7 +222,7 @@
                           "type": "text",
                           "id": "qhpQS",
                           "name": "toggle-videos-label",
-                          "fill": "#3D2E1Fff",
+                          "fill": "#3d2e1f",
                           "content": "Videos",
                           "fontFamily": "Playfair Display",
                           "fontSize": 16,
@@ -313,7 +302,7 @@
                           "type": "text",
                           "id": "JjBB2",
                           "name": "video-title-1",
-                          "fill": "#3D2E1Fff",
+                          "fill": "#3d2e1f",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Understanding God's Love",
@@ -337,13 +326,13 @@
                               "height": 16,
                               "iconFontName": "eye",
                               "iconFontFamily": "phosphor",
-                              "fill": "#3d2e1fb3"
+                              "fill": "#3d2e1f"
                             },
                             {
                               "type": "text",
                               "id": "ffn0N",
                               "name": "meta-views",
-                              "fill": "#3d2e1fb3",
+                              "fill": "#3d2e1f",
                               "content": "5.2k",
                               "fontFamily": "DM Sans",
                               "fontSize": 12,
@@ -373,13 +362,13 @@
                                   "height": 16,
                                   "iconFontName": "heart",
                                   "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1fb3"
+                                  "fill": "#3d2e1f"
                                 },
                                 {
                                   "type": "text",
                                   "id": "sYNuZ",
                                   "name": "meta-likes",
-                                  "fill": "#3d2e1fb3",
+                                  "fill": "#3d2e1f",
                                   "content": "340",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
@@ -402,10 +391,10 @@
                                   "id": "iKcXx",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
-                                  "fill": "#3d2e1f80",
+                                  "fill": "#3d2e1f",
                                   "content": "|",
                                   "fontFamily": "Dancing Script",
-                                  "fontSize": 16,
+                                  "fontSize": 12,
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -425,13 +414,13 @@
                                   "height": 16,
                                   "iconFontName": "calendar-blank",
                                   "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1fb3"
+                                  "fill": "#3d2e1f"
                                 },
                                 {
                                   "type": "text",
                                   "id": "Ne5qq",
                                   "name": "meta-days",
-                                  "fill": "#3d2e1fb3",
+                                  "fill": "#3d2e1f",
                                   "content": "1 day ago",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
@@ -497,7 +486,7 @@
                           "type": "text",
                           "id": "hsFWf",
                           "name": "video-title-2",
-                          "fill": "#3D2E1Fff",
+                          "fill": "#3d2e1f",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Agape vs Phileo: Types of Love in Greek",
@@ -521,13 +510,13 @@
                               "height": 16,
                               "iconFontName": "eye",
                               "iconFontFamily": "phosphor",
-                              "fill": "#3d2e1fb3"
+                              "fill": "#3d2e1f"
                             },
                             {
                               "type": "text",
                               "id": "W1pA0",
                               "name": "meta-views",
-                              "fill": "#3d2e1fb3",
+                              "fill": "#3d2e1f",
                               "content": "3.8k",
                               "fontFamily": "DM Sans",
                               "fontSize": 12,
@@ -557,13 +546,13 @@
                                   "height": 16,
                                   "iconFontName": "heart",
                                   "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1fb3"
+                                  "fill": "#3d2e1f"
                                 },
                                 {
                                   "type": "text",
                                   "id": "1z631",
                                   "name": "meta-likes",
-                                  "fill": "#3d2e1fb3",
+                                  "fill": "#3d2e1f",
                                   "content": "210",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
@@ -586,10 +575,10 @@
                                   "id": "7FC9V",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
-                                  "fill": "#3d2e1f80",
+                                  "fill": "#3d2e1f",
                                   "content": "|",
                                   "fontFamily": "Dancing Script",
-                                  "fontSize": 16,
+                                  "fontSize": 12,
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -609,13 +598,13 @@
                                   "height": 16,
                                   "iconFontName": "calendar-blank",
                                   "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1fb3"
+                                  "fill": "#3d2e1f"
                                 },
                                 {
                                   "type": "text",
                                   "id": "eartO",
                                   "name": "meta-days",
-                                  "fill": "#3d2e1fb3",
+                                  "fill": "#3d2e1f",
                                   "content": "4 days ago",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
@@ -681,7 +670,7 @@
                           "type": "text",
                           "id": "T4NbD",
                           "name": "video-title-4",
-                          "fill": "#3D2E1Fff",
+                          "fill": "#3d2e1f",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "The Parable of the Prodigal Son",
@@ -705,13 +694,13 @@
                               "height": 16,
                               "iconFontName": "eye",
                               "iconFontFamily": "phosphor",
-                              "fill": "#3d2e1fb3"
+                              "fill": "#3d2e1f"
                             },
                             {
                               "type": "text",
                               "id": "Xy4xx",
                               "name": "meta-views",
-                              "fill": "#3d2e1fb3",
+                              "fill": "#3d2e1f",
                               "content": "6.3k",
                               "fontFamily": "DM Sans",
                               "fontSize": 12,
@@ -741,13 +730,13 @@
                                   "height": 16,
                                   "iconFontName": "heart",
                                   "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1fb3"
+                                  "fill": "#3d2e1f"
                                 },
                                 {
                                   "type": "text",
                                   "id": "srwJq",
                                   "name": "meta-likes",
-                                  "fill": "#3d2e1fb3",
+                                  "fill": "#3d2e1f",
                                   "content": "412",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
@@ -770,10 +759,10 @@
                                   "id": "6CAgf",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
-                                  "fill": "#3d2e1f80",
+                                  "fill": "#3d2e1f",
                                   "content": "|",
                                   "fontFamily": "Dancing Script",
-                                  "fontSize": 16,
+                                  "fontSize": 12,
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -793,13 +782,13 @@
                                   "height": 16,
                                   "iconFontName": "calendar-blank",
                                   "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1fb3"
+                                  "fill": "#3d2e1f"
                                 },
                                 {
                                   "type": "text",
                                   "id": "IwDTX",
                                   "name": "meta-days",
-                                  "fill": "#3d2e1fb3",
+                                  "fill": "#3d2e1f",
                                   "content": "6 days ago",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
@@ -865,7 +854,7 @@
                           "type": "text",
                           "id": "hRIiv",
                           "name": "video-title-3",
-                          "fill": "#3D2E1Fff",
+                          "fill": "#3d2e1f",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "How to Love When It's Hard",
@@ -889,13 +878,13 @@
                               "height": 16,
                               "iconFontName": "eye",
                               "iconFontFamily": "phosphor",
-                              "fill": "#3d2e1fb3"
+                              "fill": "#3d2e1f"
                             },
                             {
                               "type": "text",
                               "id": "a058D",
                               "name": "meta-views",
-                              "fill": "#3d2e1fb3",
+                              "fill": "#3d2e1f",
                               "content": "4.1k",
                               "fontFamily": "DM Sans",
                               "fontSize": 12,
@@ -925,13 +914,13 @@
                                   "height": 16,
                                   "iconFontName": "heart",
                                   "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1fb3"
+                                  "fill": "#3d2e1f"
                                 },
                                 {
                                   "type": "text",
                                   "id": "mA4vO",
                                   "name": "meta-likes",
-                                  "fill": "#3d2e1fb3",
+                                  "fill": "#3d2e1f",
                                   "content": "289",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
@@ -954,10 +943,10 @@
                                   "id": "ICVAJ",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
-                                  "fill": "#3d2e1f80",
+                                  "fill": "#3d2e1f",
                                   "content": "|",
                                   "fontFamily": "Dancing Script",
-                                  "fontSize": 16,
+                                  "fontSize": 12,
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -977,13 +966,13 @@
                                   "height": 16,
                                   "iconFontName": "calendar-blank",
                                   "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1fb3"
+                                  "fill": "#3d2e1f"
                                 },
                                 {
                                   "type": "text",
                                   "id": "OE660",
                                   "name": "meta-days",
-                                  "fill": "#3d2e1fb3",
+                                  "fill": "#3d2e1f",
                                   "content": "2 weeks ago",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
@@ -1039,7 +1028,7 @@
                   "type": "text",
                   "id": "nJoYe",
                   "name": "status-time",
-                  "fill": "#3D2E1F",
+                  "fill": "#3d2e1f",
                   "content": "9:41",
                   "fontFamily": "Inter",
                   "fontSize": 15,
@@ -1062,7 +1051,7 @@
                   "height": 16,
                   "iconFontName": "signal",
                   "iconFontFamily": "lucide",
-                  "fill": "#3D2E1F"
+                  "fill": "#3d2e1f"
                 },
                 {
                   "type": "icon_font",
@@ -1072,7 +1061,7 @@
                   "height": 16,
                   "iconFontName": "wifi",
                   "iconFontFamily": "lucide",
-                  "fill": "#3D2E1F"
+                  "fill": "#3d2e1f"
                 },
                 {
                   "type": "frame",
@@ -1094,7 +1083,7 @@
                       "cornerRadius": 1,
                       "id": "1B0iY",
                       "name": "battery-level",
-                      "fill": "#3D2E1F",
+                      "fill": "#3d2e1f",
                       "width": "fill_container",
                       "height": "fill_container"
                     }
@@ -1112,12 +1101,7 @@
           "height": "fill_container",
           "layout": "vertical",
           "gap": 36,
-          "padding": [
-            0,
-            24,
-            24,
-            24
-          ],
+          "padding": 24,
           "alignItems": "center",
           "children": [
             {
@@ -1126,12 +1110,6 @@
               "name": "header-area",
               "width": "fill_container",
               "gap": 10,
-              "padding": [
-                20,
-                0,
-                0,
-                0
-              ],
               "alignItems": "center",
               "children": [
                 {
@@ -1188,7 +1166,7 @@
                       "type": "text",
                       "id": "Hi8q1",
                       "name": "topic-title",
-                      "fill": "#3D2E1Fff",
+                      "fill": "#3d2e1f",
                       "content": "Love",
                       "fontFamily": "Playfair Display",
                       "fontSize": 22,
@@ -1200,67 +1178,58 @@
             },
             {
               "type": "frame",
-              "id": "K6wfm",
-              "name": "content-toggle",
+              "id": "3p4U9",
+              "name": "toggle-group",
               "width": "fill_container",
-              "gap": 20,
-              "justifyContent": "space_between",
-              "alignItems": "center",
+              "gap": 10,
               "children": [
                 {
                   "type": "frame",
-                  "id": "3p4U9",
-                  "name": "toggle-group",
-                  "gap": 17,
+                  "id": "GazQ4",
+                  "name": "toggle-articles",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "alignItems": "center",
                   "children": [
                     {
-                      "type": "frame",
-                      "id": "GazQ4",
-                      "name": "toggle-articles",
-                      "layout": "vertical",
-                      "gap": 4,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "IfpkR",
-                          "name": "toggle-articles-label",
-                          "fill": "#3D2E1Fff",
-                          "content": "Articles",
-                          "fontFamily": "Playfair Display",
-                          "fontSize": 16,
-                          "fontWeight": "600"
-                        },
-                        {
-                          "type": "rectangle",
-                          "cornerRadius": 1,
-                          "id": "Ycjxj",
-                          "name": "toggle-articles-underline",
-                          "fill": "#e63434",
-                          "width": "fill_container",
-                          "height": 2
-                        }
-                      ]
+                      "type": "text",
+                      "id": "IfpkR",
+                      "name": "toggle-articles-label",
+                      "fill": "#3d2e1f",
+                      "content": "Articles",
+                      "fontFamily": "Playfair Display",
+                      "fontSize": 16,
+                      "fontWeight": "600"
                     },
                     {
-                      "type": "frame",
-                      "id": "4MbXo",
-                      "name": "toggle-videos",
-                      "layout": "vertical",
-                      "gap": 4,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "jXIRy",
-                          "name": "toggle-videos-label",
-                          "fill": "#3d2e1fb3",
-                          "content": "Videos",
-                          "fontFamily": "DM Sans",
-                          "fontSize": 16,
-                          "fontWeight": "normal"
-                        }
-                      ]
+                      "type": "rectangle",
+                      "cornerRadius": 1,
+                      "id": "Ycjxj",
+                      "name": "toggle-articles-underline",
+                      "fill": "#e63434",
+                      "width": "fill_container",
+                      "height": 2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "4MbXo",
+                  "name": "toggle-videos",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jXIRy",
+                      "name": "toggle-videos-label",
+                      "opacity": 0.7,
+                      "fill": "#3d2e1f",
+                      "content": "Videos",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -1286,7 +1255,6 @@
                     "url": "./src/images/no shadow texture/ns texture 1.3.png",
                     "mode": "fill"
                   },
-                  "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1
@@ -1297,7 +1265,6 @@
                   "children": [
                     {
                       "type": "rectangle",
-                      "cornerRadius": 8,
                       "id": "hhpW5",
                       "name": "article-thumbnail-3",
                       "fill": {
@@ -1324,7 +1291,7 @@
                           "type": "text",
                           "id": "5tOxR",
                           "name": "article-title-3",
-                          "fill": "#3D2E1Fff",
+                          "fill": "#3d2e1f",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Love in Marriage: Biblical Foundations",
@@ -1345,11 +1312,10 @@
                               "id": "KPHYy",
                               "name": "meta-read-time",
                               "rotation": -0.019961217324092603,
-                              "fill": "#3d2e1fb3",
+                              "fill": "#3d2e1f",
                               "content": "10 min read",
                               "fontFamily": "DM Sans",
-                              "fontSize": 12,
-                              "fontWeight": "normal"
+                              "fontSize": 12
                             },
                             {
                               "type": "frame",
@@ -1366,10 +1332,10 @@
                                   "id": "RhmVT",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
-                                  "fill": "#3d2e1f80",
+                                  "fill": "#3d2e1f",
                                   "content": "|",
                                   "fontFamily": "Dancing Script",
-                                  "fontSize": 16,
+                                  "fontSize": 12,
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -1389,17 +1355,16 @@
                                   "height": 16,
                                   "iconFontName": "eye",
                                   "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1fb3"
+                                  "fill": "#3d2e1f"
                                 },
                                 {
                                   "type": "text",
                                   "id": "NfPHh",
                                   "name": "meta-views",
-                                  "fill": "#3d2e1fb3",
+                                  "fill": "#3d2e1f",
                                   "content": "3.1k",
                                   "fontFamily": "DM Sans",
-                                  "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fontSize": 12
                                 }
                               ]
                             }
@@ -1427,17 +1392,16 @@
                                   "height": 16,
                                   "iconFontName": "heart",
                                   "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1fb3"
+                                  "fill": "#3d2e1f"
                                 },
                                 {
                                   "type": "text",
                                   "id": "j9X2z",
                                   "name": "meta-likes",
-                                  "fill": "#3d2e1fb3",
+                                  "fill": "#3d2e1f",
                                   "content": "267",
                                   "fontFamily": "DM Sans",
-                                  "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fontSize": 12
                                 }
                               ]
                             },
@@ -1456,10 +1420,10 @@
                                   "id": "LyuDy",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
-                                  "fill": "#3d2e1f80",
+                                  "fill": "#3d2e1f",
                                   "content": "|",
                                   "fontFamily": "Dancing Script",
-                                  "fontSize": 16,
+                                  "fontSize": 12,
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -1479,17 +1443,16 @@
                                   "height": 16,
                                   "iconFontName": "calendar-blank",
                                   "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1fb3"
+                                  "fill": "#3d2e1f"
                                 },
                                 {
                                   "type": "text",
                                   "id": "C63PG",
                                   "name": "meta-days",
-                                  "fill": "#3d2e1fb3",
+                                  "fill": "#3d2e1f",
                                   "content": "2 days ago",
                                   "fontFamily": "DM Sans",
-                                  "fontSize": 12,
-                                  "fontWeight": "normal"
+                                  "fontSize": 12
                                 }
                               ]
                             }
@@ -1511,7 +1474,6 @@
                     "url": "./src/images/no shadow texture/ns texture 1.1.png",
                     "mode": "fill"
                   },
-                  "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1
@@ -1522,7 +1484,6 @@
                   "children": [
                     {
                       "type": "rectangle",
-                      "cornerRadius": 8,
                       "id": "cVrAf",
                       "name": "article-thumbnail-1",
                       "fill": {
@@ -1549,7 +1510,7 @@
                           "type": "text",
                           "id": "aRIxI",
                           "name": "article-title-1",
-                          "fill": "#3D2E1Fff",
+                          "fill": "#3d2e1f",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "What the Bible Says About Loving Your Enemies",
@@ -1570,7 +1531,7 @@
                               "id": "CdeSi",
                               "name": "meta-read-time",
                               "rotation": -0.019961217324092603,
-                              "fill": "#3d2e1fb3",
+                              "fill": "#3d2e1f",
                               "content": "8 min read",
                               "fontFamily": "DM Sans",
                               "fontSize": 12,
@@ -1591,10 +1552,10 @@
                                   "id": "K02RL",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
-                                  "fill": "#3d2e1f80",
+                                  "fill": "#3d2e1f",
                                   "content": "|",
                                   "fontFamily": "Dancing Script",
-                                  "fontSize": 16,
+                                  "fontSize": 12,
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -1614,13 +1575,13 @@
                                   "height": 16,
                                   "iconFontName": "eye",
                                   "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1fb3"
+                                  "fill": "#3d2e1f"
                                 },
                                 {
                                   "type": "text",
                                   "id": "MpJ6F",
                                   "name": "meta-views",
-                                  "fill": "#3d2e1fb3",
+                                  "fill": "#3d2e1f",
                                   "content": "2.4k",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
@@ -1652,13 +1613,13 @@
                                   "height": 16,
                                   "iconFontName": "heart",
                                   "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1fb3"
+                                  "fill": "#3d2e1f"
                                 },
                                 {
                                   "type": "text",
                                   "id": "VPsMs",
                                   "name": "meta-likes",
-                                  "fill": "#3d2e1fb3",
+                                  "fill": "#3d2e1f",
                                   "content": "180",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
@@ -1681,10 +1642,10 @@
                                   "id": "nz9eZ",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
-                                  "fill": "#3d2e1f80",
+                                  "fill": "#3d2e1f",
                                   "content": "|",
                                   "fontFamily": "Dancing Script",
-                                  "fontSize": 16,
+                                  "fontSize": 12,
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -1704,13 +1665,13 @@
                                   "height": 16,
                                   "iconFontName": "calendar-blank",
                                   "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1fb3"
+                                  "fill": "#3d2e1f"
                                 },
                                 {
                                   "type": "text",
                                   "id": "SwcSb",
                                   "name": "meta-days",
-                                  "fill": "#3d2e1fb3",
+                                  "fill": "#3d2e1f",
                                   "content": "3 days ago",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
@@ -1736,7 +1697,6 @@
                     "url": "./src/images/no shadow texture/ns texture 1.4.png",
                     "mode": "fill"
                   },
-                  "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1
@@ -1747,7 +1707,6 @@
                   "children": [
                     {
                       "type": "rectangle",
-                      "cornerRadius": 8,
                       "id": "0SVJS",
                       "name": "article-thumbnail-4",
                       "fill": {
@@ -1774,7 +1733,7 @@
                           "type": "text",
                           "id": "wz715",
                           "name": "article-title-4",
-                          "fill": "#3D2E1Fff",
+                          "fill": "#3d2e1f",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "The Greatest Commandment Explained",
@@ -1795,7 +1754,7 @@
                               "id": "F3KqU",
                               "name": "meta-read-time",
                               "rotation": -0.019961217324092603,
-                              "fill": "#3d2e1fb3",
+                              "fill": "#3d2e1f",
                               "content": "7 min read",
                               "fontFamily": "DM Sans",
                               "fontSize": 12,
@@ -1816,10 +1775,10 @@
                                   "id": "UdaN5",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
-                                  "fill": "#3d2e1f80",
+                                  "fill": "#3d2e1f",
                                   "content": "|",
                                   "fontFamily": "Dancing Script",
-                                  "fontSize": 16,
+                                  "fontSize": 12,
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -1839,13 +1798,13 @@
                                   "height": 16,
                                   "iconFontName": "eye",
                                   "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1fb3"
+                                  "fill": "#3d2e1f"
                                 },
                                 {
                                   "type": "text",
                                   "id": "vyqgW",
                                   "name": "meta-views",
-                                  "fill": "#3d2e1fb3",
+                                  "fill": "#3d2e1f",
                                   "content": "2.7k",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
@@ -1877,13 +1836,13 @@
                                   "height": 16,
                                   "iconFontName": "heart",
                                   "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1fb3"
+                                  "fill": "#3d2e1f"
                                 },
                                 {
                                   "type": "text",
                                   "id": "52nFp",
                                   "name": "meta-likes",
-                                  "fill": "#3d2e1fb3",
+                                  "fill": "#3d2e1f",
                                   "content": "198",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
@@ -1906,10 +1865,10 @@
                                   "id": "RhJXX",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
-                                  "fill": "#3d2e1f80",
+                                  "fill": "#3d2e1f",
                                   "content": "|",
                                   "fontFamily": "Dancing Script",
-                                  "fontSize": 16,
+                                  "fontSize": 12,
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -1929,13 +1888,13 @@
                                   "height": 16,
                                   "iconFontName": "calendar-blank",
                                   "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1fb3"
+                                  "fill": "#3d2e1f"
                                 },
                                 {
                                   "type": "text",
                                   "id": "YU3a5",
                                   "name": "meta-days",
-                                  "fill": "#3d2e1fb3",
+                                  "fill": "#3d2e1f",
                                   "content": "5 days ago",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
@@ -1961,7 +1920,6 @@
                     "url": "./src/images/no shadow texture/ns texture 1.2.png",
                     "mode": "fill"
                   },
-                  "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
                     "thickness": 1
@@ -1972,7 +1930,6 @@
                   "children": [
                     {
                       "type": "rectangle",
-                      "cornerRadius": 8,
                       "id": "TLQqL",
                       "name": "article-thumbnail-2",
                       "fill": {
@@ -1999,7 +1956,7 @@
                           "type": "text",
                           "id": "cjcOT",
                           "name": "article-title-2",
-                          "fill": "#3D2E1Fff",
+                          "fill": "#3d2e1f",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "God's Love Language: Understanding Agape",
@@ -2020,7 +1977,7 @@
                               "id": "FIUus",
                               "name": "meta-read-time",
                               "rotation": -0.019961217324092603,
-                              "fill": "#3d2e1fb3",
+                              "fill": "#3d2e1f",
                               "content": "6 min read",
                               "fontFamily": "DM Sans",
                               "fontSize": 12,
@@ -2041,10 +1998,10 @@
                                   "id": "SXCEa",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
-                                  "fill": "#3d2e1f80",
+                                  "fill": "#3d2e1f",
                                   "content": "|",
                                   "fontFamily": "Dancing Script",
-                                  "fontSize": 16,
+                                  "fontSize": 12,
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -2064,13 +2021,13 @@
                                   "height": 16,
                                   "iconFontName": "eye",
                                   "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1fb3"
+                                  "fill": "#3d2e1f"
                                 },
                                 {
                                   "type": "text",
                                   "id": "nt0xx",
                                   "name": "meta-views",
-                                  "fill": "#3d2e1fb3",
+                                  "fill": "#3d2e1f",
                                   "content": "1.8k",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
@@ -2102,13 +2059,13 @@
                                   "height": 16,
                                   "iconFontName": "heart",
                                   "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1fb3"
+                                  "fill": "#3d2e1f"
                                 },
                                 {
                                   "type": "text",
                                   "id": "Egmzv",
                                   "name": "meta-likes",
-                                  "fill": "#3d2e1fb3",
+                                  "fill": "#3d2e1f",
                                   "content": "142",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
@@ -2131,10 +2088,10 @@
                                   "id": "GlpKi",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
-                                  "fill": "#3d2e1f80",
+                                  "fill": "#3d2e1f",
                                   "content": "|",
                                   "fontFamily": "Dancing Script",
-                                  "fontSize": 16,
+                                  "fontSize": 12,
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -2154,13 +2111,13 @@
                                   "height": 16,
                                   "iconFontName": "calendar-blank",
                                   "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1fb3"
+                                  "fill": "#3d2e1f"
                                 },
                                 {
                                   "type": "text",
                                   "id": "NZc3o",
                                   "name": "meta-days",
-                                  "fill": "#3d2e1fb3",
+                                  "fill": "#3d2e1f",
                                   "content": "1 week ago",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
@@ -2188,7 +2145,7 @@
       "name": "screen-1-dashboard",
       "clip": true,
       "width": 402,
-      "height": 874,
+      "height": 1076,
       "fill": "#e4ded5ff",
       "layout": "vertical",
       "children": [
@@ -2216,7 +2173,7 @@
                   "type": "text",
                   "id": "A7LSc",
                   "name": "status-time",
-                  "fill": "#3D2E1F",
+                  "fill": "#3d2e1f",
                   "content": "9:41",
                   "fontFamily": "Inter",
                   "fontSize": 15,
@@ -2287,16 +2244,13 @@
           "name": "content-wrapper",
           "width": "fill_container",
           "height": "fill_container",
-          "layout": "vertical",
-          "gap": 36,
-          "padding": [
-            20,
-            24
-          ],
+          "layout": "none",
           "children": [
             {
               "type": "frame",
               "id": "TRau0",
+              "x": 24,
+              "y": 24,
               "name": "greeting-verse-section",
               "width": "fit_content(354)",
               "layout": "vertical",
@@ -2314,11 +2268,10 @@
                       "type": "text",
                       "id": "PoCXh",
                       "name": "greeting-text",
-                      "fill": "#3D2E1F",
+                      "fill": "#3d2e1f",
                       "textGrowth": "fixed-width",
                       "width": "fit_content(170)",
                       "content": "Good Morning, Jamie",
-                      "lineHeight": 1.25,
                       "fontFamily": "Playfair Display",
                       "fontSize": 22,
                       "fontWeight": "700"
@@ -2328,7 +2281,7 @@
                       "id": "LO0h0",
                       "name": "greeting-right",
                       "height": 22,
-                      "gap": 12,
+                      "gap": 16,
                       "children": [
                         {
                           "type": "frame",
@@ -2351,11 +2304,12 @@
                               "type": "text",
                               "id": "Wp1Pc",
                               "name": "streak-count",
-                              "fill": "#3D2E1F",
+                              "fill": "#3d2e1f",
                               "content": "7",
                               "fontFamily": "DM Sans",
                               "fontSize": 10,
-                              "fontWeight": "600"
+                              "fontWeight": "600",
+                              "letterSpacing": 0.5
                             }
                           ]
                         },
@@ -2363,8 +2317,8 @@
                           "type": "frame",
                           "id": "fydQU",
                           "name": "nav-alerts",
+                          "opacity": 0.5,
                           "layout": "vertical",
-                          "gap": 3,
                           "justifyContent": "center",
                           "alignItems": "center",
                           "children": [
@@ -2376,19 +2330,7 @@
                               "height": 22,
                               "iconFontName": "bell",
                               "iconFontFamily": "phosphor",
-                              "fill": "#3D2E1F80"
-                            },
-                            {
-                              "type": "text",
-                              "id": "UO7Nr",
-                              "name": "nav-alerts-label",
-                              "enabled": false,
-                              "fill": "#3D2E1F80",
-                              "content": "ALERTS",
-                              "fontFamily": "DM Sans",
-                              "fontSize": 12,
-                              "fontWeight": "600",
-                              "letterSpacing": 0.5
+                              "fill": "#3d2e1f"
                             }
                           ]
                         }
@@ -2410,38 +2352,12 @@
                       "url": "./src/images/verse of the day background/verse of the day.png",
                       "mode": "fill"
                     },
-                    "#f5efe6e6"
+                    "#f3ede3cc"
                   ],
                   "cornerRadius": 16,
                   "stroke": {
                     "align": "inside",
-                    "thickness": 1,
-                    "fill": [
-                      {
-                        "type": "gradient",
-                        "gradientType": "linear",
-                        "enabled": false,
-                        "rotation": 0,
-                        "size": {
-                          "height": 1
-                        },
-                        "colors": [
-                          {
-                            "color": "#d4c9b800",
-                            "position": 0
-                          },
-                          {
-                            "color": "#d4c9b8",
-                            "position": 1
-                          }
-                        ]
-                      },
-                      {
-                        "type": "color",
-                        "color": "#d4c9b8",
-                        "enabled": false
-                      }
-                    ]
+                    "thickness": 0
                   },
                   "layout": "vertical",
                   "gap": 16,
@@ -2449,9 +2365,20 @@
                   "children": [
                     {
                       "type": "text",
+                      "id": "dat4w",
+                      "name": "verse-label",
+                      "opacity": 0.7,
+                      "fill": "#3d2e1f",
+                      "content": "Verse of the day",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
                       "id": "kFLKz",
                       "name": "verse-text",
-                      "fill": "#3D2E1Fff",
+                      "fill": "#3d2e1f",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
                       "content": "\"For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you a hope and a future.\"",
@@ -2499,11 +2426,11 @@
                                   "type": "text",
                                   "id": "P8Iko",
                                   "name": "like-count",
-                                  "fill": "#3D2E1Fff",
+                                  "fill": "#3d2e1f",
                                   "content": "12",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
-                                  "fontWeight": "500"
+                                  "fontWeight": "600"
                                 }
                               ]
                             },
@@ -2530,11 +2457,11 @@
                                   "type": "text",
                                   "id": "1qTEg",
                                   "name": "share-count",
-                                  "fill": "#3D2E1Fff",
+                                  "fill": "#3d2e1f",
                                   "content": "5",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
-                                  "fontWeight": "500"
+                                  "fontWeight": "600"
                                 }
                               ]
                             },
@@ -2561,11 +2488,11 @@
                                   "type": "text",
                                   "id": "tFBE9",
                                   "name": "comment-count",
-                                  "fill": "#3D2E1Fff",
+                                  "fill": "#3d2e1f",
                                   "content": "3",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
-                                  "fontWeight": "500"
+                                  "fontWeight": "600"
                                 }
                               ]
                             }
@@ -2575,8 +2502,9 @@
                           "type": "text",
                           "id": "aztYY",
                           "name": "verse-reference",
-                          "fill": "#3D2E1Fff",
+                          "fill": "#3d2e1f",
                           "content": "Jeremiah 29:11",
+                          "lineHeight": 1.5,
                           "textAlign": "right",
                           "fontFamily": "DM Sans",
                           "fontSize": 14,
@@ -2591,8 +2519,10 @@
             {
               "type": "frame",
               "id": "oFyQc",
+              "x": 24,
+              "y": 315,
               "name": "aspects-section",
-              "width": "fill_container",
+              "width": "fill_container(354)",
               "height": 330,
               "layout": "vertical",
               "gap": 16,
@@ -2609,7 +2539,7 @@
                       "type": "text",
                       "id": "jsZY9",
                       "name": "discover-heading",
-                      "fill": "#3D2E1Fff",
+                      "fill": "#3d2e1f",
                       "content": "Understanding Aspects",
                       "fontFamily": "Playfair Display",
                       "fontSize": 18,
@@ -2622,7 +2552,7 @@
                   "id": "h8Vgp",
                   "name": "search-bar",
                   "width": "fill_container",
-                  "height": 44,
+                  "height": 46,
                   "fill": {
                     "type": "color",
                     "color": "#EDE6D8",
@@ -2636,7 +2566,7 @@
                   },
                   "gap": 10,
                   "padding": [
-                    14,
+                    0,
                     16
                   ],
                   "alignItems": "center",
@@ -2645,8 +2575,10 @@
                       "type": "text",
                       "id": "lxK6O",
                       "name": "search-placeholder",
-                      "fill": "#3D2E1Fb3",
+                      "opacity": 0.7,
+                      "fill": "#3d2e1f",
                       "content": "Search for an aspect",
+                      "lineHeight": 1.5,
                       "fontFamily": "DM Sans",
                       "fontSize": 14,
                       "fontWeight": "normal"
@@ -2677,7 +2609,7 @@
                           "opacity": 0.4,
                           "width": 28,
                           "height": 28,
-                          "fill": "#EDE6D8",
+                          "fill": "#ede6d8",
                           "cornerRadius": 22,
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -2701,8 +2633,8 @@
                           "fill": "#3d2e1f",
                           "content": "1 / 3",
                           "fontFamily": "DM Sans",
-                          "fontSize": 14,
-                          "fontWeight": "500"
+                          "fontSize": 12,
+                          "fontWeight": "600"
                         },
                         {
                           "type": "frame",
@@ -2710,7 +2642,7 @@
                           "name": "chevron-right",
                           "width": 28,
                           "height": 28,
-                          "fill": "#f0e8dbff",
+                          "fill": "#EDE6D8",
                           "cornerRadius": 22,
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -2785,7 +2717,7 @@
                               "type": "frame",
                               "id": "ghQ0o",
                               "name": "faith-content",
-                              "gap": 6,
+                              "gap": 2,
                               "alignItems": "center",
                               "children": [
                                 {
@@ -2805,7 +2737,7 @@
                                   "type": "text",
                                   "id": "RleBo",
                                   "name": "faith-title",
-                                  "fill": "#3D2E1F",
+                                  "fill": "#3d2e1f",
                                   "content": "Faith",
                                   "fontFamily": "Playfair Display",
                                   "fontSize": 16,
@@ -2823,11 +2755,10 @@
                               "width": "fill_container",
                               "height": 60,
                               "content": "Discover what it means to trust God through uncertainty, build unshakeable belief, and walk by faith not by sight.",
-                              "lineHeight": 1.45,
+                              "lineHeight": 1.5,
                               "fontFamily": "DM Sans",
-                              "fontSize": 13,
-                              "fontWeight": "normal",
-                              "letterSpacing": 0.1
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -2864,7 +2795,7 @@
                               "type": "frame",
                               "id": "78RwT",
                               "name": "sin-content",
-                              "gap": 6,
+                              "gap": 2,
                               "alignItems": "center",
                               "children": [
                                 {
@@ -2884,7 +2815,7 @@
                                   "type": "text",
                                   "id": "h9yyH",
                                   "name": "sin-title",
-                                  "fill": "#3D2E1F",
+                                  "fill": "#3d2e1f",
                                   "content": "Sin",
                                   "fontFamily": "Playfair Display",
                                   "fontSize": 16,
@@ -2902,11 +2833,10 @@
                               "width": "fill_container",
                               "height": 60,
                               "content": "Understand the nature of sin, its impact on our lives, and the freedom found through repentance and God's grace.",
-                              "lineHeight": 1.45,
+                              "lineHeight": 1.5,
                               "fontFamily": "DM Sans",
-                              "fontSize": 13,
-                              "fontWeight": "normal",
-                              "letterSpacing": 0.1
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -2916,7 +2846,7 @@
                           "x": 0,
                           "y": 12,
                           "name": "topic-card-theology",
-                          "width": 354,
+                          "width": "fill_container(354)",
                           "height": 146,
                           "fill": {
                             "type": "image",
@@ -2943,7 +2873,7 @@
                               "type": "frame",
                               "id": "PyELF",
                               "name": "theology-content",
-                              "gap": 6,
+                              "gap": 2,
                               "alignItems": "center",
                               "children": [
                                 {
@@ -2963,7 +2893,7 @@
                                   "type": "text",
                                   "id": "WTf5e",
                                   "name": "theology-title",
-                                  "fill": "#3D2E1Fff",
+                                  "fill": "#3d2e1f",
                                   "content": "Theology",
                                   "fontFamily": "Playfair Display",
                                   "fontSize": 16,
@@ -2981,11 +2911,10 @@
                               "width": "fill_container",
                               "height": 60,
                               "content": "Dive into the foundational truths about God's character, His sovereignty, and how doctrine shapes everyday faith.",
-                              "lineHeight": 1.45,
+                              "lineHeight": 1.5,
                               "fontFamily": "DM Sans",
-                              "fontSize": 13,
-                              "fontWeight": "normal",
-                              "letterSpacing": 0.1
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -3022,7 +2951,7 @@
                               "type": "frame",
                               "id": "QAFZ2",
                               "name": "love-content",
-                              "gap": 5,
+                              "gap": 2,
                               "alignItems": "center",
                               "children": [
                                 {
@@ -3042,7 +2971,7 @@
                                   "type": "text",
                                   "id": "Wmkgp",
                                   "name": "love-title",
-                                  "fill": "#3D2E1F",
+                                  "fill": "#3d2e1f",
                                   "content": "Love",
                                   "fontFamily": "Playfair Display",
                                   "fontSize": 16,
@@ -3130,7 +3059,7 @@
                                   "type": "text",
                                   "id": "s2WGw",
                                   "name": "prayer-title",
-                                  "fill": "#3D2E1F",
+                                  "fill": "#3d2e1f",
                                   "content": "Prayer",
                                   "fontFamily": "Playfair Display",
                                   "fontSize": 16,
@@ -3148,11 +3077,10 @@
                               "width": "fill_container",
                               "height": 60,
                               "content": "Grow your prayer life through biblical patterns, honest conversation with God, and learning to listen for His voice.",
-                              "lineHeight": 1.45,
+                              "lineHeight": 1.5,
                               "fontFamily": "DM Sans",
-                              "fontSize": 13,
-                              "fontWeight": "normal",
-                              "letterSpacing": 0.1
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -3189,7 +3117,7 @@
                               "type": "frame",
                               "id": "t9ZGS",
                               "name": "forgiveness-content",
-                              "gap": 6,
+                              "gap": 2,
                               "alignItems": "center",
                               "children": [
                                 {
@@ -3209,7 +3137,7 @@
                                   "type": "text",
                                   "id": "55Dm5",
                                   "name": "forgiveness-title",
-                                  "fill": "#3D2E1F",
+                                  "fill": "#3d2e1f",
                                   "content": "Forgiveness",
                                   "fontFamily": "Playfair Display",
                                   "fontSize": 16,
@@ -3227,11 +3155,10 @@
                               "width": "fill_container",
                               "height": 60,
                               "content": "Discover the power of releasing offense, receiving God's forgiveness, and the freedom that comes from letting go.",
-                              "lineHeight": 1.45,
+                              "lineHeight": 1.5,
                               "fontFamily": "DM Sans",
-                              "fontSize": 13,
-                              "fontWeight": "normal",
-                              "letterSpacing": 0.1
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -3241,7 +3168,7 @@
                           "x": 0,
                           "y": 12,
                           "name": "topic-card-hope",
-                          "width": 354,
+                          "width": "fill_container(354)",
                           "height": 146,
                           "fill": {
                             "type": "image",
@@ -3268,7 +3195,7 @@
                               "type": "frame",
                               "id": "tgmJJ",
                               "name": "hope-content",
-                              "gap": 6,
+                              "gap": 2,
                               "alignItems": "center",
                               "children": [
                                 {
@@ -3288,7 +3215,7 @@
                                   "type": "text",
                                   "id": "ofvMo",
                                   "name": "hope-title",
-                                  "fill": "#3D2E1F",
+                                  "fill": "#3d2e1f",
                                   "content": "Hope",
                                   "fontFamily": "Playfair Display",
                                   "fontSize": 16,
@@ -3306,11 +3233,10 @@
                               "width": "fill_container",
                               "height": 60,
                               "content": "Find anchored hope in God's promises, even through suffering, and learn to hold onto eternal perspective.",
-                              "lineHeight": 1.45,
+                              "lineHeight": 1.5,
                               "fontFamily": "DM Sans",
-                              "fontSize": 13,
-                              "fontWeight": "normal",
-                              "letterSpacing": 0.1
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -3347,7 +3273,7 @@
                               "type": "frame",
                               "id": "I9HS3",
                               "name": "grace-content",
-                              "gap": 5,
+                              "gap": 2,
                               "alignItems": "center",
                               "children": [
                                 {
@@ -3367,7 +3293,7 @@
                                   "type": "text",
                                   "id": "QunLT",
                                   "name": "grace-title",
-                                  "fill": "#3D2E1F",
+                                  "fill": "#3d2e1f",
                                   "content": "Grace",
                                   "fontFamily": "Playfair Display",
                                   "fontSize": 16,
@@ -3385,11 +3311,10 @@
                               "width": "fill_container",
                               "height": 60,
                               "content": "Learn how unmerited favor changes everything — from salvation to daily living, and how to extend grace to others.",
-                              "lineHeight": 1.45,
+                              "lineHeight": 1.5,
                               "fontFamily": "DM Sans",
-                              "fontSize": 13,
-                              "fontWeight": "normal",
-                              "letterSpacing": 0.1
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         }
@@ -3436,7 +3361,7 @@
                               "type": "frame",
                               "id": "h4SLt",
                               "name": "wisdom-content",
-                              "gap": 6,
+                              "gap": 2,
                               "alignItems": "center",
                               "children": [
                                 {
@@ -3456,7 +3381,7 @@
                                   "type": "text",
                                   "id": "TGmLl",
                                   "name": "wisdom-title",
-                                  "fill": "#3D2E1F",
+                                  "fill": "#3d2e1f",
                                   "content": "Wisdom",
                                   "fontFamily": "Playfair Display",
                                   "fontSize": 16,
@@ -3474,11 +3399,10 @@
                               "width": "fill_container",
                               "height": 60,
                               "content": "Gain biblical wisdom for decisions, relationships, and life through the fear of the Lord and the study of His Word.",
-                              "lineHeight": 1.45,
+                              "lineHeight": 1.5,
                               "fontFamily": "DM Sans",
-                              "fontSize": 13,
-                              "fontWeight": "normal",
-                              "letterSpacing": 0.1
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -3515,7 +3439,7 @@
                               "type": "frame",
                               "id": "XBItr",
                               "name": "redemption-content",
-                              "gap": 6,
+                              "gap": 2,
                               "alignItems": "center",
                               "children": [
                                 {
@@ -3535,7 +3459,7 @@
                                   "type": "text",
                                   "id": "AgNYx",
                                   "name": "redemption-title",
-                                  "fill": "#3D2E1F",
+                                  "fill": "#3d2e1f",
                                   "content": "Redemption",
                                   "fontFamily": "Playfair Display",
                                   "fontSize": 16,
@@ -3553,11 +3477,10 @@
                               "width": "fill_container",
                               "height": 60,
                               "content": "Trace God's redemption story from Genesis to Revelation and discover how He restores what was lost.",
-                              "lineHeight": 1.45,
+                              "lineHeight": 1.5,
                               "fontFamily": "DM Sans",
-                              "fontSize": 13,
-                              "fontWeight": "normal",
-                              "letterSpacing": 0.1
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -3567,7 +3490,7 @@
                           "x": 0,
                           "y": 12,
                           "name": "topic-card-worship",
-                          "width": 354,
+                          "width": "fill_container(354)",
                           "height": 146,
                           "fill": {
                             "type": "image",
@@ -3594,7 +3517,7 @@
                               "type": "frame",
                               "id": "KiV52",
                               "name": "worship-content",
-                              "gap": 6,
+                              "gap": 2,
                               "alignItems": "center",
                               "children": [
                                 {
@@ -3614,7 +3537,7 @@
                                   "type": "text",
                                   "id": "oag7o",
                                   "name": "worship-title",
-                                  "fill": "#3D2E1F",
+                                  "fill": "#3d2e1f",
                                   "content": "Worship",
                                   "fontFamily": "Playfair Display",
                                   "fontSize": 16,
@@ -3632,11 +3555,10 @@
                               "width": "fill_container",
                               "height": 60,
                               "content": "Learn what it means to worship in spirit and truth — beyond music, into a lifestyle of surrender and adoration.",
-                              "lineHeight": 1.45,
+                              "lineHeight": 1.5,
                               "fontFamily": "DM Sans",
-                              "fontSize": 13,
-                              "fontWeight": "normal",
-                              "letterSpacing": 0.1
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         },
@@ -3673,7 +3595,7 @@
                               "type": "frame",
                               "id": "0usje",
                               "name": "mercy-content",
-                              "gap": 5,
+                              "gap": 2,
                               "alignItems": "center",
                               "children": [
                                 {
@@ -3693,7 +3615,7 @@
                                   "type": "text",
                                   "id": "S46BP",
                                   "name": "mercy-title",
-                                  "fill": "#3D2E1F",
+                                  "fill": "#3d2e1f",
                                   "content": "Mercy",
                                   "fontFamily": "Playfair Display",
                                   "fontSize": 16,
@@ -3711,11 +3633,10 @@
                               "width": "fill_container",
                               "height": 60,
                               "content": "Understand God's compassion toward the broken, and how showing mercy reflects His heart to a hurting world.",
-                              "lineHeight": 1.45,
+                              "lineHeight": 1.5,
                               "fontFamily": "DM Sans",
-                              "fontSize": 13,
-                              "fontWeight": "normal",
-                              "letterSpacing": 0.1
+                              "fontSize": 14,
+                              "fontWeight": "normal"
                             }
                           ]
                         }
@@ -3728,9 +3649,11 @@
             {
               "type": "frame",
               "id": "ywXPt",
+              "x": 24,
+              "y": 681,
               "name": "testimonies-section",
               "clip": true,
-              "width": "fill_container",
+              "width": "fill_container(354)",
               "layout": "vertical",
               "gap": 16,
               "children": [
@@ -3746,7 +3669,7 @@
                       "type": "text",
                       "id": "1sUYC",
                       "name": "discover-heading",
-                      "fill": "#3D2E1Fff",
+                      "fill": "#3d2e1f",
                       "textGrowth": "fixed-width",
                       "width": 181,
                       "content": "Testimonies",
@@ -3769,7 +3692,7 @@
                           "opacity": 0.4,
                           "width": 28,
                           "height": 28,
-                          "fill": "#EDE6D8",
+                          "fill": "#ede6d8",
                           "cornerRadius": 22,
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -3793,8 +3716,8 @@
                           "fill": "#3d2e1f",
                           "content": "1 / 3",
                           "fontFamily": "DM Sans",
-                          "fontSize": 14,
-                          "fontWeight": "500"
+                          "fontSize": 12,
+                          "fontWeight": "600"
                         },
                         {
                           "type": "frame",
@@ -3802,7 +3725,7 @@
                           "name": "chevron-right",
                           "width": 28,
                           "height": 28,
-                          "fill": "#f0e8dbff",
+                          "fill": "#EDE6D8",
                           "cornerRadius": 22,
                           "justifyContent": "center",
                           "alignItems": "center",
@@ -3835,7 +3758,7 @@
                       "id": "yxoKK",
                       "name": "testimony-card",
                       "width": 354,
-                      "fill": "#f3ede3ff",
+                      "fill": "#f3ede3",
                       "cornerRadius": 12,
                       "effect": {
                         "type": "shadow",
@@ -3884,17 +3807,19 @@
                                   "type": "text",
                                   "id": "WBqMT",
                                   "name": "testimony-name",
-                                  "fill": "#3D2E1F",
+                                  "fill": "#3d2e1f",
                                   "content": "Sarah M.",
                                   "fontFamily": "Playfair Display",
-                                  "fontSize": 14,
-                                  "fontWeight": "700"
+                                  "fontSize": 16,
+                                  "fontWeight": "600",
+                                  "fontStyle": "italic"
                                 },
                                 {
                                   "type": "text",
                                   "id": "L4jeW",
                                   "name": "testimony-username",
-                                  "fill": "#3d2e1fb3",
+                                  "opacity": 0.7,
+                                  "fill": "#3d2e1f",
                                   "content": "@sarah_m",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
@@ -3908,7 +3833,7 @@
                           "type": "text",
                           "id": "fDvkS",
                           "name": "testimony-text",
-                          "fill": "#3D2E1F",
+                          "fill": "#3d2e1f",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "God has been so faithful this season. What started as a painful breakup led me to a deeper understanding of His love. I started reading about forgiveness on this app and it completely changed my perspective. I'm now volunteering at my church and helping others walk through similar seasons.",
@@ -3924,7 +3849,7 @@
                       "id": "EYh5C",
                       "name": "testimony-card",
                       "width": 354,
-                      "fill": "#f3ede3ff",
+                      "fill": "#f3ede3",
                       "cornerRadius": 12,
                       "effect": {
                         "type": "shadow",
@@ -3973,17 +3898,19 @@
                                   "type": "text",
                                   "id": "v4N6Z",
                                   "name": "testimony-name",
-                                  "fill": "#3D2E1F",
+                                  "fill": "#3d2e1f",
                                   "content": "David K.",
                                   "fontFamily": "Playfair Display",
-                                  "fontSize": 14,
-                                  "fontWeight": "700"
+                                  "fontSize": 16,
+                                  "fontWeight": "600",
+                                  "fontStyle": "italic"
                                 },
                                 {
                                   "type": "text",
                                   "id": "JPGGV",
                                   "name": "testimony-username",
-                                  "fill": "#3d2e1fb3",
+                                  "opacity": 0.7,
+                                  "fill": "#3d2e1f",
                                   "content": "@david_k",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
@@ -3997,7 +3924,7 @@
                           "type": "text",
                           "id": "pCNJA",
                           "name": "testimony-text",
-                          "fill": "#3D2E1F",
+                          "fill": "#3d2e1f",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "I was struggling with doubt for years. The theology section helped me ask honest questions without feeling guilty. I found answers I didn't know I needed and my faith is stronger than ever. This app gave me permission to wrestle with God and come out holding on tighter.",
@@ -4013,7 +3940,7 @@
                       "id": "p3k5J",
                       "name": "testimony-card",
                       "width": 354,
-                      "fill": "#f5efe6e6",
+                      "fill": "#F3EDE3",
                       "cornerRadius": 12,
                       "effect": {
                         "type": "shadow",
@@ -4062,17 +3989,19 @@
                                   "type": "text",
                                   "id": "CfUTM",
                                   "name": "testimony-name",
-                                  "fill": "#3D2E1F",
+                                  "fill": "#3d2e1f",
                                   "content": "Grace O.",
                                   "fontFamily": "Playfair Display",
-                                  "fontSize": 14,
-                                  "fontWeight": "700"
+                                  "fontSize": 16,
+                                  "fontWeight": "600",
+                                  "fontStyle": "italic"
                                 },
                                 {
                                   "type": "text",
                                   "id": "MfQcy",
                                   "name": "testimony-username",
-                                  "fill": "#3d2e1fb3",
+                                  "opacity": 0.7,
+                                  "fill": "#3d2e1f",
                                   "content": "@grace_o",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
@@ -4086,7 +4015,7 @@
                           "type": "text",
                           "id": "V0OPZ",
                           "name": "testimony-text",
-                          "fill": "#3D2E1F",
+                          "fill": "#3d2e1f",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
                           "content": "Prayer always felt like a monologue until I found the prayer aspect here. Learning about biblical prayer patterns completely transformed how I talk to God. Now I actually look forward to my quiet time. My family has noticed the change in me and my daughter started praying on her own too.",
@@ -4109,11 +4038,10 @@
           "name": "bottom-nav",
           "width": "fill_container",
           "height": 70,
-          "fill": "#f3ece2",
+          "fill": "#F3EDE3",
           "stroke": {
             "align": "inside",
-            "thickness": 1,
-            "fill": "#D4C9B800"
+            "thickness": 0
           },
           "effect": {
             "type": "shadow",
@@ -4126,7 +4054,7 @@
             "blur": 4
           },
           "padding": [
-            4,
+            0,
             24
           ],
           "justifyContent": "space_between",
@@ -4149,7 +4077,7 @@
                   "height": 22,
                   "iconFontName": "house-fill",
                   "iconFontFamily": "phosphor",
-                  "fill": "#e63434ff"
+                  "fill": "#e63434"
                 },
                 {
                   "type": "text",
@@ -4168,6 +4096,7 @@
               "type": "frame",
               "id": "dWzVd",
               "name": "nav-community",
+              "opacity": 0.5,
               "layout": "vertical",
               "gap": 2,
               "justifyContent": "center",
@@ -4181,13 +4110,13 @@
                   "height": 22,
                   "iconFontName": "users",
                   "iconFontFamily": "phosphor",
-                  "fill": "#3D2E1F80"
+                  "fill": "#3d2e1f"
                 },
                 {
                   "type": "text",
                   "id": "ecGwQ",
                   "name": "nav-community-label",
-                  "fill": "#3D2E1F80",
+                  "fill": "#3d2e1f",
                   "content": "COMMUNITY",
                   "fontFamily": "DM Sans",
                   "fontSize": 10,
@@ -4200,6 +4129,7 @@
               "type": "frame",
               "id": "CQxqT",
               "name": "nav-bible",
+              "opacity": 0.5,
               "layout": "vertical",
               "gap": 2,
               "justifyContent": "center",
@@ -4213,13 +4143,13 @@
                   "height": 22,
                   "iconFontName": "book-open",
                   "iconFontFamily": "phosphor",
-                  "fill": "#3D2E1F80"
+                  "fill": "#3d2e1f"
                 },
                 {
                   "type": "text",
                   "id": "Fw2rz",
                   "name": "nav-bible-label",
-                  "fill": "#3D2E1F80",
+                  "fill": "#3d2e1f",
                   "content": "BIBLE",
                   "fontFamily": "DM Sans",
                   "fontSize": 10,
@@ -4231,7 +4161,8 @@
             {
               "type": "frame",
               "id": "YGmYP",
-              "name": "nav-community",
+              "name": "nav-favorites",
+              "opacity": 0.5,
               "layout": "vertical",
               "gap": 2,
               "justifyContent": "center",
@@ -4245,13 +4176,13 @@
                   "height": 22,
                   "iconFontName": "heart",
                   "iconFontFamily": "phosphor",
-                  "fill": "#3D2E1F80"
+                  "fill": "#3d2e1f"
                 },
                 {
                   "type": "text",
                   "id": "6JcXz",
                   "name": "nav-community-label",
-                  "fill": "#3D2E1F80",
+                  "fill": "#3d2e1f",
                   "content": "FAVORITES",
                   "fontFamily": "DM Sans",
                   "fontSize": 10,
@@ -4263,7 +4194,8 @@
             {
               "type": "frame",
               "id": "goR2c",
-              "name": "nav-community",
+              "name": "nav-you",
+              "opacity": 0.5,
               "layout": "vertical",
               "gap": 2,
               "justifyContent": "center",
@@ -4277,13 +4209,13 @@
                   "height": 22,
                   "iconFontName": "user",
                   "iconFontFamily": "phosphor",
-                  "fill": "#3D2E1F80"
+                  "fill": "#3d2e1f"
                 },
                 {
                   "type": "text",
                   "id": "X67UA",
                   "name": "nav-community-label",
-                  "fill": "#3D2E1F80",
+                  "fill": "#3d2e1f",
                   "content": "YOU",
                   "fontFamily": "DM Sans",
                   "fontSize": 10,
@@ -4647,11 +4579,13 @@
                         {
                           "type": "text",
                           "id": "E5LLm",
+                          "x": 0,
+                          "y": 0,
                           "name": "video-description-hidden",
                           "enabled": false,
                           "fill": "#3D2E1Fb3",
                           "textGrowth": "fixed-width",
-                          "width": "fill_container",
+                          "width": "fill_container(0)",
                           "content": " ",
                           "fontFamily": "DM Sans",
                           "fontSize": 14,
@@ -4894,11 +4828,13 @@
                         {
                           "type": "text",
                           "id": "2ZgMP",
+                          "x": 0,
+                          "y": 0,
                           "name": "video-description-hidden",
                           "enabled": false,
                           "fill": "#3D2E1Fb3",
                           "textGrowth": "fixed-width",
-                          "width": "fill_container",
+                          "width": "fill_container(0)",
                           "content": " ",
                           "fontFamily": "DM Sans",
                           "fontSize": 14,
@@ -5142,11 +5078,13 @@
                         {
                           "type": "text",
                           "id": "okz8K",
+                          "x": 0,
+                          "y": 0,
                           "name": "video-description-hidden",
                           "enabled": false,
                           "fill": "#3D2E1Fb3",
                           "textGrowth": "fixed-width",
-                          "width": "fill_container",
+                          "width": "fill_container(0)",
                           "content": " ",
                           "fontFamily": "DM Sans",
                           "fontSize": 14,
@@ -5389,11 +5327,13 @@
                         {
                           "type": "text",
                           "id": "q7jMt",
+                          "x": 0,
+                          "y": 0,
                           "name": "video-description-hidden",
                           "enabled": false,
                           "fill": "#3D2E1Fb3",
                           "textGrowth": "fixed-width",
-                          "width": "fill_container",
+                          "width": "fill_container(0)",
                           "content": " ",
                           "fontFamily": "DM Sans",
                           "fontSize": 14,
@@ -5908,11 +5848,13 @@
                         {
                           "type": "text",
                           "id": "nw1X8",
+                          "x": 0,
+                          "y": 0,
                           "name": "article-description",
                           "enabled": false,
                           "fill": "#3D2E1Fb3",
                           "textGrowth": "fixed-width",
-                          "width": "fill_container",
+                          "width": "fill_container(0)",
                           "content": "Explore the radical call to love those who oppose you, and how Scripture provides a path to forgiveness.",
                           "fontFamily": "DM Sans",
                           "fontSize": 14,
@@ -6154,11 +6096,13 @@
                         {
                           "type": "text",
                           "id": "WUNmb",
+                          "x": 0,
+                          "y": 0,
                           "name": "article-description",
                           "enabled": false,
                           "fill": "#3D2E1Fb3",
                           "textGrowth": "fixed-width",
-                          "width": "fill_container",
+                          "width": "fill_container(0)",
                           "content": "Discover the deepest form of love described in Scripture and how it differs from worldly affection.",
                           "fontFamily": "DM Sans",
                           "fontSize": 14,
@@ -6400,11 +6344,13 @@
                         {
                           "type": "text",
                           "id": "JHwDA",
+                          "x": 0,
+                          "y": 0,
                           "name": "article-description",
                           "enabled": false,
                           "fill": "#3D2E1Fb3",
                           "textGrowth": "fixed-width",
-                          "width": "fill_container",
+                          "width": "fill_container(0)",
                           "content": "A study of marriage through Scripture — from Genesis to Ephesians, what God designed love to look like.",
                           "fontFamily": "DM Sans",
                           "fontSize": 14,
@@ -6646,11 +6592,13 @@
                         {
                           "type": "text",
                           "id": "xq5GJ",
+                          "x": 0,
+                          "y": 0,
                           "name": "article-description",
                           "enabled": false,
                           "fill": "#3D2E1Fb3",
                           "textGrowth": "fixed-width",
-                          "width": "fill_container",
+                          "width": "fill_container(0)",
                           "content": "Why Jesus said loving God and neighbor is the foundation of all the law and the prophets.",
                           "fontFamily": "DM Sans",
                           "fontSize": 14,
@@ -7156,11 +7104,13 @@
                         {
                           "type": "text",
                           "id": "B1ZLL",
+                          "x": 0,
+                          "y": 0,
                           "name": "video-description-hidden",
                           "enabled": false,
                           "fill": "#3D2E1Fb3",
                           "textGrowth": "fixed-width",
-                          "width": "fill_container",
+                          "width": "fill_container(0)",
                           "content": " ",
                           "fontFamily": "DM Sans",
                           "fontSize": 14,
@@ -7405,11 +7355,13 @@
                         {
                           "type": "text",
                           "id": "Qox9c",
+                          "x": 0,
+                          "y": 0,
                           "name": "video-description-hidden",
                           "enabled": false,
                           "fill": "#3D2E1Fb3",
                           "textGrowth": "fixed-width",
-                          "width": "fill_container",
+                          "width": "fill_container(0)",
                           "content": " ",
                           "fontFamily": "DM Sans",
                           "fontSize": 14,
@@ -7654,11 +7606,13 @@
                         {
                           "type": "text",
                           "id": "n4C8k",
+                          "x": 0,
+                          "y": 0,
                           "name": "video-description-hidden",
                           "enabled": false,
                           "fill": "#3D2E1Fb3",
                           "textGrowth": "fixed-width",
-                          "width": "fill_container",
+                          "width": "fill_container(0)",
                           "content": " ",
                           "fontFamily": "DM Sans",
                           "fontSize": 14,
@@ -7903,11 +7857,13 @@
                         {
                           "type": "text",
                           "id": "bVwro",
+                          "x": 0,
+                          "y": 0,
                           "name": "video-description-hidden",
                           "enabled": false,
                           "fill": "#3D2E1Fb3",
                           "textGrowth": "fixed-width",
-                          "width": "fill_container",
+                          "width": "fill_container(0)",
                           "content": " ",
                           "fontFamily": "DM Sans",
                           "fontSize": 14,
@@ -8423,11 +8379,13 @@
                         {
                           "type": "text",
                           "id": "Hn6JU",
+                          "x": 0,
+                          "y": 0,
                           "name": "article-description",
                           "enabled": false,
                           "fill": "#3D2E1Fb3",
                           "textGrowth": "fixed-width",
-                          "width": "fill_container",
+                          "width": "fill_container(0)",
                           "content": "Explore the radical call to love those who oppose you, and how Scripture provides a path to forgiveness.",
                           "fontFamily": "DM Sans",
                           "fontSize": 14,
@@ -8669,11 +8627,13 @@
                         {
                           "type": "text",
                           "id": "7Xaym",
+                          "x": 0,
+                          "y": 0,
                           "name": "article-description",
                           "enabled": false,
                           "fill": "#3D2E1Fb3",
                           "textGrowth": "fixed-width",
-                          "width": "fill_container",
+                          "width": "fill_container(0)",
                           "content": "Discover the deepest form of love described in Scripture and how it differs from worldly affection.",
                           "fontFamily": "DM Sans",
                           "fontSize": 14,
@@ -8915,11 +8875,13 @@
                         {
                           "type": "text",
                           "id": "raZ0m",
+                          "x": 0,
+                          "y": 0,
                           "name": "article-description",
                           "enabled": false,
                           "fill": "#3D2E1Fb3",
                           "textGrowth": "fixed-width",
-                          "width": "fill_container",
+                          "width": "fill_container(0)",
                           "content": "A study of marriage through Scripture — from Genesis to Ephesians, what God designed love to look like.",
                           "fontFamily": "DM Sans",
                           "fontSize": 14,
@@ -9161,11 +9123,13 @@
                         {
                           "type": "text",
                           "id": "tfaFJ",
+                          "x": 0,
+                          "y": 0,
                           "name": "article-description",
                           "enabled": false,
                           "fill": "#3D2E1Fb3",
                           "textGrowth": "fixed-width",
-                          "width": "fill_container",
+                          "width": "fill_container(0)",
                           "content": "Why Jesus said loving God and neighbor is the foundation of all the law and the prophets.",
                           "fontFamily": "DM Sans",
                           "fontSize": 14,
@@ -14438,6 +14402,10 @@
           "name": "content-center",
           "width": "fill_container",
           "height": "fill_container",
+          "padding": [
+            0,
+            24
+          ],
           "justifyContent": "center",
           "alignItems": "center",
           "children": [
@@ -14445,6 +14413,7 @@
               "type": "frame",
               "id": "y9ROf",
               "name": "loader-content",
+              "width": "fill_container",
               "layout": "vertical",
               "gap": 10,
               "alignItems": "center",
@@ -14467,6 +14436,7 @@
                   "type": "frame",
                   "id": "yOwMs",
                   "name": "verse-group",
+                  "width": "fill_container",
                   "layout": "vertical",
                   "gap": 10,
                   "alignItems": "center",
@@ -14477,19 +14447,20 @@
                       "name": "verse-text",
                       "fill": "#3d2e1f",
                       "textGrowth": "fixed-width",
-                      "width": 280,
+                      "width": "fill_container",
                       "content": "And now these three remain: faith, hope and love. But the greatest of these is love.",
                       "textAlign": "center",
                       "fontFamily": "Playfair Display",
                       "fontSize": 16,
-                      "fontWeight": "normal",
+                      "fontWeight": "600",
                       "fontStyle": "italic"
                     },
                     {
                       "type": "text",
                       "id": "uImfg",
                       "name": "reference-text",
-                      "fill": "#3d2e1fb3",
+                      "opacity": 0.7,
+                      "fill": "#3d2e1f",
                       "content": "1 Corinthians 13:13",
                       "textAlign": "center",
                       "fontFamily": "DM Sans",
