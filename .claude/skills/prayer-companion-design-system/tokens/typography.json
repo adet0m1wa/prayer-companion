@@ -1,0 +1,19 @@
+{
+  "heading": {
+    "display": { "family": "Playfair Display", "weight": "Bold/700", "size": 22, "style": "normal", "lineHeight": "auto", "letterSpacing": "auto" },
+    "section": { "family": "Playfair Display", "weight": "SemiBold/600", "size": 18, "style": "normal", "lineHeight": "auto", "letterSpacing": "auto" },
+    "card": { "family": "Playfair Display", "weight": "SemiBold/600", "size": 16, "style": "italic", "lineHeight": "auto", "letterSpacing": "auto" },
+    "toggle-active": { "family": "Playfair Display", "weight": "SemiBold/600", "size": 16, "style": "normal", "lineHeight": "auto", "letterSpacing": "auto" },
+    "toggle-inactive": { "family": "DM Sans", "weight": "Regular/400", "size": 16, "style": "normal", "lineHeight": "auto", "letterSpacing": "auto" }
+  },
+  "body": {
+    "default": { "family": "DM Sans", "weight": "Regular/400", "size": 14, "style": "normal", "lineHeight": 1.5, "letterSpacing": "auto" },
+    "counter": { "family": "DM Sans", "weight": "SemiBold/600", "size": 12, "style": "normal", "lineHeight": "auto", "letterSpacing": "auto" },
+    "caption": { "family": "DM Sans", "weight": "Regular/400", "size": 12, "style": "normal", "lineHeight": "auto", "letterSpacing": "auto" },
+    "separator": { "family": "Dancing Script", "weight": "Regular/400", "size": 12, "style": "normal", "lineHeight": "auto", "letterSpacing": "auto" },
+    "label": { "family": "DM Sans", "weight": "SemiBold/600", "size": 10, "style": "normal", "lineHeight": "auto", "letterSpacing": 0.5 }
+  },
+  "system": {
+    "status": { "family": "Inter", "weight": "Bold/700", "size": 15, "style": "normal", "lineHeight": "auto", "letterSpacing": "auto" }
+  }
+}

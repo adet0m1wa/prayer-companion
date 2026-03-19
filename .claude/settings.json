@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(python3:*)",
-      "Read(//dev/**)"
+      "Read(//dev/**)",
+      "Bash(mkdir -p \"/Users/mac/Documents/Projects/Coding Lifestyle/prayer-companion/.claude/skills/prayer-companion-design-system/tokens\")",
+      "Bash(mkdir -p \"/Users/mac/Documents/Projects/Coding Lifestyle/prayer-companion/.claude/skills/prayer-companion-design-system/components\")"
     ]
   }
 }

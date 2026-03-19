@@ -1,0 +1,17 @@
+{
+  "ink": {
+    "default": { "hex": "#3D2E1F", "opacity": 1.0 },
+    "muted": { "hex": "#3D2E1F", "opacity": 0.7 },
+    "faded": { "hex": "#3D2E1F", "opacity": 0.5 }
+  },
+  "accent": {
+    "default": { "hex": "#E63434", "opacity": 1.0 },
+    "subtle": { "hex": "#E6343433", "opacity": 0.2, "note": "8-char hex due to Pencil stroke limitation" }
+  },
+  "surface": {
+    "canvas": { "hex": "#E4DED5", "opacity": 1.0 },
+    "card": { "hex": "#F3EDE3", "opacity": 1.0 },
+    "muted": { "hex": "#EDE6D8", "opacity": 1.0, "note": "Also used at 40% element opacity for disabled states" },
+    "overlay": { "hex": "#F3EDE3CC", "opacity": 0.8, "note": "8-char hex for verse card image overlay" }
+  }
+}
