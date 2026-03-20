@@ -4,7 +4,15 @@
       "Bash(python3:*)",
       "Read(//dev/**)",
       "Bash(mkdir -p \"/Users/mac/Documents/Projects/Coding Lifestyle/prayer-companion/.claude/skills/prayer-companion-design-system/tokens\")",
-      "Bash(mkdir -p \"/Users/mac/Documents/Projects/Coding Lifestyle/prayer-companion/.claude/skills/prayer-companion-design-system/components\")"
+      "Bash(mkdir -p \"/Users/mac/Documents/Projects/Coding Lifestyle/prayer-companion/.claude/skills/prayer-companion-design-system/components\")",
+      "Bash(npm install:*)",
+      "Bash(curl -sL \"https://github.com/google/fonts/raw/main/ofl/playfairdisplay/PlayfairDisplay%5Bwght%5D.ttf\" -o PlayfairDisplay-VariableFont.ttf)",
+      "Bash(curl -sL \"https://github.com/google/fonts/raw/main/ofl/playfairdisplay/PlayfairDisplay-Italic%5Bwght%5D.ttf\" -o PlayfairDisplay-Italic-VariableFont.ttf)",
+      "Bash(curl -sL \"https://github.com/google/fonts/raw/main/ofl/dmsans/DMSans%5Bopsz%2Cwght%5D.ttf\" -o DMSans-VariableFont.ttf)",
+      "Bash(curl -sL \"https://github.com/google/fonts/raw/main/ofl/dancingscript/DancingScript%5Bwght%5D.ttf\" -o DancingScript-VariableFont.ttf)",
+      "Bash(curl -sL \"https://github.com/google/fonts/raw/main/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf\" -o Inter-Bold.ttf)",
+      "Bash(npx tsc:*)",
+      "Bash(npx vite:*)"
     ]
   }
 }
