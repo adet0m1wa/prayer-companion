@@ -30,7 +30,7 @@
               "type": "frame",
               "id": "H0ECr",
               "name": "status-left",
-              "gap": 6,
+              "justifyContent": "space_between",
               "alignItems": "center",
               "children": [
                 {
@@ -49,7 +49,7 @@
               "type": "frame",
               "id": "dSdkZ",
               "name": "status-right",
-              "gap": 6,
+              "justifyContent": "space_between",
               "alignItems": "center",
               "children": [
                 {
@@ -168,8 +168,7 @@
                         "enabled": true,
                         "url": "./src/images/images for understanding aspect/love.png",
                         "mode": "fill"
-                      },
-                      "cornerRadius": 8
+                      }
                     },
                     {
                       "type": "text",
@@ -187,57 +186,48 @@
             },
             {
               "type": "frame",
-              "id": "XyFjc",
-              "name": "content-toggle",
+              "id": "o7USz",
+              "name": "toggle-group",
               "width": "fill_container",
-              "gap": 20,
-              "alignItems": "center",
+              "gap": 10,
               "children": [
                 {
+                  "type": "text",
+                  "id": "H28n2",
+                  "name": "toggle-articles",
+                  "opacity": 0.7,
+                  "fill": "#3d2e1f",
+                  "content": "Articles",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
                   "type": "frame",
-                  "id": "o7USz",
-                  "name": "toggle-group",
-                  "gap": 10,
+                  "id": "Pfg44",
+                  "name": "toggle-videos",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "alignItems": "center",
                   "children": [
                     {
                       "type": "text",
-                      "id": "H28n2",
-                      "name": "toggle-articles",
-                      "opacity": 0.7,
+                      "id": "qhpQS",
+                      "name": "toggle-videos-label",
                       "fill": "#3d2e1f",
-                      "content": "Articles",
-                      "fontFamily": "DM Sans",
+                      "content": "Videos",
+                      "fontFamily": "Playfair Display",
                       "fontSize": 16,
-                      "fontWeight": "normal"
+                      "fontWeight": "600"
                     },
                     {
-                      "type": "frame",
-                      "id": "Pfg44",
-                      "name": "toggle-videos",
-                      "layout": "vertical",
-                      "gap": 4,
-                      "alignItems": "center",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "qhpQS",
-                          "name": "toggle-videos-label",
-                          "fill": "#3d2e1f",
-                          "content": "Videos",
-                          "fontFamily": "Playfair Display",
-                          "fontSize": 16,
-                          "fontWeight": "600"
-                        },
-                        {
-                          "type": "rectangle",
-                          "cornerRadius": 1,
-                          "id": "ulFlN",
-                          "name": "toggle-videos-underline",
-                          "fill": "#e63434",
-                          "width": "fill_container",
-                          "height": 2
-                        }
-                      ]
+                      "type": "rectangle",
+                      "cornerRadius": 1,
+                      "id": "ulFlN",
+                      "name": "toggle-videos-underline",
+                      "fill": "#e63434",
+                      "width": "fill_container",
+                      "height": 2
                     }
                   ]
                 }
@@ -263,10 +253,9 @@
                     "url": "./src/images/no shadow texture/ns texture 1.5.png",
                     "mode": "fill"
                   },
-                  "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
-                    "thickness": 1
+                    "thickness": 0
                   },
                   "gap": 20,
                   "padding": 20,
@@ -284,7 +273,6 @@
                         "url": "./src/images/video thumbnails/video image 1.5.png",
                         "mode": "fill"
                       },
-                      "cornerRadius": 8,
                       "layout": "none"
                     },
                     {
@@ -295,7 +283,6 @@
                       "width": "fill_container",
                       "height": "fill_container",
                       "layout": "vertical",
-                      "gap": 6,
                       "justifyContent": "space_between",
                       "children": [
                         {
@@ -381,7 +368,6 @@
                               "id": "tuzXj",
                               "name": "meta-separator",
                               "rotation": 0.019961217324092603,
-                              "cornerRadius": 4,
                               "gap": 4,
                               "justifyContent": "center",
                               "alignItems": "center",
@@ -409,7 +395,7 @@
                                 {
                                   "type": "icon_font",
                                   "id": "Fheb5",
-                                  "name": "meta-heart-icon",
+                                  "name": "meta-calendar-icon",
                                   "width": 16,
                                   "height": 16,
                                   "iconFontName": "calendar-blank",
@@ -446,10 +432,9 @@
                     "url": "./src/images/no shadow texture/ns texture 1.6.png",
                     "mode": "fill"
                   },
-                  "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
-                    "thickness": 1
+                    "thickness": 0
                   },
                   "gap": 20,
                   "padding": 20,
@@ -468,7 +453,6 @@
                         "url": "./src/images/video thumbnails/video image 2.5.png",
                         "mode": "fill"
                       },
-                      "cornerRadius": 8,
                       "layout": "none"
                     },
                     {
@@ -479,7 +463,6 @@
                       "width": "fill_container",
                       "height": "fill_container",
                       "layout": "vertical",
-                      "gap": 6,
                       "justifyContent": "space_between",
                       "children": [
                         {
@@ -565,7 +548,6 @@
                               "id": "gX6Qy",
                               "name": "meta-separator",
                               "rotation": 0.019961217324092603,
-                              "cornerRadius": 4,
                               "gap": 4,
                               "justifyContent": "center",
                               "alignItems": "center",
@@ -593,7 +575,7 @@
                                 {
                                   "type": "icon_font",
                                   "id": "VjVRz",
-                                  "name": "meta-heart-icon",
+                                  "name": "meta-calendar-icon",
                                   "width": 16,
                                   "height": 16,
                                   "iconFontName": "calendar-blank",
@@ -620,190 +602,6 @@
                 },
                 {
                   "type": "frame",
-                  "id": "Mgu2a",
-                  "name": "video-card-4",
-                  "width": "fill_container",
-                  "height": 145,
-                  "fill": {
-                    "type": "image",
-                    "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.0.png",
-                    "mode": "fill"
-                  },
-                  "cornerRadius": 12,
-                  "stroke": {
-                    "align": "inside",
-                    "thickness": 1
-                  },
-                  "gap": 20,
-                  "padding": 20,
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "pPxr1",
-                      "name": "video-thumbnail-4",
-                      "clip": true,
-                      "width": 120,
-                      "height": 100,
-                      "fill": {
-                        "type": "image",
-                        "enabled": true,
-                        "url": "./src/images/video thumbnails/video image 4.5.png",
-                        "mode": "fill"
-                      },
-                      "cornerRadius": 8,
-                      "layout": "none"
-                    },
-                    {
-                      "type": "frame",
-                      "id": "6vrvX",
-                      "name": "video-content-4",
-                      "rotation": -0.019961217324092603,
-                      "width": "fill_container",
-                      "height": "fill_container",
-                      "layout": "vertical",
-                      "gap": 6,
-                      "justifyContent": "space_between",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "T4NbD",
-                          "name": "video-title-4",
-                          "fill": "#3d2e1f",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "The Parable of the Prodigal Son",
-                          "fontFamily": "Playfair Display",
-                          "fontSize": 16,
-                          "fontWeight": "600",
-                          "fontStyle": "italic"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "O5BpJ",
-                          "name": "video-meta-4-row1",
-                          "gap": 4,
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "icon_font",
-                              "id": "jjdDa",
-                              "name": "meta-eye-icon",
-                              "width": 16,
-                              "height": 16,
-                              "iconFontName": "eye",
-                              "iconFontFamily": "phosphor",
-                              "fill": "#3d2e1f"
-                            },
-                            {
-                              "type": "text",
-                              "id": "Xy4xx",
-                              "name": "meta-views",
-                              "fill": "#3d2e1f",
-                              "content": "6.3k",
-                              "fontFamily": "DM Sans",
-                              "fontSize": 12,
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "id": "BCb2v",
-                          "name": "video-meta-4-row2",
-                          "gap": 8,
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "0nKbp",
-                              "name": "likes-count",
-                              "gap": 4,
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "type": "icon_font",
-                                  "id": "oJ8i3",
-                                  "name": "meta-heart-icon",
-                                  "width": 16,
-                                  "height": 16,
-                                  "iconFontName": "heart",
-                                  "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1f"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "srwJq",
-                                  "name": "meta-likes",
-                                  "fill": "#3d2e1f",
-                                  "content": "412",
-                                  "fontFamily": "DM Sans",
-                                  "fontSize": 12,
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "aPd4o",
-                              "name": "meta-separator",
-                              "rotation": 0.019961217324092603,
-                              "cornerRadius": 4,
-                              "gap": 4,
-                              "justifyContent": "center",
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "6CAgf",
-                                  "name": "meta-read-time",
-                                  "rotation": -0.019961217324092603,
-                                  "fill": "#3d2e1f",
-                                  "content": "|",
-                                  "fontFamily": "Dancing Script",
-                                  "fontSize": 12,
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "QoEig",
-                              "name": "date-posted",
-                              "gap": 4,
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "type": "icon_font",
-                                  "id": "Jlic5",
-                                  "name": "meta-heart-icon",
-                                  "width": 16,
-                                  "height": 16,
-                                  "iconFontName": "calendar-blank",
-                                  "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1f"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "IwDTX",
-                                  "name": "meta-days",
-                                  "fill": "#3d2e1f",
-                                  "content": "6 days ago",
-                                  "fontFamily": "DM Sans",
-                                  "fontSize": 12,
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
                   "id": "iTCR2",
                   "name": "video-card-3",
                   "width": "fill_container",
@@ -814,10 +612,9 @@
                     "url": "./src/images/no shadow texture/ns texture 1.7.png",
                     "mode": "fill"
                   },
-                  "cornerRadius": 12,
                   "stroke": {
                     "align": "inside",
-                    "thickness": 1
+                    "thickness": 0
                   },
                   "gap": 20,
                   "padding": 20,
@@ -836,7 +633,6 @@
                         "url": "./src/images/video thumbnails/video image 3.5.png",
                         "mode": "fill"
                       },
-                      "cornerRadius": 8,
                       "layout": "none"
                     },
                     {
@@ -847,7 +643,6 @@
                       "width": "fill_container",
                       "height": "fill_container",
                       "layout": "vertical",
-                      "gap": 6,
                       "justifyContent": "space_between",
                       "children": [
                         {
@@ -933,7 +728,6 @@
                               "id": "TugT0",
                               "name": "meta-separator",
                               "rotation": 0.019961217324092603,
-                              "cornerRadius": 4,
                               "gap": 4,
                               "justifyContent": "center",
                               "alignItems": "center",
@@ -961,7 +755,7 @@
                                 {
                                   "type": "icon_font",
                                   "id": "OboYM",
-                                  "name": "meta-heart-icon",
+                                  "name": "meta-calendar-icon",
                                   "width": 16,
                                   "height": 16,
                                   "iconFontName": "calendar-blank",
@@ -974,6 +768,186 @@
                                   "name": "meta-days",
                                   "fill": "#3d2e1f",
                                   "content": "2 weeks ago",
+                                  "fontFamily": "DM Sans",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Mgu2a",
+                  "name": "video-card-4",
+                  "width": "fill_container",
+                  "height": 145,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./src/images/no shadow texture/ns texture 1.0.png",
+                    "mode": "fill"
+                  },
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 0
+                  },
+                  "gap": 20,
+                  "padding": 20,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "pPxr1",
+                      "name": "video-thumbnail-4",
+                      "clip": true,
+                      "width": 120,
+                      "height": 100,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./src/images/video thumbnails/video image 4.5.png",
+                        "mode": "fill"
+                      },
+                      "layout": "none"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "6vrvX",
+                      "name": "video-content-4",
+                      "rotation": -0.019961217324092603,
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "layout": "vertical",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "T4NbD",
+                          "name": "video-title-4",
+                          "fill": "#3d2e1f",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "The Parable of the Prodigal Son",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 16,
+                          "fontWeight": "600",
+                          "fontStyle": "italic"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "O5BpJ",
+                          "name": "video-meta-4-row1",
+                          "gap": 4,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "jjdDa",
+                              "name": "meta-eye-icon",
+                              "width": 16,
+                              "height": 16,
+                              "iconFontName": "eye",
+                              "iconFontFamily": "phosphor",
+                              "fill": "#3d2e1f"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Xy4xx",
+                              "name": "meta-views",
+                              "fill": "#3d2e1f",
+                              "content": "6.3k",
+                              "fontFamily": "DM Sans",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "BCb2v",
+                          "name": "video-meta-4-row2",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "0nKbp",
+                              "name": "likes-count",
+                              "gap": 4,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon_font",
+                                  "id": "oJ8i3",
+                                  "name": "meta-heart-icon",
+                                  "width": 16,
+                                  "height": 16,
+                                  "iconFontName": "heart",
+                                  "iconFontFamily": "phosphor",
+                                  "fill": "#3d2e1f"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "srwJq",
+                                  "name": "meta-likes",
+                                  "fill": "#3d2e1f",
+                                  "content": "412",
+                                  "fontFamily": "DM Sans",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "aPd4o",
+                              "name": "meta-separator",
+                              "rotation": 0.019961217324092603,
+                              "gap": 4,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "6CAgf",
+                                  "name": "meta-read-time",
+                                  "rotation": -0.019961217324092603,
+                                  "fill": "#3d2e1f",
+                                  "content": "|",
+                                  "fontFamily": "Dancing Script",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "QoEig",
+                              "name": "date-posted",
+                              "gap": 4,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon_font",
+                                  "id": "Jlic5",
+                                  "name": "meta-calendar-icon",
+                                  "width": 16,
+                                  "height": 16,
+                                  "iconFontName": "calendar-blank",
+                                  "iconFontFamily": "phosphor",
+                                  "fill": "#3d2e1f"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "IwDTX",
+                                  "name": "meta-days",
+                                  "fill": "#3d2e1f",
+                                  "content": "6 days ago",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
                                   "fontWeight": "normal"
@@ -1159,8 +1133,7 @@
                         "enabled": true,
                         "url": "./src/images/images for understanding aspect/love.png",
                         "mode": "fill"
-                      },
-                      "cornerRadius": 8
+                      }
                     },
                     {
                       "type": "text",
@@ -1245,225 +1218,6 @@
               "children": [
                 {
                   "type": "frame",
-                  "id": "nyyew",
-                  "name": "article-card-3",
-                  "width": "fill_container",
-                  "height": 145,
-                  "fill": {
-                    "type": "image",
-                    "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.3.png",
-                    "mode": "fill"
-                  },
-                  "stroke": {
-                    "align": "inside",
-                    "thickness": 1
-                  },
-                  "gap": 20,
-                  "padding": 20,
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "rectangle",
-                      "id": "hhpW5",
-                      "name": "article-thumbnail-3",
-                      "fill": {
-                        "type": "image",
-                        "enabled": true,
-                        "url": "./src/images/article thumbnails/article image 3.1.png",
-                        "mode": "fill"
-                      },
-                      "width": 100,
-                      "height": 100
-                    },
-                    {
-                      "type": "frame",
-                      "id": "iEQk2",
-                      "name": "article-content-3",
-                      "rotation": -0.019961217324092603,
-                      "width": "fill_container",
-                      "height": "fill_container",
-                      "layout": "vertical",
-                      "gap": 6,
-                      "justifyContent": "space_between",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "5tOxR",
-                          "name": "article-title-3",
-                          "fill": "#3d2e1f",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "Love in Marriage: Biblical Foundations",
-                          "fontFamily": "Playfair Display",
-                          "fontSize": 16,
-                          "fontWeight": "600",
-                          "fontStyle": "italic"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "WVsrI",
-                          "name": "article-meta-3",
-                          "gap": 8,
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "KPHYy",
-                              "name": "meta-read-time",
-                              "rotation": -0.019961217324092603,
-                              "fill": "#3d2e1f",
-                              "content": "10 min read",
-                              "fontFamily": "DM Sans",
-                              "fontSize": 12
-                            },
-                            {
-                              "type": "frame",
-                              "id": "DpDYs",
-                              "name": "meta-separator",
-                              "rotation": 0.019961217324092603,
-                              "cornerRadius": 4,
-                              "gap": 4,
-                              "justifyContent": "center",
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "RhmVT",
-                                  "name": "meta-read-time",
-                                  "rotation": -0.019961217324092603,
-                                  "fill": "#3d2e1f",
-                                  "content": "|",
-                                  "fontFamily": "Dancing Script",
-                                  "fontSize": 12,
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "8KmWA",
-                              "name": "views-count",
-                              "gap": 4,
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "type": "icon_font",
-                                  "id": "nK7mS",
-                                  "name": "meta-eye-icon",
-                                  "width": 16,
-                                  "height": 16,
-                                  "iconFontName": "eye",
-                                  "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1f"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "NfPHh",
-                                  "name": "meta-views",
-                                  "fill": "#3d2e1f",
-                                  "content": "3.1k",
-                                  "fontFamily": "DM Sans",
-                                  "fontSize": 12
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "id": "zbVMi",
-                          "name": "article-meta-3-row2",
-                          "gap": 8,
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "Hwnr2",
-                              "name": "likes-count",
-                              "gap": 4,
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "type": "icon_font",
-                                  "id": "EMSPT",
-                                  "name": "meta-heart-icon",
-                                  "width": 16,
-                                  "height": 16,
-                                  "iconFontName": "heart",
-                                  "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1f"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "j9X2z",
-                                  "name": "meta-likes",
-                                  "fill": "#3d2e1f",
-                                  "content": "267",
-                                  "fontFamily": "DM Sans",
-                                  "fontSize": 12
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "nbf4G",
-                              "name": "meta-separator",
-                              "rotation": 0.019961217324092603,
-                              "cornerRadius": 4,
-                              "gap": 4,
-                              "justifyContent": "center",
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "LyuDy",
-                                  "name": "meta-read-time",
-                                  "rotation": -0.019961217324092603,
-                                  "fill": "#3d2e1f",
-                                  "content": "|",
-                                  "fontFamily": "Dancing Script",
-                                  "fontSize": 12,
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "WWXeS",
-                              "name": "date-posted",
-                              "gap": 4,
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "type": "icon_font",
-                                  "id": "zjYNc",
-                                  "name": "meta-heart-icon",
-                                  "width": 16,
-                                  "height": 16,
-                                  "iconFontName": "calendar-blank",
-                                  "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1f"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "C63PG",
-                                  "name": "meta-days",
-                                  "fill": "#3d2e1f",
-                                  "content": "2 days ago",
-                                  "fontFamily": "DM Sans",
-                                  "fontSize": 12
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
                   "id": "4RPkg",
                   "name": "article-card-1",
                   "width": "fill_container",
@@ -1476,7 +1230,7 @@
                   },
                   "stroke": {
                     "align": "inside",
-                    "thickness": 1
+                    "thickness": 0
                   },
                   "gap": 20,
                   "padding": 20,
@@ -1503,7 +1257,6 @@
                       "width": "fill_container",
                       "height": "fill_container",
                       "layout": "vertical",
-                      "gap": 6,
                       "justifyContent": "space_between",
                       "children": [
                         {
@@ -1542,7 +1295,6 @@
                               "id": "HEAO8",
                               "name": "meta-separator",
                               "rotation": 0.019961217324092603,
-                              "cornerRadius": 4,
                               "gap": 4,
                               "justifyContent": "center",
                               "alignItems": "center",
@@ -1632,7 +1384,6 @@
                               "id": "WrKkw",
                               "name": "meta-separator",
                               "rotation": 0.019961217324092603,
-                              "cornerRadius": 4,
                               "gap": 4,
                               "justifyContent": "center",
                               "alignItems": "center",
@@ -1660,7 +1411,7 @@
                                 {
                                   "type": "icon_font",
                                   "id": "xSXDb",
-                                  "name": "meta-heart-icon",
+                                  "name": "meta-calendar-icon",
                                   "width": 16,
                                   "height": 16,
                                   "iconFontName": "calendar-blank",
@@ -1687,229 +1438,6 @@
                 },
                 {
                   "type": "frame",
-                  "id": "fJh3a",
-                  "name": "article-card-4",
-                  "width": "fill_container",
-                  "height": 145,
-                  "fill": {
-                    "type": "image",
-                    "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.4.png",
-                    "mode": "fill"
-                  },
-                  "stroke": {
-                    "align": "inside",
-                    "thickness": 1
-                  },
-                  "gap": 20,
-                  "padding": 20,
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "rectangle",
-                      "id": "0SVJS",
-                      "name": "article-thumbnail-4",
-                      "fill": {
-                        "type": "image",
-                        "enabled": true,
-                        "url": "./src/images/article thumbnails/article image 4.1.png",
-                        "mode": "fill"
-                      },
-                      "width": 100,
-                      "height": 100
-                    },
-                    {
-                      "type": "frame",
-                      "id": "47T1z",
-                      "name": "article-content-4",
-                      "rotation": -0.019961217324092603,
-                      "width": "fill_container",
-                      "height": "fill_container",
-                      "layout": "vertical",
-                      "gap": 6,
-                      "justifyContent": "space_between",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "wz715",
-                          "name": "article-title-4",
-                          "fill": "#3d2e1f",
-                          "textGrowth": "fixed-width",
-                          "width": "fill_container",
-                          "content": "The Greatest Commandment Explained",
-                          "fontFamily": "Playfair Display",
-                          "fontSize": 16,
-                          "fontWeight": "600",
-                          "fontStyle": "italic"
-                        },
-                        {
-                          "type": "frame",
-                          "id": "oeBFn",
-                          "name": "article-meta-4",
-                          "gap": 8,
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "F3KqU",
-                              "name": "meta-read-time",
-                              "rotation": -0.019961217324092603,
-                              "fill": "#3d2e1f",
-                              "content": "7 min read",
-                              "fontFamily": "DM Sans",
-                              "fontSize": 12,
-                              "fontWeight": "normal"
-                            },
-                            {
-                              "type": "frame",
-                              "id": "Ydl7m",
-                              "name": "meta-separator",
-                              "rotation": 0.019961217324092603,
-                              "cornerRadius": 4,
-                              "gap": 4,
-                              "justifyContent": "center",
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "UdaN5",
-                                  "name": "meta-read-time",
-                                  "rotation": -0.019961217324092603,
-                                  "fill": "#3d2e1f",
-                                  "content": "|",
-                                  "fontFamily": "Dancing Script",
-                                  "fontSize": 12,
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "JMLZd",
-                              "name": "views-count",
-                              "gap": 4,
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "type": "icon_font",
-                                  "id": "aU3jd",
-                                  "name": "meta-eye-icon",
-                                  "width": 16,
-                                  "height": 16,
-                                  "iconFontName": "eye",
-                                  "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1f"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "vyqgW",
-                                  "name": "meta-views",
-                                  "fill": "#3d2e1f",
-                                  "content": "2.7k",
-                                  "fontFamily": "DM Sans",
-                                  "fontSize": 12,
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "frame",
-                          "id": "Nimc2",
-                          "name": "article-meta-4-row2",
-                          "gap": 8,
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "frame",
-                              "id": "ymfuz",
-                              "name": "likes-count",
-                              "gap": 4,
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "type": "icon_font",
-                                  "id": "ZF4SX",
-                                  "name": "meta-heart-icon",
-                                  "width": 16,
-                                  "height": 16,
-                                  "iconFontName": "heart",
-                                  "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1f"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "52nFp",
-                                  "name": "meta-likes",
-                                  "fill": "#3d2e1f",
-                                  "content": "198",
-                                  "fontFamily": "DM Sans",
-                                  "fontSize": 12,
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "SxBFZ",
-                              "name": "meta-separator",
-                              "rotation": 0.019961217324092603,
-                              "cornerRadius": 4,
-                              "gap": 4,
-                              "justifyContent": "center",
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "type": "text",
-                                  "id": "RhJXX",
-                                  "name": "meta-read-time",
-                                  "rotation": -0.019961217324092603,
-                                  "fill": "#3d2e1f",
-                                  "content": "|",
-                                  "fontFamily": "Dancing Script",
-                                  "fontSize": 12,
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
-                              "id": "3cu3g",
-                              "name": "date-posted",
-                              "gap": 4,
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "type": "icon_font",
-                                  "id": "dvDWX",
-                                  "name": "meta-heart-icon",
-                                  "width": 16,
-                                  "height": 16,
-                                  "iconFontName": "calendar-blank",
-                                  "iconFontFamily": "phosphor",
-                                  "fill": "#3d2e1f"
-                                },
-                                {
-                                  "type": "text",
-                                  "id": "YU3a5",
-                                  "name": "meta-days",
-                                  "fill": "#3d2e1f",
-                                  "content": "5 days ago",
-                                  "fontFamily": "DM Sans",
-                                  "fontSize": 12,
-                                  "fontWeight": "normal"
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
                   "id": "EY7kB",
                   "name": "article-card-2",
                   "width": "fill_container",
@@ -1922,7 +1450,7 @@
                   },
                   "stroke": {
                     "align": "inside",
-                    "thickness": 1
+                    "thickness": 0
                   },
                   "gap": 20,
                   "padding": 20,
@@ -1949,7 +1477,6 @@
                       "width": "fill_container",
                       "height": "fill_container",
                       "layout": "vertical",
-                      "gap": 6,
                       "justifyContent": "space_between",
                       "children": [
                         {
@@ -1988,7 +1515,6 @@
                               "id": "1T92D",
                               "name": "meta-separator",
                               "rotation": 0.019961217324092603,
-                              "cornerRadius": 4,
                               "gap": 4,
                               "justifyContent": "center",
                               "alignItems": "center",
@@ -2078,7 +1604,6 @@
                               "id": "fdu6V",
                               "name": "meta-separator",
                               "rotation": 0.019961217324092603,
-                              "cornerRadius": 4,
                               "gap": 4,
                               "justifyContent": "center",
                               "alignItems": "center",
@@ -2106,7 +1631,7 @@
                                 {
                                   "type": "icon_font",
                                   "id": "u3Rhs",
-                                  "name": "meta-heart-icon",
+                                  "name": "meta-calendar-icon",
                                   "width": 16,
                                   "height": 16,
                                   "iconFontName": "calendar-blank",
@@ -2119,6 +1644,442 @@
                                   "name": "meta-days",
                                   "fill": "#3d2e1f",
                                   "content": "1 week ago",
+                                  "fontFamily": "DM Sans",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nyyew",
+                  "name": "article-card-3",
+                  "width": "fill_container",
+                  "height": 145,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./src/images/no shadow texture/ns texture 1.3.png",
+                    "mode": "fill"
+                  },
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 0
+                  },
+                  "gap": 20,
+                  "padding": 20,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "hhpW5",
+                      "name": "article-thumbnail-3",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./src/images/article thumbnails/article image 3.1.png",
+                        "mode": "fill"
+                      },
+                      "width": 100,
+                      "height": 100
+                    },
+                    {
+                      "type": "frame",
+                      "id": "iEQk2",
+                      "name": "article-content-3",
+                      "rotation": -0.019961217324092603,
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "layout": "vertical",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "5tOxR",
+                          "name": "article-title-3",
+                          "fill": "#3d2e1f",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Love in Marriage: Biblical Foundations",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 16,
+                          "fontWeight": "600",
+                          "fontStyle": "italic"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "WVsrI",
+                          "name": "article-meta-3",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "KPHYy",
+                              "name": "meta-read-time",
+                              "rotation": -0.019961217324092603,
+                              "fill": "#3d2e1f",
+                              "content": "10 min read",
+                              "fontFamily": "DM Sans",
+                              "fontSize": 12
+                            },
+                            {
+                              "type": "frame",
+                              "id": "DpDYs",
+                              "name": "meta-separator",
+                              "rotation": 0.019961217324092603,
+                              "gap": 4,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "RhmVT",
+                                  "name": "meta-read-time",
+                                  "rotation": -0.019961217324092603,
+                                  "fill": "#3d2e1f",
+                                  "content": "|",
+                                  "fontFamily": "Dancing Script",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "8KmWA",
+                              "name": "views-count",
+                              "gap": 4,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon_font",
+                                  "id": "nK7mS",
+                                  "name": "meta-eye-icon",
+                                  "width": 16,
+                                  "height": 16,
+                                  "iconFontName": "eye",
+                                  "iconFontFamily": "phosphor",
+                                  "fill": "#3d2e1f"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "NfPHh",
+                                  "name": "meta-views",
+                                  "fill": "#3d2e1f",
+                                  "content": "3.1k",
+                                  "fontFamily": "DM Sans",
+                                  "fontSize": 12
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "zbVMi",
+                          "name": "article-meta-3-row2",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "Hwnr2",
+                              "name": "likes-count",
+                              "gap": 4,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon_font",
+                                  "id": "EMSPT",
+                                  "name": "meta-heart-icon",
+                                  "width": 16,
+                                  "height": 16,
+                                  "iconFontName": "heart",
+                                  "iconFontFamily": "phosphor",
+                                  "fill": "#3d2e1f"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "j9X2z",
+                                  "name": "meta-likes",
+                                  "fill": "#3d2e1f",
+                                  "content": "267",
+                                  "fontFamily": "DM Sans",
+                                  "fontSize": 12
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "nbf4G",
+                              "name": "meta-separator",
+                              "rotation": 0.019961217324092603,
+                              "gap": 4,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "LyuDy",
+                                  "name": "meta-read-time",
+                                  "rotation": -0.019961217324092603,
+                                  "fill": "#3d2e1f",
+                                  "content": "|",
+                                  "fontFamily": "Dancing Script",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "WWXeS",
+                              "name": "date-posted",
+                              "gap": 4,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon_font",
+                                  "id": "zjYNc",
+                                  "name": "meta-calendar-icon",
+                                  "width": 16,
+                                  "height": 16,
+                                  "iconFontName": "calendar-blank",
+                                  "iconFontFamily": "phosphor",
+                                  "fill": "#3d2e1f"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "C63PG",
+                                  "name": "meta-days",
+                                  "fill": "#3d2e1f",
+                                  "content": "2 days ago",
+                                  "fontFamily": "DM Sans",
+                                  "fontSize": 12
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "fJh3a",
+                  "name": "article-card-4",
+                  "width": "fill_container",
+                  "height": 145,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./src/images/no shadow texture/ns texture 1.4.png",
+                    "mode": "fill"
+                  },
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 0
+                  },
+                  "gap": 20,
+                  "padding": 20,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "0SVJS",
+                      "name": "article-thumbnail-4",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./src/images/article thumbnails/article image 4.1.png",
+                        "mode": "fill"
+                      },
+                      "width": 100,
+                      "height": 100
+                    },
+                    {
+                      "type": "frame",
+                      "id": "47T1z",
+                      "name": "article-content-4",
+                      "rotation": -0.019961217324092603,
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "layout": "vertical",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wz715",
+                          "name": "article-title-4",
+                          "fill": "#3d2e1f",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "The Greatest Commandment Explained",
+                          "fontFamily": "Playfair Display",
+                          "fontSize": 16,
+                          "fontWeight": "600",
+                          "fontStyle": "italic"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "oeBFn",
+                          "name": "article-meta-4",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "F3KqU",
+                              "name": "meta-read-time",
+                              "rotation": -0.019961217324092603,
+                              "fill": "#3d2e1f",
+                              "content": "7 min read",
+                              "fontFamily": "DM Sans",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Ydl7m",
+                              "name": "meta-separator",
+                              "rotation": 0.019961217324092603,
+                              "gap": 4,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "UdaN5",
+                                  "name": "meta-read-time",
+                                  "rotation": -0.019961217324092603,
+                                  "fill": "#3d2e1f",
+                                  "content": "|",
+                                  "fontFamily": "Dancing Script",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "JMLZd",
+                              "name": "views-count",
+                              "gap": 4,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon_font",
+                                  "id": "aU3jd",
+                                  "name": "meta-eye-icon",
+                                  "width": 16,
+                                  "height": 16,
+                                  "iconFontName": "eye",
+                                  "iconFontFamily": "phosphor",
+                                  "fill": "#3d2e1f"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "vyqgW",
+                                  "name": "meta-views",
+                                  "fill": "#3d2e1f",
+                                  "content": "2.7k",
+                                  "fontFamily": "DM Sans",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Nimc2",
+                          "name": "article-meta-4-row2",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "ymfuz",
+                              "name": "likes-count",
+                              "gap": 4,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon_font",
+                                  "id": "ZF4SX",
+                                  "name": "meta-heart-icon",
+                                  "width": 16,
+                                  "height": 16,
+                                  "iconFontName": "heart",
+                                  "iconFontFamily": "phosphor",
+                                  "fill": "#3d2e1f"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "52nFp",
+                                  "name": "meta-likes",
+                                  "fill": "#3d2e1f",
+                                  "content": "198",
+                                  "fontFamily": "DM Sans",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "SxBFZ",
+                              "name": "meta-separator",
+                              "rotation": 0.019961217324092603,
+                              "gap": 4,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "RhJXX",
+                                  "name": "meta-read-time",
+                                  "rotation": -0.019961217324092603,
+                                  "fill": "#3d2e1f",
+                                  "content": "|",
+                                  "fontFamily": "Dancing Script",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "3cu3g",
+                              "name": "date-posted",
+                              "gap": 4,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon_font",
+                                  "id": "dvDWX",
+                                  "name": "meta-calendar-icon",
+                                  "width": 16,
+                                  "height": 16,
+                                  "iconFontName": "calendar-blank",
+                                  "iconFontFamily": "phosphor",
+                                  "fill": "#3d2e1f"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "YU3a5",
+                                  "name": "meta-days",
+                                  "fill": "#3d2e1f",
+                                  "content": "5 days ago",
                                   "fontFamily": "DM Sans",
                                   "fontSize": 12,
                                   "fontWeight": "normal"
@@ -2145,7 +2106,7 @@
       "name": "screen-1-dashboard",
       "clip": true,
       "width": 402,
-      "height": 1076,
+      "height": 874,
       "fill": "#e4ded5ff",
       "layout": "vertical",
       "children": [
@@ -2669,12 +2630,6 @@
                   "name": "aspects-pages",
                   "clip": true,
                   "width": "fill_container",
-                  "padding": [
-                    0,
-                    0,
-                    10,
-                    0
-                  ],
                   "children": [
                     {
                       "type": "frame",
@@ -14429,8 +14384,7 @@
                     "enabled": true,
                     "url": "./src/images/images for understanding aspect/love.png",
                     "mode": "fill"
-                  },
-                  "cornerRadius": 12
+                  }
                 },
                 {
                   "type": "frame",
