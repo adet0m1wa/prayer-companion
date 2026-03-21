@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Agentation } from "agentation";
 import { GreetingHeader } from "./components/dashboard/GreetingHeader";
 import { VerseCard } from "./components/dashboard/VerseCard";
@@ -12,6 +12,21 @@ type Screen = "dashboard" | "loader" | "detail";
 
 export function App() {
   const [screen, setScreen] = useState<Screen>("dashboard");
+  const [sentinelVisible, setSentinelVisible] = useState(true);
+  const sentinelRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = sentinelRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setSentinelVisible(entry.isIntersecting),
+      { threshold: 0.1 },
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [screen]);
+
+  const showShadow = !sentinelVisible;
 
   return (
     <div className="mx-auto max-w-[402px] min-h-screen bg-surface-canvas flex flex-col">
@@ -26,8 +41,9 @@ export function App() {
             <VerseCard />
             <TopicCardStack onCardClick={() => setScreen("detail")} />
             <TestimoniesSection />
+            <div ref={sentinelRef} className="h-px w-full shrink-0" />
           </div>
-          <BottomNav />
+          <BottomNav showShadow={showShadow} />
         </>
       )}
       <Agentation />

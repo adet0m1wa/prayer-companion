@@ -6,6 +6,7 @@ import {
   User,
   type Icon,
 } from "@phosphor-icons/react";
+import { motion } from "framer-motion";
 
 interface NavTab {
   label: string;
@@ -22,12 +23,20 @@ const TABS: NavTab[] = [
   { label: "YOU", icon: User },
 ];
 
-export function BottomNav() {
+interface BottomNavProps {
+  showShadow?: boolean;
+}
+
+export function BottomNav({ showShadow = false }: BottomNavProps) {
   return (
-    <nav
-      className="sticky bottom-0 w-full h-[70px] bg-surface-card flex items-center justify-between px-[24px]"
-      style={{ boxShadow: "0 -2px 4px #0000000d" }}
-    >
+    <nav className="sticky bottom-0 w-full bg-surface-card relative">
+      <motion.div
+        className="pointer-events-none absolute inset-0"
+        style={{ boxShadow: "0 -2px 4px rgba(0, 0, 0, 0.05)" }}
+        animate={{ opacity: showShadow ? 1 : 0 }}
+        transition={{ duration: 0.2, ease: "easeOut" }}
+      />
+      <div className="w-full h-[70px] flex items-center justify-between px-[24px]">
       {TABS.map((tab) => (
         <button
           key={tab.label}
@@ -48,6 +57,7 @@ export function BottomNav() {
           </span>
         </button>
       ))}
+      </div>
     </nav>
   );
 }
