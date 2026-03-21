@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { Heart, ShareNetwork, ChatCentered, type Icon } from "@phosphor-icons/react";
+import { motion, useAnimationControls } from "framer-motion";
 import verseBackground from "../../images/verse of the day background/verse of the day.png";
 
 interface VerseCardProps {
@@ -18,6 +20,25 @@ export function VerseCard({
   shares = 5,
   comments = 3,
 }: VerseCardProps) {
+  const [liked, setLiked] = useState(false);
+  const heartControls = useAnimationControls();
+  const shimmerControls = useAnimationControls();
+
+  const handleLikeTap = () => {
+    const willLike = !liked;
+    setLiked(willLike);
+    heartControls.start({
+      scale: [1, 1.3, 1],
+      transition: { type: "spring", stiffness: 400, damping: 10 },
+    });
+    if (willLike) {
+      shimmerControls.start({
+        opacity: [0.8, 0.3, 0.3, 0.8],
+        transition: { duration: 1.1, times: [0, 0.136, 0.59, 1], ease: ["easeIn", "linear", "easeOut"] },
+      });
+    }
+  };
+
   return (
     <div className="relative overflow-hidden rounded-[16px] p-[16px] flex flex-col gap-[16px] w-full">
       {/* Layer 1: texture image at 75% opacity (bottom) */}
@@ -28,7 +49,11 @@ export function VerseCard({
       />
 
       {/* Layer 2: surface/card (#F3EDE3) at 80% opacity (on top, mutes the texture) */}
-      <div className="absolute inset-0 bg-surface-card/80" />
+      <motion.div
+        className="absolute inset-0 bg-surface-card"
+        initial={{ opacity: 0.8 }}
+        animate={shimmerControls}
+      />
 
       {/* Content on top of backgrounds */}
       <span className="relative font-body text-[12px] font-normal text-ink-default opacity-70">
@@ -42,7 +67,22 @@ export function VerseCard({
       <div className="relative flex items-center justify-between gap-[8px] w-full">
         {/* Action icons */}
         <div className="flex items-center gap-[10px]">
-          <ActionIcon icon={Heart} count={likes} />
+          <div className="flex flex-col items-center justify-center w-[44px]">
+            <motion.div
+              className="cursor-pointer"
+              animate={heartControls}
+              onTap={handleLikeTap}
+            >
+              <Heart
+                size={22}
+                weight={liked ? "fill" : "light"}
+                className="text-accent-default"
+              />
+            </motion.div>
+            <span className="font-body text-[12px] font-semibold text-ink-default">
+              {liked ? likes + 1 : likes}
+            </span>
+          </div>
           <ActionIcon icon={ShareNetwork} count={shares} />
           <ActionIcon icon={ChatCentered} count={comments} />
         </div>

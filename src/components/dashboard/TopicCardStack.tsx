@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { CaretLeft, CaretRight } from "@phosphor-icons/react";
+import { useState, useMemo } from "react";
+import { CaretLeft, CaretRight, X } from "@phosphor-icons/react";
 import { TopicCard } from "./TopicCard";
 
 import loveIcon from "../../images/images for understanding aspect/love.png";
@@ -49,10 +49,31 @@ interface TopicCardStackProps {
   onCardClick?: () => void;
 }
 
+const ALL_TOPICS = PAGES.flat();
+const CARDS_PER_PAGE = 4;
+
 export function TopicCardStack({ onCardClick }: TopicCardStackProps) {
   const [page, setPage] = useState(0);
-  const totalPages = PAGES.length;
-  const cards = PAGES[page];
+  const [query, setQuery] = useState("");
+
+  const filtered = useMemo(() => {
+    if (!query.trim()) return ALL_TOPICS;
+    const q = query.trim().toLowerCase();
+    return ALL_TOPICS.filter((t) => t.title.toLowerCase().includes(q));
+  }, [query]);
+
+  const totalPages = Math.max(1, Math.ceil(filtered.length / CARDS_PER_PAGE));
+  const safePage = Math.min(page, totalPages - 1);
+  const cards = filtered.slice(safePage * CARDS_PER_PAGE, (safePage + 1) * CARDS_PER_PAGE);
+  const isSearching = query.trim().length > 0;
+  const noResults = isSearching && filtered.length === 0;
+  const singlePage = totalPages <= 1;
+
+  // Reset to page 0 when query changes
+  const handleQueryChange = (value: string) => {
+    setQuery(value);
+    setPage(0);
+  };
 
   return (
     <div className="flex flex-col gap-[16px] w-full">
@@ -65,64 +86,89 @@ export function TopicCardStack({ onCardClick }: TopicCardStackProps) {
 
       {/* Search bar */}
       <div
-        className="flex items-center h-[46px] w-full rounded-[12px] px-[16px]"
-        style={{ border: "1px solid #e6343433" }}
+        className="flex items-center h-[46px] w-full rounded-[12px] px-[16px] transition-colors"
+        style={{
+          border: isSearching ? "1px solid var(--color-accent-default)" : "1px solid #e6343433",
+        }}
       >
-        <span className="font-body text-[14px] font-normal text-ink-default opacity-70 leading-[1.5]">
-          Search for an aspect
-        </span>
+        <input
+          type="text"
+          value={query}
+          onChange={(e) => handleQueryChange(e.target.value)}
+          placeholder="Search for an aspect"
+          className="flex-1 bg-transparent font-body text-[14px] font-normal text-ink-default leading-[1.5] outline-none placeholder:text-ink-default placeholder:opacity-70"
+        />
+        {isSearching && (
+          <button
+            onClick={() => handleQueryChange("")}
+            className="ml-[8px] flex items-center justify-center"
+          >
+            <X size={16} className="text-ink-faded" />
+          </button>
+        )}
       </div>
 
-      {/* Pagination — right-aligned */}
-      <div className="flex items-center justify-end gap-[16px]">
-        <button
-          onClick={() => setPage((p) => Math.max(0, p - 1))}
-          className="flex items-center justify-center w-[28px] h-[28px] rounded-[22px] bg-surface-muted"
-          style={{ opacity: page === 0 ? 0.4 : 1 }}
-          disabled={page === 0}
-        >
-          <CaretLeft size={18} weight="bold" className="text-accent-default" />
-        </button>
+      {/* Pagination — right-aligned (hidden when no results) */}
+      {!noResults && (
+        <div className="flex items-center justify-end gap-[16px]">
+          <button
+            onClick={() => setPage((p) => Math.max(0, p - 1))}
+            className="flex items-center justify-center w-[28px] h-[28px] rounded-[22px] bg-surface-muted"
+            style={{ opacity: safePage === 0 || singlePage ? 0.4 : 1 }}
+            disabled={safePage === 0 || singlePage}
+          >
+            <CaretLeft size={18} weight="bold" className="text-accent-default" />
+          </button>
 
-        <span className="font-body text-[12px] font-semibold text-ink-default">
-          {page + 1} / {totalPages}
-        </span>
+          <span className="font-body text-[12px] font-semibold text-ink-default min-w-[32px] text-center">
+            {safePage + 1} / {totalPages}
+          </span>
 
-        <button
-          onClick={() => setPage((p) => Math.min(totalPages - 1, p + 1))}
-          className="flex items-center justify-center w-[28px] h-[28px] rounded-[22px] bg-surface-muted"
-          style={{ opacity: page === totalPages - 1 ? 0.4 : 1 }}
-          disabled={page === totalPages - 1}
-        >
-          <CaretRight size={18} weight="bold" className="text-accent-default" />
-        </button>
-      </div>
-
-      {/* Card stack — top card fully visible, others peeking behind */}
-      <div className="relative w-full h-[176px]">
-        {/* Background cards (stacked behind, bottom to top) */}
-        {cards.slice(1).reverse().map((card, reverseIdx) => {
-          const stackIdx = cards.length - 1 - reverseIdx;
-          const yOffset = stackIdx * 12;
-          return (
-            <div
-              key={card.title}
-              className="absolute left-0 right-0 h-[146px]"
-              style={{
-                top: `${yOffset}px`,
-                backgroundImage: `url(${card.textureSrc})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            />
-          );
-        })}
-
-        {/* Top card — fully visible, clickable */}
-        <div className="absolute left-0 right-0 top-0 cursor-pointer" onClick={onCardClick}>
-          <TopicCard {...cards[0]} />
+          <button
+            onClick={() => setPage((p) => Math.min(totalPages - 1, p + 1))}
+            className="flex items-center justify-center w-[28px] h-[28px] rounded-[22px] bg-surface-muted"
+            style={{ opacity: safePage === totalPages - 1 || singlePage ? 0.4 : 1 }}
+            disabled={safePage === totalPages - 1 || singlePage}
+          >
+            <CaretRight size={18} weight="bold" className="text-accent-default" />
+          </button>
         </div>
-      </div>
+      )}
+
+      {/* No results message */}
+      {noResults ? (
+        <div className="flex items-center justify-center h-[176px] w-full">
+          <p className="font-heading text-[16px] font-semibold italic text-ink-default">
+            No aspect like that at the moment
+          </p>
+        </div>
+      ) : (
+        /* Card stack — top card fully visible, others peeking behind */
+        <div className="relative w-full h-[176px]">
+          {/* Background cards (stacked behind, bottom to top) */}
+          {cards.slice(1).reverse().map((card, reverseIdx) => {
+            const stackIdx = cards.length - 1 - reverseIdx;
+            const yOffset = stackIdx * 12;
+            return (
+              <div
+                key={card.title}
+                className="absolute left-0 right-0 h-[146px]"
+                style={{
+                  top: `${yOffset}px`,
+                  backgroundImage: `url(${card.textureSrc})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              />
+            );
+          })}
+
+          {/* Top card — fully visible, clickable */}
+          <div className="absolute left-0 right-0 top-0 cursor-pointer" onClick={onCardClick}>
+            <TopicCard {...cards[0]} />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
