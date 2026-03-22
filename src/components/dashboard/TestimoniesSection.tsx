@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { CaretLeft, CaretRight } from "@phosphor-icons/react";
+import { motion } from "framer-motion";
 import { TestimonyCard } from "./TestimonyCard";
 
 import sarahAvatar from "../../images/dp for testimonies/sarah.png";
@@ -27,13 +28,14 @@ const TESTIMONIES = [
   },
 ];
 
+const slideTransition = { duration: 0.35, ease: [0.25, 0.1, 0.25, 1] as [number, number, number, number] };
+
 export function TestimoniesSection() {
   const [page, setPage] = useState(0);
   const totalPages = TESTIMONIES.length;
-  const testimony = TESTIMONIES[page];
 
   return (
-    <div className="flex flex-col gap-[16px] w-full overflow-hidden">
+    <div className="flex flex-col gap-[16px] w-full">
       {/* Header: title left, pagination right */}
       <div className="flex items-center justify-between w-full">
         <h2 className="font-heading text-[18px] font-semibold text-ink-default">
@@ -66,8 +68,27 @@ export function TestimoniesSection() {
         </div>
       </div>
 
-      {/* Testimony card */}
-      <TestimonyCard {...testimony} />
+      {/* Outer clip container — hides off-screen pages */}
+      <div className="mx-[-24px]" style={{ overflow: "hidden" }}>
+        {/* Horizontal track — slides by page */}
+        <motion.div
+          className="flex"
+          style={{ width: `${totalPages * 100}%` }}
+          animate={{ x: `${-page * (100 / totalPages)}%` }}
+          transition={slideTransition}
+        >
+          {TESTIMONIES.map((testimony, idx) => (
+            <div
+              key={idx}
+              style={{ width: `${100 / totalPages}%` }}
+            >
+              <div className="w-full px-[24px]">
+                <TestimonyCard {...testimony} />
+              </div>
+            </div>
+          ))}
+        </motion.div>
+      </div>
     </div>
   );
 }

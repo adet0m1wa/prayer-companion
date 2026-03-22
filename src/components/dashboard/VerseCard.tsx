@@ -34,7 +34,7 @@ export function VerseCard({
     if (willLike) {
       shimmerControls.start({
         opacity: [0.8, 0.3, 0.3, 0.8],
-        transition: { duration: 1.1, times: [0, 0.136, 0.59, 1], ease: ["easeIn", "linear", "easeOut"] },
+        transition: { duration: 0.8, times: [0, 0.136, 0.35, 0.7], ease: ["easeIn", "linear", "easeOut"] },
       });
     }
   };
