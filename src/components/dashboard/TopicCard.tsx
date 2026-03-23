@@ -1,15 +1,21 @@
+import { SharedTopicIcon } from "../shared/SharedTopicIcon";
+
 interface TopicCardProps {
+  id?: string;
   title: string;
   description: string;
   iconSrc: string;
   textureSrc: string;
+  isTransitioning?: boolean;
 }
 
 export function TopicCard({
+  id,
   title,
   description,
   iconSrc,
   textureSrc,
+  isTransitioning = false,
 }: TopicCardProps) {
   return (
     <div
@@ -22,7 +28,11 @@ export function TopicCard({
     >
       {/* Icon + title row */}
       <div className="flex items-center gap-[2px]">
-        <img src={iconSrc} alt="" className="w-[30px] h-[30px] object-contain" />
+        {id === "love" && isTransitioning ? (
+          <SharedTopicIcon src={iconSrc} size={30} topicId={id} />
+        ) : (
+          <img src={iconSrc} alt="" className="w-[30px] h-[30px] object-contain" />
+        )}
         <span className="font-heading text-[16px] font-semibold italic text-ink-default">
           {title}
         </span>

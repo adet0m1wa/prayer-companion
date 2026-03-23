@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Heart, ShareNetwork, ChatCentered, type Icon } from "@phosphor-icons/react";
 import { motion, useAnimationControls } from "framer-motion";
+import { useWebHaptics } from "web-haptics/react";
 import verseBackground from "../../images/verse of the day background/verse of the day.png";
 
 interface VerseCardProps {
@@ -23,10 +24,12 @@ export function VerseCard({
   const [liked, setLiked] = useState(false);
   const heartControls = useAnimationControls();
   const shimmerControls = useAnimationControls();
+  const { trigger } = useWebHaptics();
 
   const handleLikeTap = () => {
     const willLike = !liked;
     setLiked(willLike);
+    trigger();
     heartControls.start({
       scale: [1, 1.3, 1],
       transition: { type: "spring", stiffness: 400, damping: 10 },

@@ -47,7 +47,7 @@ const PAGES = [
 ];
 
 interface TopicCardStackProps {
-  onCardClick?: () => void;
+  onCardClick?: (topicId: string) => void;
 }
 
 const ALL_TOPICS = PAGES.flat();
@@ -67,6 +67,7 @@ export function TopicCardStack({ onCardClick }: TopicCardStackProps) {
   const [pageCardIndices, setPageCardIndices] = useState<Record<number, number>>({});
   const [isAnimating, setIsAnimating] = useState(false);
   const [recycledCardId, setRecycledCardId] = useState<string | null>(null);
+  const [isTransitioning, setIsTransitioning] = useState(false);
   const dragX = useMotionValue(0);
   const dragOpacity = useTransform(dragX, [-300, -100, 0, 100, 300], [0, 1, 1, 1, 0]);
   const isDraggingRef = useRef(false);
@@ -153,15 +154,29 @@ export function TopicCardStack({ onCardClick }: TopicCardStackProps) {
       swipeCard(offset.x < 0 ? "left" : "right");
     } else {
       animate(dragX, 0, springTransition);
-      requestAnimationFrame(() => {
-        isDraggingRef.current = false;
-      });
+      // Only allow click if drag was < 5px (clean tap)
+      if (Math.abs(offset.x) < 5) {
+        requestAnimationFrame(() => {
+          isDraggingRef.current = false;
+        });
+      } else {
+        // Block the click that fires after dragEnd, then reset
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            isDraggingRef.current = false;
+          });
+        });
+      }
     }
   };
 
   const handleCardClick = () => {
     if (isDraggingRef.current || isAnimating) return;
-    onCardClick?.();
+    const topCard = allPageCards[safePage]?.[0];
+    if (topCard?.id === "love") {
+      setIsTransitioning(true);
+      onCardClick?.(topCard.id);
+    }
   };
 
   const handleChevronLeft = () => {
@@ -300,7 +315,7 @@ export function TopicCardStack({ onCardClick }: TopicCardStackProps) {
                           onClick={isActivePage ? handleCardClick : undefined}
                         >
                           <motion.div style={{ opacity: isActivePage ? dragOpacity : 1 }}>
-                            <TopicCard {...card} />
+                            <TopicCard {...card} isTransitioning={isTransitioning} />
                           </motion.div>
                         </motion.div>
                       );
@@ -326,9 +341,9 @@ export function TopicCardStack({ onCardClick }: TopicCardStackProps) {
                           ? { duration: 0.35, ease: "easeOut", times: [0, 0.1, 1] }
                           : glideTransition
                         }
-                        style={{ transformOrigin: "top center" }}
+                        style={{ transformOrigin: "top center", pointerEvents: "none" }}
                       >
-                        <TopicCard {...card} />
+                        <TopicCard {...card} isTransitioning={isTransitioning} />
                       </motion.div>
                     );
                   })}

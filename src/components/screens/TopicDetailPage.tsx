@@ -1,9 +1,23 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 import { TopicHeader } from "../screen2/TopicHeader";
 import { ContentToggle } from "../screen2/ContentToggle";
 import { ArticleCard } from "../screen2/ArticleCard";
 import { VideoCard } from "../screen2/VideoCard";
 import { BottomNav } from "../shared/BottomNav";
+
+import loveIcon from "../../images/images for understanding aspect/love.png";
+import faithIcon from "../../images/images for understanding aspect/faith.png";
+import sinIcon from "../../images/images for understanding aspect/sin.png";
+import theologyIcon from "../../images/images for understanding aspect/theology.png";
+import graceIcon from "../../images/images for understanding aspect/grace.png";
+import prayerIcon from "../../images/images for understanding aspect/prayer.png";
+import forgivenessIcon from "../../images/images for understanding aspect/forgiveness.png";
+import hopeIcon from "../../images/images for understanding aspect/hope.png";
+import mercyIcon from "../../images/images for understanding aspect/mercy.png";
+import wisdomIcon from "../../images/images for understanding aspect/wisdom.png";
+import redemptionIcon from "../../images/images for understanding aspect/redemption.png";
+import worshipIcon from "../../images/images for understanding aspect/worship.png";
 
 import articleThumb1 from "../../images/article thumbnails/article image 1.1.png";
 import articleThumb2 from "../../images/article thumbnails/article image 2.1.png";
@@ -39,28 +53,114 @@ const VIDEOS = [
 ];
 
 interface TopicDetailPageProps {
+  topicId?: string;
   onBack: () => void;
 }
 
-export function TopicDetailPage({ onBack }: TopicDetailPageProps) {
+const TOPIC_META: Record<string, { title: string; iconSrc: string }> = {
+  love: { title: "Love", iconSrc: loveIcon },
+  faith: { title: "Faith", iconSrc: faithIcon },
+  sin: { title: "Sin", iconSrc: sinIcon },
+  theology: { title: "Theology", iconSrc: theologyIcon },
+  grace: { title: "Grace", iconSrc: graceIcon },
+  prayer: { title: "Prayer", iconSrc: prayerIcon },
+  forgiveness: { title: "Forgiveness", iconSrc: forgivenessIcon },
+  hope: { title: "Hope", iconSrc: hopeIcon },
+  mercy: { title: "Mercy", iconSrc: mercyIcon },
+  wisdom: { title: "Wisdom", iconSrc: wisdomIcon },
+  redemption: { title: "Redemption", iconSrc: redemptionIcon },
+  worship: { title: "Worship", iconSrc: worshipIcon },
+};
+
+// Bottom-up stagger: last card appears first, header appears last
+const contentContainerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.09,
+      staggerDirection: -1, // Bottom-up
+    },
+  },
+};
+
+const contentItemVariants = {
+  hidden: { opacity: 0, y: 10 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.2, ease: "easeOut" as const },
+  },
+};
+
+export function TopicDetailPage({ topicId = "love", onBack }: TopicDetailPageProps) {
   const [tab, setTab] = useState<"articles" | "videos">("articles");
+  const [contentVisible, setContentVisible] = useState(false);
+  const [sentinelVisible, setSentinelVisible] = useState(true);
+  const sentinelRef = useRef<HTMLDivElement>(null);
+  const meta = TOPIC_META[topicId] ?? TOPIC_META.love;
+
+  // Start content stagger immediately on mount
+  useEffect(() => {
+    const timer = setTimeout(() => setContentVisible(true), 50);
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const el = sentinelRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setSentinelVisible(entry.isIntersecting),
+      { threshold: 0 },
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <div className="flex flex-col min-h-screen">
-      {/* Scrollable content */}
-      <div className="flex-1 flex flex-col gap-[36px] p-[24px]">
-        <TopicHeader onBack={onBack} />
-        <ContentToggle active={tab} onToggle={setTab} />
+    <div className="flex flex-col h-screen bg-surface-canvas">
+      <div className="flex-1 overflow-y-auto px-[24px] pt-[30px] pb-[30px]">
+        <motion.div
+          className="flex flex-col gap-[36px]"
+          variants={contentContainerVariants}
+          initial="hidden"
+          animate={contentVisible ? "visible" : "hidden"}
+        >
+          {/* Section 1: Header */}
+          <motion.div variants={contentItemVariants}>
+            <TopicHeader
+              topicId={topicId}
+              title={meta.title}
+              iconSrc={meta.iconSrc}
+              onBack={onBack}
+              contentVisible={contentVisible}
+            />
+          </motion.div>
 
-        {/* Card list */}
-        <div className="flex flex-col gap-[16px]">
-          {tab === "articles"
-            ? ARTICLES.map((a) => <ArticleCard key={a.title} {...a} />)
-            : VIDEOS.map((v) => <VideoCard key={v.title} {...v} />)}
-        </div>
+          {/* Section 2: Toggle */}
+          <motion.div variants={contentItemVariants}>
+            <ContentToggle active={tab} onToggle={setTab} />
+          </motion.div>
+
+          {/* Section 3: Cards — 16px gap */}
+          <div className="flex flex-col gap-[16px]">
+            {tab === "articles"
+              ? ARTICLES.map((a) => (
+                  <motion.div key={a.title} variants={contentItemVariants}>
+                    <ArticleCard {...a} />
+                  </motion.div>
+                ))
+              : VIDEOS.map((v) => (
+                  <motion.div key={v.title} variants={contentItemVariants}>
+                    <VideoCard {...v} />
+                  </motion.div>
+                ))}
+          </div>
+        </motion.div>
+
+        <div ref={sentinelRef} className="h-px w-full shrink-0" />
       </div>
 
-      <BottomNav />
+      {contentVisible && <BottomNav showShadow={!sentinelVisible} />}
     </div>
   );
 }
