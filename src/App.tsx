@@ -1,6 +1,9 @@
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect, useCallback, lazy, Suspense } from "react";
 import { LayoutGroup, AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { Agentation } from "agentation";
+
+const Agentation = import.meta.env.DEV
+  ? lazy(() => import("agentation").then((m) => ({ default: m.Agentation })))
+  : () => null;
 import { GreetingHeader } from "./components/dashboard/GreetingHeader";
 import { VerseCard } from "./components/dashboard/VerseCard";
 import { TopicCardStack } from "./components/dashboard/TopicCardStack";
@@ -134,7 +137,7 @@ export function App() {
           )}
         </AnimatePresence>
 
-        <Agentation />
+        <Suspense fallback={null}><Agentation /></Suspense>
       </div>
     </LayoutGroup>
   );
