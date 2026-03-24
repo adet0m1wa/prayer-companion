@@ -30,57 +30,17 @@ import worshipIcon from "./images/images for understanding aspect/worship.png";
 // Verse background
 import verseBackground from "./images/verse of the day background/verse of the day.png";
 
-// Card textures (TopicCardStack)
+// Above-fold textures (preloaded before render)
 import texture0 from "./images/textures/texture 1.0.png";
 import texture1 from "./images/textures/texture 1.1.png";
 import texture2 from "./images/textures/texture 1.2.png";
 import texture3 from "./images/textures/texture 1.3.png";
-import texture4 from "./images/textures/texture 1.4.png";
-import texture5 from "./images/textures/texture 1.5.png";
-import texture6 from "./images/textures/texture 1.6.png";
-import texture7 from "./images/textures/texture 1.7.png";
 
-// Testimony avatars
-import sarahAvatar from "./images/dp for testimonies/sarah.png";
-import davidAvatar from "./images/dp for testimonies/david.png";
-import graceAvatar from "./images/dp for testimonies/grace dp.png";
-
-// Article/video thumbnails
-import articleThumb1 from "./images/article thumbnails/article image 1.1.png";
-import articleThumb2 from "./images/article thumbnails/article image 2.1.png";
-import articleThumb3 from "./images/article thumbnails/article image 3.1.png";
-import articleThumb4 from "./images/article thumbnails/article image 4.1.png";
-import videoThumb1 from "./images/video thumbnails/video image 1.5.png";
-import videoThumb2 from "./images/video thumbnails/video image 2.5.png";
-import videoThumb3 from "./images/video thumbnails/video image 3.5.png";
-import videoThumb4 from "./images/video thumbnails/video image 4.5.png";
-
-// No-shadow textures (detail page cards)
-import nsTexture0 from "./images/no shadow texture/ns texture 1.0.png";
-import nsTexture1 from "./images/no shadow texture/ns texture 1.1.png";
-import nsTexture2 from "./images/no shadow texture/ns texture 1.2.png";
-import nsTexture3 from "./images/no shadow texture/ns texture 1.3.png";
-import nsTexture4 from "./images/no shadow texture/ns texture 1.4.png";
-import nsTexture5 from "./images/no shadow texture/ns texture 1.5.png";
-import nsTexture6 from "./images/no shadow texture/ns texture 1.6.png";
-import nsTexture7 from "./images/no shadow texture/ns texture 1.7.png";
-
+// Above-fold images only — verse card bg + first page topic card textures/icons
 const CRITICAL_IMAGES = [
-  // Verse bg
   verseBackground,
-  // Card textures
-  texture0, texture1, texture2, texture3, texture4, texture5, texture6, texture7,
-  // Topic icons
-  loveIcon, faithIcon, sinIcon, theologyIcon, graceIcon, prayerIcon,
-  forgivenessIcon, hopeIcon, mercyIcon, wisdomIcon, redemptionIcon, worshipIcon,
-  // Avatars
-  sarahAvatar, davidAvatar, graceAvatar,
-  // Article thumbs
-  articleThumb1, articleThumb2, articleThumb3, articleThumb4,
-  // Video thumbs
-  videoThumb1, videoThumb2, videoThumb3, videoThumb4,
-  // NS textures
-  nsTexture0, nsTexture1, nsTexture2, nsTexture3, nsTexture4, nsTexture5, nsTexture6, nsTexture7,
+  texture0, texture1, texture2, texture3,
+  loveIcon, faithIcon, sinIcon, theologyIcon,
 ];
 
 const TOPIC_ICONS: Record<string, string> = {
