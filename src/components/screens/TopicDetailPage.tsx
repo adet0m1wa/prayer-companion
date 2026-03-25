@@ -31,24 +31,23 @@ import videoThumb4 from "../../images/video thumbnails/video image 4.5.png";
 import nsTexture1 from "../../images/no shadow texture/ns texture 1.1.webp";
 import nsTexture2 from "../../images/no shadow texture/ns texture 1.2.webp";
 import nsTexture3 from "../../images/no shadow texture/ns texture 1.3.webp";
-import nsTexture4 from "../../images/no shadow texture/ns texture 1.4.webp";
-import nsTexture5 from "../../images/no shadow texture/ns texture 1.5.webp";
+
 import nsTexture6 from "../../images/no shadow texture/ns texture 1.6.webp";
 import nsTexture7 from "../../images/no shadow texture/ns texture 1.7.webp";
-import nsTexture0 from "../../images/no shadow texture/ns texture 1.0.webp";
+
 
 const ARTICLES = [
   { thumbnailSrc: articleThumb1, textureSrc: nsTexture1, title: "What the Bible Says About Loving Your Enemies", readTime: "8 min read", views: "2.4k", likes: "180", date: "3 days ago" },
   { thumbnailSrc: articleThumb2, textureSrc: nsTexture2, title: "God's Love Language: Understanding Agape", readTime: "6 min read", views: "1.8k", likes: "142", date: "1 week ago" },
   { thumbnailSrc: articleThumb3, textureSrc: nsTexture3, title: "Love in Marriage: Biblical Foundations", readTime: "10 min read", views: "3.1k", likes: "267", date: "2 days ago" },
-  { thumbnailSrc: articleThumb4, textureSrc: nsTexture4, title: "The Greatest Commandment Explained", readTime: "7 min read", views: "2.7k", likes: "198", date: "5 days ago" },
+  { thumbnailSrc: articleThumb4, textureSrc: nsTexture2, title: "The Greatest Commandment Explained", readTime: "7 min read", views: "2.7k", likes: "198", date: "5 days ago" },
 ];
 
 const VIDEOS = [
-  { thumbnailSrc: videoThumb1, textureSrc: nsTexture5, title: "Understanding God's Unconditional Love for Humanity", views: "5.2k", likes: "340", date: "1 day ago" },
+  { thumbnailSrc: videoThumb1, textureSrc: nsTexture1, title: "Understanding God's Unconditional Love for Humanity", views: "5.2k", likes: "340", date: "1 day ago" },
   { thumbnailSrc: videoThumb2, textureSrc: nsTexture6, title: "Agape vs Phileo: Types of Love in Greek", views: "3.8k", likes: "210", date: "4 days ago" },
   { thumbnailSrc: videoThumb3, textureSrc: nsTexture7, title: "How to Love When It's Hard: A Biblical Perspective", views: "4.1k", likes: "289", date: "2 weeks ago" },
-  { thumbnailSrc: videoThumb4, textureSrc: nsTexture0, title: "The Parable of the Prodigal Son: A Father's Love", views: "6.3k", likes: "412", date: "6 days ago" },
+  { thumbnailSrc: videoThumb4, textureSrc: nsTexture2, title: "The Parable of the Prodigal Son: A Father's Love", views: "6.3k", likes: "412", date: "6 days ago" },
 ];
 
 interface TopicDetailPageProps {
