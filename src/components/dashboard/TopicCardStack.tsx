@@ -16,14 +16,14 @@ import wisdomIcon from "../../images/images for understanding aspect/wisdom.png"
 import redemptionIcon from "../../images/images for understanding aspect/redemption.png";
 import worshipIcon from "../../images/images for understanding aspect/worship.png";
 
-import texture0 from "../../images/textures/texture 1.0.png";
-import texture1 from "../../images/textures/texture 1.1.png";
-import texture2 from "../../images/textures/texture 1.2.png";
-import texture3 from "../../images/textures/texture 1.3.png";
-import texture4 from "../../images/textures/texture 1.4.png";
-import texture5 from "../../images/textures/texture 1.5.png";
-import texture6 from "../../images/textures/texture 1.6.png";
-import texture7 from "../../images/textures/texture 1.7.png";
+import texture0 from "../../images/textures/texture 1.0.webp";
+import texture1 from "../../images/textures/texture 1.1.webp";
+import texture2 from "../../images/textures/texture 1.2.webp";
+import texture3 from "../../images/textures/texture 1.3.webp";
+import texture4 from "../../images/textures/texture 1.4.webp";
+import texture5 from "../../images/textures/texture 1.5.webp";
+import texture6 from "../../images/textures/texture 1.6.webp";
+import texture7 from "../../images/textures/texture 1.7.webp";
 
 const PAGES = [
   [

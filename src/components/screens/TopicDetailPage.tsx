@@ -29,14 +29,14 @@ import videoThumb2 from "../../images/video thumbnails/video image 2.5.png";
 import videoThumb3 from "../../images/video thumbnails/video image 3.5.png";
 import videoThumb4 from "../../images/video thumbnails/video image 4.5.png";
 
-import nsTexture1 from "../../images/no shadow texture/ns texture 1.1.png";
-import nsTexture2 from "../../images/no shadow texture/ns texture 1.2.png";
-import nsTexture3 from "../../images/no shadow texture/ns texture 1.3.png";
-import nsTexture4 from "../../images/no shadow texture/ns texture 1.4.png";
-import nsTexture5 from "../../images/no shadow texture/ns texture 1.5.png";
-import nsTexture6 from "../../images/no shadow texture/ns texture 1.6.png";
-import nsTexture7 from "../../images/no shadow texture/ns texture 1.7.png";
-import nsTexture0 from "../../images/no shadow texture/ns texture 1.0.png";
+import nsTexture1 from "../../images/no shadow texture/ns texture 1.1.webp";
+import nsTexture2 from "../../images/no shadow texture/ns texture 1.2.webp";
+import nsTexture3 from "../../images/no shadow texture/ns texture 1.3.webp";
+import nsTexture4 from "../../images/no shadow texture/ns texture 1.4.webp";
+import nsTexture5 from "../../images/no shadow texture/ns texture 1.5.webp";
+import nsTexture6 from "../../images/no shadow texture/ns texture 1.6.webp";
+import nsTexture7 from "../../images/no shadow texture/ns texture 1.7.webp";
+import nsTexture0 from "../../images/no shadow texture/ns texture 1.0.webp";
 
 const ARTICLES = [
   { thumbnailSrc: articleThumb1, textureSrc: nsTexture1, title: "What the Bible Says About Loving Your Enemies", readTime: "8 min read", views: "2.4k", likes: "180", date: "3 days ago" },

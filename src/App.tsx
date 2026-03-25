@@ -31,10 +31,10 @@ import worshipIcon from "./images/images for understanding aspect/worship.png";
 import verseBackground from "./images/verse of the day background/verse of the day.png";
 
 // Above-fold textures (preloaded before render)
-import texture0 from "./images/textures/texture 1.0.png";
-import texture1 from "./images/textures/texture 1.1.png";
-import texture2 from "./images/textures/texture 1.2.png";
-import texture3 from "./images/textures/texture 1.3.png";
+import texture0 from "./images/textures/texture 1.0.webp";
+import texture1 from "./images/textures/texture 1.1.webp";
+import texture2 from "./images/textures/texture 1.2.webp";
+import texture3 from "./images/textures/texture 1.3.webp";
 
 // Above-fold images only — verse card bg + first page topic card textures/icons
 const CRITICAL_IMAGES = [

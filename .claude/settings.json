@@ -14,7 +14,9 @@
       "Bash(npx tsc:*)",
       "Bash(npx vite:*)",
       "mcp__agentation__agentation_get_all_pending",
-      "Bash(node -e \":*)"
+      "Bash(node -e \":*)",
+      "Bash(sed -i '' 's|textures/texture 1\\\\.\\\\\\([0-7]\\\\\\)\\\\.png|textures/texture 1.\\\\1.webp|g' src/App.tsx src/components/dashboard/TopicCardStack.tsx)",
+      "Bash(sed -i '' 's|no shadow texture/ns texture 1\\\\.\\\\\\([0-7]\\\\\\)\\\\.png|no shadow texture/ns texture 1.\\\\1.webp|g' src/components/screens/TopicDetailPage.tsx)"
     ]
   }
 }
