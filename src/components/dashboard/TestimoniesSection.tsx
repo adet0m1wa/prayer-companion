@@ -69,7 +69,7 @@ export function TestimoniesSection() {
       </div>
 
       {/* Outer clip container — hides off-screen pages */}
-      <div className="mx-[-24px]" style={{ overflow: "hidden" }}>
+      <div style={{ overflow: "hidden", marginLeft: "calc(-1 * var(--app-px))", marginRight: "calc(-1 * var(--app-px))" }}>
         {/* Horizontal track — slides by page */}
         <motion.div
           className="flex"
@@ -82,7 +82,7 @@ export function TestimoniesSection() {
               key={idx}
               style={{ width: `${100 / totalPages}%` }}
             >
-              <div className="w-full px-[24px]">
+              <div className="w-full" style={{ paddingLeft: "var(--app-px)", paddingRight: "var(--app-px)" }}>
                 <TestimonyCard {...testimony} />
               </div>
             </div>

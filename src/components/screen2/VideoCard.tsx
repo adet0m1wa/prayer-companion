@@ -19,7 +19,7 @@ export function VideoCard({
 }: VideoCardProps) {
   return (
     <div
-      className="flex items-center gap-[20px] w-full h-[145px] p-[20px]"
+      className="flex items-center gap-[20px] w-full aspect-[354/145] p-[20px]"
       style={{
         backgroundImage: `url(${textureSrc})`,
         backgroundSize: "cover",
@@ -36,7 +36,7 @@ export function VideoCard({
       {/* Content */}
       <div className="flex flex-col justify-between h-full flex-1 min-w-0">
         {/* Title */}
-        <p className="font-heading text-[16px] font-semibold italic text-ink-default">
+        <p className="font-heading text-[16px] font-semibold italic text-ink-default line-clamp-2">
           {title}
         </p>
 

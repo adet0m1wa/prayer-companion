@@ -96,6 +96,35 @@ input, select, textarea { font-size: max(16px, 1rem); }
   src: url("../assets/fonts/Inter-Bold.ttf") format("truetype");
 }
 
+/* ─── Responsive Padding ─── */
+/* Default: 24px. Scales down for narrower viewports. */
+:root {
+  --app-px: 24px;
+}
+@media (max-width: 399px) {
+  :root { --app-px: 20px; }
+}
+@media (max-width: 374px) {
+  :root { --app-px: 16px; }
+}
+
+/* ─── Small Screen Font Scaling ─── */
+@media (max-width: 359px) {
+  :root {
+    --heading-display-size: 20px;
+    --body-default-size: 13px;
+  }
+}
+
+/* ─── Scrollbar Hiding ─── */
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 /* ─── Base Styles ─── */
 
 body {

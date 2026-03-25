@@ -29,14 +29,14 @@ interface BottomNavProps {
 
 export function BottomNav({ showShadow = false }: BottomNavProps) {
   return (
-    <nav className="sticky bottom-0 w-full bg-surface-card relative">
+    <nav className="sticky bottom-0 w-full bg-surface-card relative" style={{ paddingBottom: "env(safe-area-inset-bottom, 10px)" }}>
       <motion.div
         className="pointer-events-none absolute inset-0"
         style={{ boxShadow: "0 -2px 4px rgba(0, 0, 0, 0.05)" }}
         animate={{ opacity: showShadow ? 1 : 0 }}
         transition={{ duration: 0.2, ease: "easeOut" }}
       />
-      <div className="w-full h-[70px] flex items-center justify-between px-[24px]">
+      <div className="w-full h-[70px] flex items-center justify-between" style={{ paddingLeft: "var(--app-px)", paddingRight: "var(--app-px)" }}>
       {TABS.map((tab) => (
         <button
           key={tab.label}

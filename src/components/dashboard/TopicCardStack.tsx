@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback, useRef } from "react";
+import { useState, useMemo, useCallback, useRef, useEffect } from "react";
 import { CaretLeft, CaretRight, X } from "@phosphor-icons/react";
 import { motion, useMotionValue, useTransform, animate, type PanInfo } from "framer-motion";
 import { TopicCard } from "./TopicCard";
@@ -55,7 +55,7 @@ const CARDS_PER_PAGE = 4;
 const SWIPE_THRESHOLD = 100;
 const CARD_Y_OFFSET = 12;
 const CARD_SCALE_STEP = 0.03;
-const STACK_HEIGHT = 146 + (CARDS_PER_PAGE - 1) * CARD_Y_OFFSET;
+const STACK_PEEK = (CARDS_PER_PAGE - 1) * CARD_Y_OFFSET; // 36px for behind cards
 
 const springTransition = { type: "spring" as const, stiffness: 300, damping: 20 };
 const glideTransition = { duration: 0.35, ease: "easeOut" as const };
@@ -74,6 +74,22 @@ export function TopicCardStack({ onCardClick }: TopicCardStackProps) {
   const swipingRef = useRef(false);
   const pageRef = useRef(page);
   pageRef.current = page;
+
+  // Dynamic stack height based on actual card size
+  const cardMeasureRef = useRef<HTMLDivElement>(null);
+  const [cardHeight, setCardHeight] = useState(146);
+  const stackHeight = cardHeight + STACK_PEEK;
+
+  useEffect(() => {
+    const el = cardMeasureRef.current;
+    if (!el) return;
+    const ro = new ResizeObserver(([entry]) => {
+      const h = entry.contentRect.height;
+      if (h > 0) setCardHeight(h);
+    });
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
 
   const filtered = useMemo(() => {
     if (!query.trim()) return ALL_TOPICS;
@@ -260,7 +276,7 @@ export function TopicCardStack({ onCardClick }: TopicCardStackProps) {
         </div>
       ) : (
         /* Outer clip container — hides off-screen pages */
-        <div className="mx-[-24px]" style={{ overflow: "hidden", height: STACK_HEIGHT }}>
+        <div style={{ overflow: "hidden", height: stackHeight, marginLeft: "calc(-1 * var(--app-px))", marginRight: "calc(-1 * var(--app-px))" }}>
           {/* Horizontal track — slides by page */}
           <motion.div
             className="flex"
@@ -274,16 +290,18 @@ export function TopicCardStack({ onCardClick }: TopicCardStackProps) {
                 key={pageIdx}
                 style={{
                   width: `${100 / totalPages}%`,
-                  height: STACK_HEIGHT,
+                  height: stackHeight,
                 }}
               >
-                {/* Child wrapper — insets cards by 24px, holds the stack */}
+                {/* Child wrapper — insets cards by --app-px, holds the stack */}
                 <div
-                  className="w-full px-[24px] relative"
+                  className="w-full relative"
                   style={{
-                    height: STACK_HEIGHT,
+                    height: stackHeight,
                     overflow: "visible",
                     isolation: "isolate",
+                    paddingLeft: "var(--app-px)",
+                    paddingRight: "var(--app-px)",
                   }}
                 >
                   {[...cards].reverse().map((card, reverseIdx) => {
@@ -297,12 +315,15 @@ export function TopicCardStack({ onCardClick }: TopicCardStackProps) {
                     if (isTop) {
                       return (
                         <motion.div
+                          ref={pageIdx === 0 && reverseIdx === cards.length - 1 ? cardMeasureRef : undefined}
                           key={card.id}
-                          className="absolute left-[24px] right-[24px] top-0 cursor-grab active:cursor-grabbing"
+                          className="absolute top-0 cursor-grab active:cursor-grabbing"
                           initial={false}
                           animate={{ y: 0, scale: 1, zIndex }}
                           transition={glideTransition}
                           style={{
+                            left: "var(--app-px)",
+                            right: "var(--app-px)",
                             x: isActivePage ? dragX : 0,
                             transformOrigin: "top center",
                           }}
@@ -326,7 +347,7 @@ export function TopicCardStack({ onCardClick }: TopicCardStackProps) {
                     return (
                       <motion.div
                         key={card.id}
-                        className="absolute left-[24px] right-[24px]"
+                        className="absolute"
                         initial={false}
                         animate={isRecycled
                           ? {
@@ -341,7 +362,7 @@ export function TopicCardStack({ onCardClick }: TopicCardStackProps) {
                           ? { duration: 0.35, ease: "easeOut", times: [0, 0.1, 1] }
                           : glideTransition
                         }
-                        style={{ transformOrigin: "top center", pointerEvents: "none" }}
+                        style={{ left: "var(--app-px)", right: "var(--app-px)", transformOrigin: "top center", pointerEvents: "none" }}
                       >
                         <TopicCard {...card} isTransitioning={isTransitioning} />
                       </motion.div>

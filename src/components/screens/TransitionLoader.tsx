@@ -100,7 +100,7 @@ export function TransitionLoader({
   }, [isPresent, safeToRemove]);
 
   return (
-    <div ref={scope} className="absolute inset-0 bg-surface-canvas">
+    <div ref={scope} className="absolute inset-0 bg-surface-canvas overflow-hidden">
       {/* Heart icon — absolutely centered, wrapped for exit animation */}
       <motion.div
         data-loader-icon
@@ -111,8 +111,8 @@ export function TransitionLoader({
 
       {/* Text group — positioned below center point */}
       <div
-        className="absolute left-0 right-0 flex flex-col items-center gap-[10px] px-[24px]"
-        style={{ top: "calc(50% + 45px)" }}
+        className="absolute left-0 right-0 flex flex-col items-center gap-[10px]"
+        style={{ paddingLeft: "var(--app-px)", paddingRight: "var(--app-px)", top: "calc(50% + 45px)" }}
       >
         <motion.p
           data-loader-verse

@@ -19,7 +19,7 @@ export function TopicCard({
 }: TopicCardProps) {
   return (
     <div
-      className="flex flex-col gap-[10px] p-[20px] w-full h-[146px] overflow-hidden"
+      className="flex flex-col gap-[10px] p-[20px] w-full overflow-hidden aspect-[354/146]"
       style={{
         backgroundImage: `url(${textureSrc})`,
         backgroundSize: "cover",
@@ -33,7 +33,7 @@ export function TopicCard({
         ) : (
           <img src={iconSrc} alt="" className="w-[30px] h-[30px] object-contain" />
         )}
-        <span className="font-heading text-[16px] font-semibold italic text-ink-default">
+        <span className="font-heading text-[16px] font-semibold italic text-ink-default line-clamp-2">
           {title}
         </span>
       </div>
