@@ -82,7 +82,7 @@ export function VerseCard({
                 className="text-accent-default"
               />
             </motion.div>
-            <span className="font-body text-[13px] font-semibold text-ink-default">
+            <span className="font-body text-[12px] font-semibold text-ink-default">
               {liked ? likes + 1 : likes}
             </span>
           </div>
@@ -109,7 +109,7 @@ function ActionIcon({
   return (
     <div className="flex flex-col items-center justify-center w-[44px]">
       <IconComponent size={22} weight="light" className="text-accent-default" />
-      <span className="font-body text-[13px] font-semibold text-ink-default">
+      <span className="font-body text-[12px] font-semibold text-ink-default">
         {count}
       </span>
     </div>
