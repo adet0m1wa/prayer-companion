@@ -36,11 +36,37 @@ import texture1 from "./images/textures/texture 1.1.webp";
 import texture2 from "./images/textures/texture 1.2.webp";
 import texture3 from "./images/textures/texture 1.3.webp";
 
+// Detail page images (background preloaded after dashboard renders)
+import articleThumb1 from "./images/article thumbnails/article image 1.1.png";
+import articleThumb2 from "./images/article thumbnails/article image 2.1.png";
+import articleThumb3 from "./images/article thumbnails/article image 3.1.png";
+import articleThumb4 from "./images/article thumbnails/article image 4.1.png";
+import videoThumb1 from "./images/video thumbnails/video image 1.5.png";
+import videoThumb2 from "./images/video thumbnails/video image 2.5.png";
+import videoThumb3 from "./images/video thumbnails/video image 3.5.png";
+import videoThumb4 from "./images/video thumbnails/video image 4.5.png";
+import nsTexture0 from "./images/no shadow texture/ns texture 1.0.webp";
+import nsTexture1 from "./images/no shadow texture/ns texture 1.1.webp";
+import nsTexture2 from "./images/no shadow texture/ns texture 1.2.webp";
+import nsTexture3 from "./images/no shadow texture/ns texture 1.3.webp";
+import nsTexture4 from "./images/no shadow texture/ns texture 1.4.webp";
+import nsTexture5 from "./images/no shadow texture/ns texture 1.5.webp";
+import nsTexture6 from "./images/no shadow texture/ns texture 1.6.webp";
+import nsTexture7 from "./images/no shadow texture/ns texture 1.7.webp";
+
 // Above-fold images only — verse card bg + first page topic card textures/icons
 const CRITICAL_IMAGES = [
   verseBackground,
   texture0, texture1, texture2, texture3,
   loveIcon, faithIcon, sinIcon, theologyIcon,
+];
+
+// Detail page images — preloaded in background after dashboard renders
+const DETAIL_IMAGES = [
+  articleThumb1, articleThumb2, articleThumb3, articleThumb4,
+  videoThumb1, videoThumb2, videoThumb3, videoThumb4,
+  nsTexture0, nsTexture1, nsTexture2, nsTexture3,
+  nsTexture4, nsTexture5, nsTexture6, nsTexture7,
 ];
 
 const TOPIC_ICONS: Record<string, string> = {
@@ -68,6 +94,24 @@ export function App() {
   const sentinelRef = useRef<HTMLDivElement>(null);
   const prefersReducedMotion = useReducedMotion();
   const allImagesLoaded = useImagePreloader(CRITICAL_IMAGES);
+
+  // Background preload detail page images after dashboard is visible
+  useEffect(() => {
+    if (!allImagesLoaded) return;
+    const preload = () => {
+      DETAIL_IMAGES.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });
+    };
+    if ("requestIdleCallback" in window) {
+      const id = requestIdleCallback(preload);
+      return () => cancelIdleCallback(id);
+    } else {
+      const id = setTimeout(preload, 1000);
+      return () => clearTimeout(id);
+    }
+  }, [allImagesLoaded]);
 
   useEffect(() => {
     const el = sentinelRef.current;
