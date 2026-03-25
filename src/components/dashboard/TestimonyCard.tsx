@@ -24,14 +24,14 @@ export function TestimonyCard({
           <span className="font-heading text-[16px] font-semibold italic text-ink-default">
             {name}
           </span>
-          <span className="font-body text-[13px] font-normal text-ink-default opacity-70">
+          <span className="font-body text-[12px] font-normal text-ink-default opacity-70">
             {handle}
           </span>
         </div>
       </div>
 
       {/* Body text */}
-      <p className="font-body text-[13px] font-normal text-ink-default leading-[1.5]">
+      <p className="font-body font-normal text-ink-default leading-[1.5]" style={{ fontSize: "var(--card-body-size)" }}>
         {text}
       </p>
     </div>

@@ -59,11 +59,11 @@ export function VerseCard({
       />
 
       {/* Content on top of backgrounds */}
-      <span className="relative font-body text-[13px] font-normal text-ink-default opacity-70">
+      <span className="relative font-body text-[12px] font-normal text-ink-default opacity-70">
         {label}
       </span>
 
-      <p className="relative font-body text-[13px] font-normal text-ink-default leading-[1.5]">
+      <p className="relative font-body font-normal text-ink-default leading-[1.5]" style={{ fontSize: "var(--card-body-size)" }}>
         {text}
       </p>
 
@@ -91,7 +91,7 @@ export function VerseCard({
         </div>
 
         {/* Reference */}
-        <span className="font-body text-[13px] font-normal text-ink-default leading-[1.5] text-right">
+        <span className="font-body font-normal text-ink-default leading-[1.5] text-right" style={{ fontSize: "var(--card-body-size)" }}>
           {reference}
         </span>
       </div>
