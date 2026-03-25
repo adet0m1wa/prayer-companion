@@ -38,7 +38,7 @@ export function ArticleCard({
       />
 
       {/* Content */}
-      <div className="flex flex-col justify-between h-full flex-1 min-w-0">
+      <div className="flex flex-col justify-between flex-1 min-w-0">
         {/* Title */}
         <p
           className="font-heading font-semibold italic text-ink-default line-clamp-2"
