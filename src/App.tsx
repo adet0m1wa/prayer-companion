@@ -156,24 +156,31 @@ export function App() {
   return (
     <LayoutGroup>
       <div
-        className={`mx-auto w-full min-w-[360px] max-w-[460px] bg-surface-canvas flex flex-col relative ${
-          screen === "dashboard" ? "min-h-screen" : "h-screen overflow-hidden"
-        }`}
+        className="mx-auto w-full min-w-[360px] max-w-[460px] bg-surface-canvas flex flex-col relative"
+        style={{ height: "100dvh", /* fallback */ minHeight: "-webkit-fill-available" }}
       >
         {/* Dashboard — always mounted, visibility toggled */}
         <div
-          className="flex flex-col flex-1"
+          className="flex flex-col flex-1 min-h-0"
           style={{ visibility: dashboardHidden || screen !== "dashboard" ? "hidden" : "visible" }}
         >
           {allImagesLoaded ? (
             <>
-              <div className="flex flex-col gap-[36px]" style={{ paddingLeft: "var(--app-px)", paddingRight: "var(--app-px)", paddingTop: "calc(30px + var(--safe-top))", paddingBottom: "calc(30px + var(--nav-height))" }}>
-                <GreetingHeader />
-                <VerseCard />
-                <TopicCardStack onCardClick={handleCardClick} />
-                <TestimoniesSection />
+              <div
+                className="flex-1 overflow-y-auto hide-scrollbar"
+                style={{ overscrollBehaviorY: "contain" }}
+              >
+                <div
+                  className="flex flex-col gap-[36px]"
+                  style={{ paddingLeft: "var(--app-px)", paddingRight: "var(--app-px)", paddingTop: "calc(30px + var(--safe-top))", paddingBottom: 30 }}
+                >
+                  <GreetingHeader />
+                  <VerseCard />
+                  <TopicCardStack onCardClick={handleCardClick} />
+                  <TestimoniesSection />
+                </div>
+                <div ref={sentinelRef} className="h-px w-full shrink-0" />
               </div>
-              <div ref={sentinelRef} className="h-px w-full shrink-0" />
               <BottomNav showShadow={showShadow} />
             </>
           ) : (

@@ -1,7 +1,22 @@
 @import "tailwindcss";
 
-/* ─── Mobile PWA Overrides ─── */
-html { overscroll-behavior: none; touch-action: manipulation; }
+/* ─── Mobile PWA Shell ─── */
+html {
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  touch-action: manipulation;
+}
+body {
+  height: 100%;
+  overflow: hidden;
+}
+#root {
+  height: 100%;
+}
+@media (display-mode: standalone) {
+  body { overscroll-behavior-y: none; }
+}
 button, [role="button"], nav { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
 input, select, textarea { font-size: max(16px, 1rem); }
 
@@ -157,4 +172,5 @@ body {
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* height + overflow already set in shell rules above */
 }
