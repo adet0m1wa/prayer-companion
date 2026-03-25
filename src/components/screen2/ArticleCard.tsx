@@ -21,7 +21,7 @@ export function ArticleCard({
 }: ArticleCardProps) {
   return (
     <div
-      className="flex items-stretch gap-[20px] w-full min-h-[145px] h-auto"
+      className="flex items-center gap-[20px] w-full min-h-[145px] h-auto"
       style={{
         padding: "var(--card-px)",
         backgroundImage: `url(${textureSrc})`,
