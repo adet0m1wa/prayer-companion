@@ -1,10 +1,10 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { TopicHeader } from "../screen2/TopicHeader";
 import { ContentToggle } from "../screen2/ContentToggle";
 import { ArticleCard } from "../screen2/ArticleCard";
 import { VideoCard } from "../screen2/VideoCard";
-import { BottomNav } from "../shared/BottomNav";
+
 
 import loveIcon from "../../images/images for understanding aspect/love.png";
 import faithIcon from "../../images/images for understanding aspect/faith.png";
@@ -95,8 +95,6 @@ const contentItemVariants = {
 export function TopicDetailPage({ topicId = "love", onBack }: TopicDetailPageProps) {
   const [tab, setTab] = useState<"articles" | "videos">("articles");
   const [contentVisible, setContentVisible] = useState(false);
-  const [sentinelVisible, setSentinelVisible] = useState(true);
-  const sentinelRef = useRef<HTMLDivElement>(null);
   const meta = TOPIC_META[topicId] ?? TOPIC_META.love;
 
   // Start content stagger immediately on mount
@@ -105,16 +103,6 @@ export function TopicDetailPage({ topicId = "love", onBack }: TopicDetailPagePro
     return () => clearTimeout(timer);
   }, []);
 
-  useEffect(() => {
-    const el = sentinelRef.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => setSentinelVisible(entry.isIntersecting),
-      { threshold: 0 },
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
 
   return (
     <div className="flex flex-col h-full bg-surface-canvas">
@@ -160,10 +148,8 @@ export function TopicDetailPage({ topicId = "love", onBack }: TopicDetailPagePro
           </div>
         </motion.div>
 
-        <div ref={sentinelRef} className="h-px w-full shrink-0" />
       </div>
 
-      {contentVisible && <BottomNav showShadow={!sentinelVisible} />}
     </div>
   );
 }
