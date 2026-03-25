@@ -19,13 +19,12 @@ export function VideoCard({
 }: VideoCardProps) {
   return (
     <div
-      className="flex items-center gap-[20px] w-full aspect-[354/145]"
+      className="flex items-center gap-[20px] w-full min-h-[145px] h-auto"
       style={{
         padding: "var(--card-px)",
         backgroundImage: `url(${textureSrc})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        minHeight: 120,
       }}
     >
       {/* Thumbnail */}
