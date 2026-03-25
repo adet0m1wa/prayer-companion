@@ -53,7 +53,7 @@ export function TestimoniesSection() {
             <CaretLeft size={18} weight="bold" className="text-accent-default" />
           </button>
 
-          <span className="font-body text-[12px] font-semibold text-ink-default min-w-[32px] text-center">
+          <span className="font-body text-[13px] font-semibold text-ink-default min-w-[32px] text-center">
             {page + 1} / {totalPages}
           </span>
 
