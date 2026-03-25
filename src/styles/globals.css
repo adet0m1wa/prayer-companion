@@ -108,6 +108,28 @@ input, select, textarea { font-size: max(16px, 1rem); }
   :root { --app-px: 16px; }
 }
 
+/* ─── Card Scaling (below 400px) ─── */
+:root {
+  --card-px: 20px;
+  --card-title-size: 16px;
+  --card-body-size: 14px;
+  --card-caption-size: 12px;
+  --article-thumb: 100px;
+  --video-thumb-w: 120px;
+  --video-thumb-h: 100px;
+}
+@media (max-width: 399px) {
+  :root {
+    --card-px: 16px;
+    --card-title-size: 14px;
+    --card-body-size: 13px;
+    --card-caption-size: 11px;
+    --article-thumb: 80px;
+    --video-thumb-w: 100px;
+    --video-thumb-h: 80px;
+  }
+}
+
 /* ─── Small Screen Font Scaling ─── */
 @media (max-width: 359px) {
   :root {

@@ -21,36 +21,51 @@ export function ArticleCard({
 }: ArticleCardProps) {
   return (
     <div
-      className="flex items-center gap-[20px] w-full aspect-[354/145] p-[20px]"
+      className="flex items-center gap-[20px] w-full aspect-[354/145]"
       style={{
+        padding: "var(--card-px)",
         backgroundImage: `url(${textureSrc})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
+        minHeight: 120,
       }}
     >
       {/* Thumbnail */}
       <img
         src={thumbnailSrc}
         alt=""
-        className="w-[100px] h-[100px] object-cover shrink-0"
+        className="object-cover shrink-0"
+        style={{ width: "var(--article-thumb)", height: "var(--article-thumb)" }}
       />
 
       {/* Content */}
       <div className="flex flex-col justify-between h-full flex-1 min-w-0">
         {/* Title */}
-        <p className="font-heading text-[16px] font-semibold italic text-ink-default line-clamp-2">
+        <p
+          className="font-heading font-semibold italic text-ink-default line-clamp-2"
+          style={{ fontSize: "var(--card-title-size)" }}
+        >
           {title}
         </p>
 
         {/* Meta row 1: read time | views */}
         <div className="flex items-center gap-[8px]">
-          <span className="font-body text-[12px] font-normal text-ink-default">
+          <span
+            className="font-body font-normal text-ink-default"
+            style={{ fontSize: "var(--card-caption-size)" }}
+          >
             {readTime}
           </span>
-          <span className="font-separator text-[12px] font-normal text-ink-default">|</span>
+          <span
+            className="font-separator font-normal text-ink-default"
+            style={{ fontSize: "var(--card-caption-size)" }}
+          >|</span>
           <div className="flex items-center gap-[4px]">
-            <Eye size={16} className="text-ink-default" />
-            <span className="font-body text-[12px] font-normal text-ink-default">
+            <Eye size={16} className="text-ink-default shrink-0" />
+            <span
+              className="font-body font-normal text-ink-default"
+              style={{ fontSize: "var(--card-caption-size)" }}
+            >
               {views}
             </span>
           </div>
@@ -59,15 +74,24 @@ export function ArticleCard({
         {/* Meta row 2: likes | date */}
         <div className="flex items-center gap-[8px]">
           <div className="flex items-center gap-[4px]">
-            <Heart size={16} className="text-ink-default" />
-            <span className="font-body text-[12px] font-normal text-ink-default">
+            <Heart size={16} className="text-ink-default shrink-0" />
+            <span
+              className="font-body font-normal text-ink-default"
+              style={{ fontSize: "var(--card-caption-size)" }}
+            >
               {likes}
             </span>
           </div>
-          <span className="font-separator text-[12px] font-normal text-ink-default">|</span>
+          <span
+            className="font-separator font-normal text-ink-default"
+            style={{ fontSize: "var(--card-caption-size)" }}
+          >|</span>
           <div className="flex items-center gap-[4px]">
-            <CalendarBlank size={16} className="text-ink-default" />
-            <span className="font-body text-[12px] font-normal text-ink-default">
+            <CalendarBlank size={16} className="text-ink-default shrink-0" />
+            <span
+              className="font-body font-normal text-ink-default"
+              style={{ fontSize: "var(--card-caption-size)" }}
+            >
               {date}
             </span>
           </div>

@@ -19,8 +19,9 @@ export function TopicCard({
 }: TopicCardProps) {
   return (
     <div
-      className="flex flex-col gap-[10px] p-[20px] w-full overflow-hidden aspect-[354/146]"
+      className="flex flex-col justify-center gap-[10px] w-full overflow-hidden aspect-[354/146]"
       style={{
+        padding: "var(--card-px)",
         backgroundImage: `url(${textureSrc})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -33,13 +34,19 @@ export function TopicCard({
         ) : (
           <img src={iconSrc} alt="" className="w-[30px] h-[30px] object-contain" />
         )}
-        <span className="font-heading text-[16px] font-semibold italic text-ink-default line-clamp-2">
+        <span
+          className="font-heading font-semibold italic text-ink-default line-clamp-2"
+          style={{ fontSize: "var(--card-title-size)" }}
+        >
           {title}
         </span>
       </div>
 
       {/* Description */}
-      <p className="font-body text-[14px] font-normal text-ink-default leading-[1.5] line-clamp-3">
+      <p
+        className="font-body font-normal text-ink-default leading-[1.5] line-clamp-3"
+        style={{ fontSize: "var(--card-body-size)" }}
+      >
         {description}
       </p>
     </div>
