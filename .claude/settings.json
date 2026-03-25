@@ -13,7 +13,8 @@
       "Bash(curl -sL \"https://github.com/google/fonts/raw/main/ofl/inter/Inter%5Bopsz%2Cwght%5D.ttf\" -o Inter-Bold.ttf)",
       "Bash(npx tsc:*)",
       "Bash(npx vite:*)",
-      "mcp__agentation__agentation_get_all_pending"
+      "mcp__agentation__agentation_get_all_pending",
+      "Bash(node -e \":*)"
     ]
   }
 }
