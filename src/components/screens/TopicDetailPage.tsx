@@ -45,10 +45,10 @@ const ARTICLES = [
 ];
 
 const VIDEOS = [
-  { thumbnailSrc: videoThumb1, textureSrc: nsTexture5, title: "Understanding God's Love", views: "5.2k", likes: "340", date: "1 day ago" },
+  { thumbnailSrc: videoThumb1, textureSrc: nsTexture5, title: "Understanding God's Unconditional Love for Humanity", views: "5.2k", likes: "340", date: "1 day ago" },
   { thumbnailSrc: videoThumb2, textureSrc: nsTexture6, title: "Agape vs Phileo: Types of Love in Greek", views: "3.8k", likes: "210", date: "4 days ago" },
-  { thumbnailSrc: videoThumb3, textureSrc: nsTexture7, title: "How to Love When It's Hard", views: "4.1k", likes: "289", date: "2 weeks ago" },
-  { thumbnailSrc: videoThumb4, textureSrc: nsTexture0, title: "The Parable of the Prodigal Son", views: "6.3k", likes: "412", date: "6 days ago" },
+  { thumbnailSrc: videoThumb3, textureSrc: nsTexture7, title: "How to Love When It's Hard: A Biblical Perspective", views: "4.1k", likes: "289", date: "2 weeks ago" },
+  { thumbnailSrc: videoThumb4, textureSrc: nsTexture0, title: "The Parable of the Prodigal Son: A Father's Love", views: "6.3k", likes: "412", date: "6 days ago" },
 ];
 
 interface TopicDetailPageProps {
