@@ -5,7 +5,7 @@ interface ContentToggleProps {
 
 export function ContentToggle({ active, onToggle }: ContentToggleProps) {
   return (
-    <div className="flex items-start gap-[20px] w-full">
+    <div className="flex items-start gap-[22px] w-full">
       <TabItem
         label="Articles"
         isActive={active === "articles"}
