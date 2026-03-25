@@ -36,7 +36,7 @@ export function TopicCard({
         )}
         <span
           className="font-heading font-semibold italic text-ink-default line-clamp-2"
-          style={{ fontSize: "var(--card-title-size)" }}
+          style={{ fontSize: 15 }}
         >
           {title}
         </span>

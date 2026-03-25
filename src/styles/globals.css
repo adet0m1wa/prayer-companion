@@ -96,10 +96,12 @@ input, select, textarea { font-size: max(16px, 1rem); }
   src: url("../assets/fonts/Inter-Bold.ttf") format("truetype");
 }
 
-/* ─── Responsive Padding ─── */
-/* Default: 24px. Scales down for narrower viewports. */
+/* ─── Safe Area + Responsive Padding ─── */
 :root {
   --app-px: 24px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --nav-height: calc(70px + var(--safe-bottom));
 }
 @media (max-width: 399px) {
   :root { --app-px: 20px; }
@@ -112,7 +114,7 @@ input, select, textarea { font-size: max(16px, 1rem); }
 :root {
   --card-px: 20px;
   --card-title-size: 16px;
-  --card-body-size: 14px;
+  --card-body-size: 13px;
   --card-caption-size: 12px;
   --article-thumb: 100px;
   --video-thumb-w: 120px;
@@ -122,7 +124,7 @@ input, select, textarea { font-size: max(16px, 1rem); }
   :root {
     --card-px: 16px;
     --card-title-size: 14px;
-    --card-body-size: 13px;
+    --card-body-size: 12px;
     --card-caption-size: 11px;
     --article-thumb: 80px;
     --video-thumb-w: 100px;

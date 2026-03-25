@@ -118,7 +118,7 @@ export function TopicDetailPage({ topicId = "love", onBack }: TopicDetailPagePro
 
   return (
     <div className="flex flex-col h-screen bg-surface-canvas">
-      <div className="flex-1 overflow-y-auto hide-scrollbar pt-[30px] pb-[30px]" style={{ paddingLeft: "var(--app-px)", paddingRight: "var(--app-px)" }}>
+      <div className="flex-1 overflow-y-auto hide-scrollbar" style={{ paddingLeft: "var(--app-px)", paddingRight: "var(--app-px)", paddingTop: "calc(30px + var(--safe-top))", paddingBottom: "calc(30px + var(--nav-height))" }}>
         <motion.div
           className="flex flex-col gap-[36px]"
           variants={contentContainerVariants}

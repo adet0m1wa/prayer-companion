@@ -167,7 +167,7 @@ export function App() {
         >
           {allImagesLoaded ? (
             <>
-              <div className="pt-[30px] pb-[30px] flex flex-col gap-[36px]" style={{ paddingLeft: "var(--app-px)", paddingRight: "var(--app-px)" }}>
+              <div className="flex flex-col gap-[36px]" style={{ paddingLeft: "var(--app-px)", paddingRight: "var(--app-px)", paddingTop: "calc(30px + var(--safe-top))", paddingBottom: "calc(30px + var(--nav-height))" }}>
                 <GreetingHeader />
                 <VerseCard />
                 <TopicCardStack onCardClick={handleCardClick} />

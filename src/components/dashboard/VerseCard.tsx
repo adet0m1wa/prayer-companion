@@ -63,7 +63,7 @@ export function VerseCard({
         {label}
       </span>
 
-      <p className="relative font-body text-[14px] font-normal text-ink-default leading-[1.5]">
+      <p className="relative font-body text-[13px] font-normal text-ink-default leading-[1.5]">
         {text}
       </p>
 
@@ -91,7 +91,7 @@ export function VerseCard({
         </div>
 
         {/* Reference */}
-        <span className="font-body text-[14px] font-normal text-ink-default leading-[1.5] text-right">
+        <span className="font-body text-[13px] font-normal text-ink-default leading-[1.5] text-right">
           {reference}
         </span>
       </div>

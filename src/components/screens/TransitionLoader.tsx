@@ -100,7 +100,7 @@ export function TransitionLoader({
   }, [isPresent, safeToRemove]);
 
   return (
-    <div ref={scope} className="absolute inset-0 bg-surface-canvas overflow-hidden">
+    <div ref={scope} className="absolute inset-0 bg-surface-canvas overflow-hidden" style={{ paddingTop: "var(--safe-top)" }}>
       {/* Heart icon — absolutely centered, wrapped for exit animation */}
       <motion.div
         data-loader-icon

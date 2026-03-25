@@ -31,7 +31,7 @@ export function TestimonyCard({
       </div>
 
       {/* Body text */}
-      <p className="font-body text-[14px] font-normal text-ink-default leading-[1.5]">
+      <p className="font-body text-[13px] font-normal text-ink-default leading-[1.5]">
         {text}
       </p>
     </div>

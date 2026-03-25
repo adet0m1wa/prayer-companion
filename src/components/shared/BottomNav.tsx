@@ -29,7 +29,7 @@ interface BottomNavProps {
 
 export function BottomNav({ showShadow = false }: BottomNavProps) {
   return (
-    <nav className="sticky bottom-0 w-full bg-surface-card relative" style={{ paddingBottom: "env(safe-area-inset-bottom, 10px)" }}>
+    <nav className="fixed bottom-0 left-0 right-0 z-50 bg-surface-card" style={{ maxWidth: 460, margin: "0 auto", paddingBottom: "var(--safe-bottom)" }}>
       <motion.div
         className="pointer-events-none absolute inset-0"
         style={{ boxShadow: "0 -2px 4px rgba(0, 0, 0, 0.05)" }}
