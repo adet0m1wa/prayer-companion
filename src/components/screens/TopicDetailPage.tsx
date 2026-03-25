@@ -5,7 +5,6 @@ import { ContentToggle } from "../screen2/ContentToggle";
 import { ArticleCard } from "../screen2/ArticleCard";
 import { VideoCard } from "../screen2/VideoCard";
 
-
 import loveIcon from "../../images/images for understanding aspect/love.png";
 import faithIcon from "../../images/images for understanding aspect/faith.png";
 import sinIcon from "../../images/images for understanding aspect/sin.png";
@@ -149,7 +148,6 @@ export function TopicDetailPage({ topicId = "love", onBack }: TopicDetailPagePro
         </motion.div>
 
       </div>
-
     </div>
   );
 }
