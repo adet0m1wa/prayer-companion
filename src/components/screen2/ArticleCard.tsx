@@ -33,7 +33,7 @@ export function ArticleCard({
       <img
         src={thumbnailSrc}
         alt=""
-        className="object-cover shrink-0"
+        className="object-cover shrink-0 self-center"
         style={{ width: "var(--article-thumb)", height: "var(--article-thumb)" }}
       />
 

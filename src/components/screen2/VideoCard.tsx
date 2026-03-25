@@ -31,7 +31,7 @@ export function VideoCard({
       <img
         src={thumbnailSrc}
         alt=""
-        className="object-cover shrink-0"
+        className="object-cover shrink-0 self-center"
         style={{ width: "var(--video-thumb-w)", height: "var(--video-thumb-h)" }}
       />
 
