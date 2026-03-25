@@ -156,7 +156,7 @@ export function App() {
   return (
     <LayoutGroup>
       <div
-        className={`mx-auto max-w-[402px] bg-surface-canvas flex flex-col relative ${
+        className={`mx-auto w-full min-w-[360px] max-w-[460px] bg-surface-canvas flex flex-col relative ${
           screen === "dashboard" ? "min-h-screen" : "h-screen overflow-hidden"
         }`}
       >
