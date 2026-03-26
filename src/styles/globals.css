@@ -1,4 +1,21 @@
 @import "tailwindcss";
+@import "./generated/tailwind-tokens.css";
+@import "./generated/variables.css";
+
+/*
+ * ─── Token Variable Name Mapping ───
+ * Old (globals.css @theme)        → New (generated)
+ * --font-heading                  → --font-family-display
+ * --font-body                     → --font-family-body
+ * --font-separator                → --font-family-accent
+ * --font-system                   → --font-family-ui
+ *
+ * Colors, spacing, and radius names are identical.
+ * Old @theme block is kept as fallback — Tailwind classes (font-heading,
+ * font-body, font-separator) depend on the --font-* naming convention.
+ * Generated tokens add: semantic aliases, icon sizes, font weights,
+ * typography composites, and new Tailwind utilities (text-primary, etc.)
+ */
 
 /* ─── Mobile PWA Shell ─── */
 html {
