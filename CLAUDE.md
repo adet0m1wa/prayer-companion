@@ -278,3 +278,7 @@ Note: Rows 5 and 9 use 8-char hex codes due to Pencil limitations — flagged fo
 - Icon family: Phosphor (not lucide or Material Symbols) for all UI icons
 - Font stack: Playfair Display (italic, headings), DM Sans (body), Inter (status bar)
 - Active nav color: red #E63434 (not coral/sienna from earlier iterations)
+
+## Code Bug Reference
+
+Before building any new screens or aspects, read `docs/code-bug-reference.md`. It contains 15 documented code bugs from the Love aspect build with exact root causes and fixes. Do not repeat these mistakes.
