@@ -1,125 +1,122 @@
-# Prayer Companion App — Technical Specification (v1)
+# Prayer Companion App — Technical Specification (v2)
+
+> Updated after Session 5. Reflects current architecture.
 
 ## Stack
 
 | Layer | Technology |
 |---|---|
-| Framework | React (Vite) |
-| Styling | Tailwind CSS + CSS custom properties for design tokens |
-| UI Motion | Framer Motion (card transitions, content reveals, stagger animations) |
-| Custom Animation | Rive (topic icons, triggered animations) |
-| Build Tool | Vite |
-| Package Manager | npm |
+| Framework | Vite 8 + React 18 + TypeScript |
+| Styling | Tailwind CSS v4 (@theme directive, CSS variables for responsive scaling) |
+| Animation | Framer Motion (all transitions, stagger, FLIP, drag) |
+| Icons | @phosphor-icons/react (UI), lucide-react (status bar) |
+| Fonts | Playfair Display, DM Sans, Dancing Script, Inter -- all local TTFs |
+| Haptics | web-haptics (heart tap only) |
+| PWA | vite-plugin-pwa v1.2.0, Workbox, autoUpdate strategy |
+| Images | vite-plugin-image-optimizer + Sharp (WebP textures, 2x retina) |
+| Deploy | Vercel (auto-deploy on push, ~20s builds) |
 
 ## Project Structure
 
 ```
 prayer-companion/
 ├── .claude/
-│   ├── agents/
-│   │   ├── design-engineer.md
-│   │   ├── design-tokens.md
-│   │   └── code-review.md
-│   └── skills/
-│       └── rive-animation/
-│           └── SKILL.md
-├── references/
-│   ├── screen-1-daily/
-│   │   ├── ref-moonly-cards.png
-│   │   ├── ref-moonly-cards-2.png
-│   │   └── notes.md
-│   └── screen-2-topic-detail/
-│       ├── ref-costar-header.png
-│       ├── ref-bloom-content-cards.png
-│       └── notes.md
-├── public/
-│   └── animations/          ← .riv files go here
-├── src/
-│   ├── components/          ← atoms, molecules
-│   ├── pages/               ← Screen 1, Screen 2
-│   └── styles/              ← tokens.css, global styles
+│   ├── agents/ (design-engineer, design-tokens, code-review)
+│   └── skills/prayer-companion-design-system/ (8 files, tokens + patterns + gotchas)
 ├── docs/
 │   ├── PRD.md
-│   └── TECHNICAL.md
-├── design.pen               ← Pencil source of truth
-├── CLAUDE.md                ← project memory
-├── tailwind.config.js
+│   ├── TECHNICAL.md
+│   ├── design-system.md
+│   ├── motion-system.md
+│   ├── responsive-system.md
+│   ├── code-bug-reference.md
+│   └── design-system-process.md
+├── public/icons/ (icon-192.png, icon-512.png, apple-touch-icon.png)
+├── src/
+│   ├── assets/fonts/ (5 TTFs)
+│   ├── assets/images/
+│   │   ├── images for understanding aspect/ (12 aspect icons, PNG)
+│   │   ├── article thumbnails/ (4 images, PNG)
+│   │   ├── video thumbnails/ (4 images, PNG)
+│   │   ├── textures/ (8 with shadow, WebP)
+│   │   ├── no shadow texture/ (8 without shadow, WebP)
+│   │   ├── dp for testimonies/ (3 avatars, PNG)
+│   │   └── verse of the day background/ (1 image, PNG)
+│   ├── components/
+│   │   ├── dashboard/ (GreetingHeader, VerseCard, TopicCardStack, TopicCard, TestimoniesSection, TestimonyCard)
+│   │   ├── shared/ (BottomNav, SharedTopicIcon)
+│   │   ├── screen2/ (TopicHeader, ContentToggle, ArticleCard, VideoCard)
+│   │   └── screens/ (TransitionLoader, TopicDetailPage)
+│   ├── hooks/useImagePreloader.ts
+│   ├── styles/globals.css (tokens + responsive variables + PWA shell CSS)
+│   ├── App.tsx (routing, preloader, flex shell, AnimatePresence)
+│   └── main.tsx
+├── CLAUDE.md
+├── design.pen (Pencil source of truth)
 ├── package.json
-└── vite.config.js
+├── vite.config.ts (image optimizer + PWA config)
+└── vercel.json (caching + SPA rewrite)
 ```
-
-## Design Token Strategy
-
-Tokens are extracted AFTER screens are designed and locked (Step 3 in workflow).
-
-Expected token categories:
-- **Colors:** per-topic accent colors (Love=red variant, Faith=blue variant, etc.), background, surface, text primary/secondary, border
-- **Typography:** heading sizes (h1–h3), body, caption, metadata. Font family TBD by olomi during design phase
-- **Spacing:** consistent scale (4px base or 8px base TBD)
-- **Radius:** card corners, button corners, icon containers
-- **Shadows:** card elevation, subtle depth
-
-Tokens live in `src/styles/tokens.css` as CSS custom properties and are mirrored in `tailwind.config.js` via the `extend` key.
-
-## Component Architecture (Bottom-Up)
-
-### Atoms
-- `StreakCounter` — flame/number display
-- `NotificationBell` — bell icon with badge
-- `TopicIcon` — Rive animation container (placeholder SVG icon during build)
-- `ChevronNav` — floating left/right arrow buttons
-- `ContentToggle` — Articles | Videos switch
-- `MetadataRow` — views, likes, duration/read time
-- `PlayOverlay` — large play icon for video thumbnails
-- `NavItem` — single bottom nav tab (icon + label)
-
-### Molecules
-- `GreetingHeader` — time-based greeting + streak counter + bell
-- `TopicCard` — accent color + heading + topic icon + tap target
-- `ArticleCard` — thumbnail + title + description + metadata
-- `VideoCard` — thumbnail with play overlay + title + metadata
-- `BottomNav` — 3 NavItems (Home, Bible, Community)
-
-### Pages
-- `DailyView` (Screen 1) — greeting header + encouragement text + topic card stack with chevrons + bottom nav
-- `TopicDetailView` (Screen 2) — header with line separator + content toggle + content card list + bottom nav
-
-## Animation Plan (Steps 5 & 6 — AFTER all screens and design system)
-
-### Framer Motion (Step 5)
-- Card expand: topic card → full screen with color shift animation
-- Content card stagger: cards animate in sequence on Screen 2 load
-- Content toggle: crossfade between article and video views
-- Page transitions: smooth ease between Screen 1 and Screen 2
-
-### Rive (Step 6)
-- Per-topic animated icons (heart pulses for Love, cross glows for Faith, etc.)
-- Triggered on card tap in Screen 1
-- Persistent subtle loop in Screen 2 header
-- `.riv` files stored in `public/animations/`
-- Embedded via `@rive-app/react-canvas` using rive-animation skill patterns
-
-## Color Shift Logic (Screen 2)
-
-When a topic card expands:
-- Screen 1 card: `background: var(--topic-accent)` at full saturation
-- Screen 2 expanded: `background: color-mix(in srgb, var(--topic-accent) 10%, white 80%)`
-- Remaining 10% is neutral/surface tone
-- This ensures readability and bottom nav compatibility
 
 ## Responsive Strategy
 
-- Mobile-first (375px base width)
-- Max container width for tablet: 428px (centered)
-- No desktop breakpoint for v1 — this is a mobile app prototype
+- **Range:** 360px minimum -> 460px maximum
+- **Sweet spot:** 390px (most common phone width)
+- **Container:** `max-w-[460px] min-w-[360px] w-full mx-auto`
+- **Breakpoints:** 4 levels via CSS variables (see docs/responsive-system.md)
+- **Font scaling:** CSS variables with media queries (14px -> 13.5px body, 16px -> 15px titles)
+- **Padding scaling:** 24px -> 20px -> 16px via --app-px variable
 
-## Build Order (Strict)
+## PWA Architecture
 
-1. All screens designed and locked in Pencil
-2. Design system extracted from completed designs
-3. Design tokens generated (tailwind.config.js + tokens.css)
-4. Components built bottom-up (atoms → molecules → pages)
-5. Framer Motion animations added
-6. Rive animations integrated
-7. Visual QA against Pencil designs
-8. Code review
+- **Layout:** Flexbox shell (100dvh, single scroll context)
+- **Nav:** flex-shrink-0 in flex column (NOT position:fixed)
+- **Safe areas:** env(safe-area-inset-top/bottom) via viewport-fit=cover
+- **Precache:** 2.8MB via Workbox (all assets including WebP textures)
+- **Zoom:** Disabled globally (maximum-scale=1) for iOS input zoom prevention
+
+## Image Strategy
+
+- All source images at 2x retina display dimensions
+- Textures: WebP format (quality 85)
+- Two-phase preloading: 9 blocking + 16 background via requestIdleCallback
+- Build-time optimization: vite-plugin-image-optimizer + Sharp
+- Total source images: ~751KB (down from 40.2MB)
+
+## Animation Architecture
+
+- All timing constants documented in docs/motion-system.md
+- Standard duration: 0.35s for non-spring transitions
+- Drag system: shared MotionValue with inner/outer wrapper pattern
+- FLIP: conditional layoutId on Love card only
+- Stagger: bottom-up on detail page, sequential on loader
+- See docs/motion-system.md for complete reference
+
+## Component Architecture
+
+### Dashboard (Screen 1)
+- App.tsx -> GreetingHeader + VerseCard + TopicCardStack + TestimoniesSection + BottomNav
+- TopicCardStack handles: search, pagination, horizontal slide, swipe, card cycling
+- BottomNav: scroll-based shadow via IntersectionObserver sentinel
+
+### Detail Page (Screen 2)
+- TopicDetailPage -> TopicHeader + ContentToggle + ArticleCard/VideoCard list
+- Absolute overlay (sibling to scroll container)
+- No BottomNav -- back chevron only
+- Content stagger: bottom-up reveal
+
+### Transition (Screen 1 -> Screen 2)
+- Dashboard -> visibility:hidden -> TransitionLoader -> TopicDetailPage
+- Heart FLIP -> text stagger -> exit cascade -> detail reveal
+- Detail exit -> opacity fade -> dashboard restore
+
+## Build Order Completed
+
+1. Setup & Init
+2. Screen Design in Pencil
+3. Design System Extraction
+4. Component Generation
+5. Framer Motion Animations
+6. Rive Animations (placeholder icons in use)
+7. Visual QA (ongoing)
+8. Code Review

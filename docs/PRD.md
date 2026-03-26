@@ -1,87 +1,58 @@
-# Prayer Companion App — Product Requirements Document (v1)
+# Prayer Companion App — Product Requirements Document (v2)
+
+> Updated after Session 5. Reflects what's actually built.
 
 ## Overview
 
-A Bible-focused app that helps Christians grow in their faith by exploring different spiritual topics — Love, Faith, Sin, Theology, and more. Content is delivered through articles and videos, organized by topic. The app has a calm, intentional aesthetic rooted in a God-first philosophy.
+A Bible-focused app that helps Christians grow in their faith by exploring spiritual topics ("Aspects") through articles and videos. Calm, intentional aesthetic rooted in a God-first philosophy. Built as a portfolio piece showcasing the Pencil -> Claude Code -> Framer Motion -> PWA -> Vercel pipeline.
 
 ## Target Audience
 
-Christians (and seekers) who want to deepen their understanding of scripture and faith topics. Primarily mobile users. Range from new believers exploring foundational concepts to mature Christians studying theology.
+Christians (and seekers) who want to deepen their understanding of scripture and faith topics. Primarily mobile users. Range from new believers to mature Christians studying theology.
 
 ## Screens
 
-### Screen 1 — Daily View (Home)
+### Screen 1 — Dashboard (Home)
 
 The entry point. Greets the user, encourages exploration, and presents topic cards.
 
 **Components:**
-1. **Time-based greeting** — "Good Morning" / "Good Afternoon" / "Good Evening" based on local time
-2. **Streak counter** — Tracks consecutive days of app engagement. Displayed beside a bell (notification) icon
-3. **Encouragement text** — A short line nudging users to explore topics (e.g. "Discover what God's Word says about...")
-4. **Topic cards** — Stacked vertically, each card contains:
-   - Bold topic heading (Love, Faith, Sin, Theology, etc.)
-   - Rive animated icon representing the topic (heart for Love, cross for Faith, etc.)
-   - Distinct accent color per card
-   - Tappable — expands to Screen 2
-5. **Floating chevron arrows** — Left and right arrows for horizontal navigation through topic cards
-6. **Bottom navigation** — 3 tabs: Home, Bible, Community
+1. **Time-based greeting** — "Good Morning/Afternoon/Evening, Jamie" (Playfair Display Bold)
+2. **Streak counter** — Fire icon + count (accent/default) + bell icon (ink/faded)
+3. **Verse of the day card** — Waterfall illustration at 80% opacity, scripture text (Jeremiah 29:11), like/share/comment actions with counts, reference right-aligned
+4. **Understanding Aspects section** — heading + search bar + 12 topic cards across 3 paginated stacks (4 per page) with chevron navigation + "1/3" counter
+5. **Testimonies section** — 3 paginated full-text testimony cards (Sarah M., David K., Grace O.) with avatars
+6. **Bottom navigation** — 5 tabs: Home (active), Community, Bible, Favorites, You
 
-### Screen 2 — Topic Detail View (Expanded Card)
+### Screen 2 — Topic Detail View
 
-When a topic card is tapped, it expands to fill the screen.
+When a topic card is tapped, a transition loader plays, then the detail page appears.
 
-**Transition behavior:**
-- Card expands from its position with a smooth ease animation
-- Card's accent color shifts: from 100% accent → approximately 80% white + 10% accent
-- Bottom nav persists throughout
-- Rive animation triggers on the icon when the card opens
+**Transition:** Heart icon FLIP animates to center -> verse text staggers in -> hold -> cascade exit -> detail page reveals bottom-up.
 
 **Components:**
-1. **Header area:**
-   - Topic title (e.g. "Love") — left-aligned
-   - Rive animated icon to the LEFT of the title
-   - Vertical line separator between header and body content (editorial style, ref: Co-Star)
-2. **Content type toggle:**
-   - Articles | Videos switch
-   - Aligned to the RIGHT side of the screen (right-thumb accessibility)
-3. **Content cards — Articles:**
-   - Thumbnail image (left)
-   - Title + description (right)
-   - No play icon
-   - Metadata row: views count, likes count, read time (minutes)
-4. **Content cards — Videos:**
-   - Thumbnail image with LARGE play icon overlay
-   - Title only (no description)
-   - Metadata row: views count, likes count, duration
-5. **Bottom navigation** — Same 3 tabs, persistent
-   - Home tab returns to Screen 1 (default card stack view)
-   - Bible tab navigates to scriptures section
-   - Community tab navigates to community section
+1. **Header:** Back chevron (28x28, radius/22) + topic icon + title (Playfair Display Bold 22px)
+2. **Content toggle:** Articles | Videos (gap 22px, left-aligned, active underline in accent/default)
+3. **Article cards:** Thumbnail (100x100) + title (italic, 2 lines max) + read time + views + likes + date
+4. **Video cards:** Thumbnail (120x100) + title (italic, always 2 lines) + views + likes + date
+5. **No bottom navigation** — back chevron is the only navigation
 
-**Navigation back:**
-- Tapping Home in the bottom nav returns to Screen 1
-- No separate back button — Home IS the back action
+**Navigation back:** Back chevron returns to dashboard.
 
-## Topics (Initial Set)
+## Topics (12 Total)
 
-- Love
-- Faith
-- Sin
-- Theology
-- Grace
-- Prayer
-- Forgiveness
-- Hope
+Love, Faith, Sin, Theology, Grace, Prayer, Forgiveness, Hope, Mercy, Wisdom, Redemption, Worship.
 
-Each topic has its own distinct accent color.
+Only Love is currently built. Others use the same design system.
 
 ## Technical Constraints
 
-- React + Tailwind CSS
-- Rive for custom animated icons (placeholder icons during build phase)
-- Framer Motion for UI transitions (card expand, content reveals)
-- Mobile-first responsive design
-- Animations and Rive are the LAST steps — all screens and design system built first
+- React 18 + Vite 8 + TypeScript + Tailwind CSS v4
+- Framer Motion for all transitions and animations
+- Rive planned for topic icons (placeholders currently)
+- PWA with Workbox (installable, offline-capable)
+- Mobile-first: 360-460px responsive range
+- Deployed to Vercel (auto-deploy on push to main)
 
 ## Out of Scope (v1)
 
@@ -89,5 +60,6 @@ Each topic has its own distinct accent color.
 - Bible reader (Bible tab is placeholder)
 - Community features (Community tab is placeholder)
 - Backend / CMS for content
-- Search functionality
 - Bookmarking
+- Dark mode (rejected in Session 1)
+- Sort By feature (killed -- adds complexity for zero payoff)
