@@ -1,0 +1,87 @@
+{
+  "surface": {
+    "default": {
+      "$value": "{color.surface.card}",
+      "$type": "color",
+      "$description": "Primary surface — card backgrounds"
+    },
+    "canvas": {
+      "$value": "{color.surface.canvas}",
+      "$type": "color",
+      "$description": "Page background"
+    },
+    "elevated": {
+      "$value": "{color.surface.card}",
+      "$type": "color",
+      "$description": "Elevated card surfaces"
+    },
+    "muted": {
+      "$value": "{color.surface.muted}",
+      "$type": "color",
+      "$description": "Disabled or secondary fills — chevron circles"
+    },
+    "overlay": {
+      "$value": "{color.surface.overlay}",
+      "$type": "color",
+      "$description": "Semi-transparent overlay on verse card images"
+    }
+  },
+  "text": {
+    "primary": {
+      "$value": "{color.ink.default}",
+      "$type": "color",
+      "$description": "Primary text color — headings, body, icons"
+    },
+    "secondary": {
+      "$value": "{color.ink.muted}",
+      "$type": "color",
+      "$description": "Secondary text — metadata, subtitles"
+    },
+    "disabled": {
+      "$value": "{color.ink.faded}",
+      "$type": "color",
+      "$description": "Disabled text and inactive tab labels"
+    },
+    "accent": {
+      "$value": "{color.accent.default}",
+      "$type": "color",
+      "$description": "Accent-colored text — active tab labels, counters"
+    }
+  },
+  "interactive": {
+    "default": {
+      "$value": "{color.accent.default}",
+      "$type": "color",
+      "$description": "Default interactive element color — active states, CTAs"
+    },
+    "subtle": {
+      "$value": "{color.accent.subtle}",
+      "$type": "color",
+      "$description": "Subtle interactive borders — search bar focus ring"
+    }
+  },
+  "icon": {
+    "active": {
+      "$value": "{color.accent.default}",
+      "$type": "color",
+      "$description": "Active icon color — selected tabs, tapped hearts, interactive elements"
+    },
+    "inactive": {
+      "$value": "{color.ink.faded}",
+      "$type": "color",
+      "$description": "Inactive icon color — unselected tabs, disabled actions"
+    }
+  },
+  "border": {
+    "default": {
+      "$value": "{color.ink.faded}",
+      "$type": "color",
+      "$description": "Default border color — dividers, separators"
+    },
+    "accent": {
+      "$value": "{color.accent.subtle}",
+      "$type": "color",
+      "$description": "Accent border — search bar"
+    }
+  }
+}

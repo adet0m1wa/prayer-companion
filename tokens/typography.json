@@ -1,0 +1,120 @@
+{
+  "heading": {
+    "display": {
+      "$value": {
+        "fontFamily": "{font.family.display}",
+        "fontSize": "22px",
+        "fontWeight": "{font.weight.bold}",
+        "fontStyle": "normal"
+      },
+      "$type": "typography",
+      "$description": "Main page heading — 'Aspects of Love'"
+    },
+    "section": {
+      "$value": {
+        "fontFamily": "{font.family.display}",
+        "fontSize": "18px",
+        "fontWeight": "{font.weight.semibold}",
+        "fontStyle": "normal"
+      },
+      "$type": "typography",
+      "$description": "Section headings — 'Explore Topics'"
+    },
+    "card": {
+      "$value": {
+        "fontFamily": "{font.family.display}",
+        "fontSize": "16px",
+        "fontWeight": "{font.weight.semibold}",
+        "fontStyle": "italic"
+      },
+      "$type": "typography",
+      "$description": "Card title text — italic serif"
+    },
+    "toggle-active": {
+      "$value": {
+        "fontFamily": "{font.family.display}",
+        "fontSize": "16px",
+        "fontWeight": "{font.weight.semibold}",
+        "fontStyle": "normal"
+      },
+      "$type": "typography",
+      "$description": "Active toggle tab label — Articles / Videos"
+    },
+    "toggle-inactive": {
+      "$value": {
+        "fontFamily": "{font.family.body}",
+        "fontSize": "16px",
+        "fontWeight": "{font.weight.regular}",
+        "fontStyle": "normal"
+      },
+      "$type": "typography",
+      "$description": "Inactive toggle tab label"
+    }
+  },
+  "system": {
+    "status": {
+      "$value": {
+        "fontFamily": "{font.family.ui}",
+        "fontSize": "15px",
+        "fontWeight": "{font.weight.bold}",
+        "fontStyle": "normal"
+      },
+      "$type": "typography",
+      "$description": "Status bar time display"
+    }
+  },
+  "body": {
+    "default": {
+      "$value": {
+        "fontFamily": "{font.family.body}",
+        "fontSize": "14px",
+        "fontWeight": "{font.weight.regular}",
+        "lineHeight": 1.5,
+        "fontStyle": "normal"
+      },
+      "$type": "typography",
+      "$description": "Default body text — descriptions, paragraphs"
+    },
+    "counter": {
+      "$value": {
+        "fontFamily": "{font.family.body}",
+        "fontSize": "12px",
+        "fontWeight": "{font.weight.semibold}",
+        "fontStyle": "normal"
+      },
+      "$type": "typography",
+      "$description": "Numeric counters — article/video counts"
+    },
+    "caption": {
+      "$value": {
+        "fontFamily": "{font.family.body}",
+        "fontSize": "12px",
+        "fontWeight": "{font.weight.regular}",
+        "fontStyle": "normal"
+      },
+      "$type": "typography",
+      "$description": "Caption text — timestamps, metadata"
+    },
+    "separator": {
+      "$value": {
+        "fontFamily": "{font.family.accent}",
+        "fontSize": "12px",
+        "fontWeight": "{font.weight.regular}",
+        "fontStyle": "normal"
+      },
+      "$type": "typography",
+      "$description": "Decorative separator text — 'in Christ'"
+    },
+    "label": {
+      "$value": {
+        "fontFamily": "{font.family.body}",
+        "fontSize": "10px",
+        "fontWeight": "{font.weight.semibold}",
+        "letterSpacing": "0.5px",
+        "fontStyle": "normal"
+      },
+      "$type": "typography",
+      "$description": "Uppercase labels — nav items, metadata tags"
+    }
+  }
+}
