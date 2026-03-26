@@ -1,9 +1,23 @@
+import fs from 'node:fs';
 import { register } from '@tokens-studio/sd-transforms';
 import StyleDictionary from 'style-dictionary';
 import { usesReferences, getReferences } from 'style-dictionary/utils';
 
-// Register Tokens Studio transforms, preprocessors, and formats
-await register(StyleDictionary);
+// Determine source: tokens.json (Tokens Studio single-file sync) takes priority.
+// Fall back to tokens/**/*.json (individual files) if tokens.json doesn't exist.
+// NEVER load both — they contain the same data and merging causes duplicates.
+const usesSingleFile = fs.existsSync('tokens.json');
+const source = usesSingleFile ? ['tokens.json'] : ['tokens/**/*.json'];
+
+console.log(`Source: ${usesSingleFile ? 'tokens.json (Tokens Studio)' : 'tokens/**/*.json (individual files)'}`);
+
+// Register Tokens Studio transforms, preprocessors, and formats.
+// excludeParentKeys strips set names (primitives, semantic, typography) from
+// tokens.json paths → --color-ink-default, not --primitives-color-ink-default.
+// Has no effect on individual files (they have no parent set keys).
+await register(StyleDictionary, {
+  excludeParentKeys: true,
+});
 
 // Custom format: Tailwind v4 @theme { } wrapper with namespaced variables
 StyleDictionary.registerFormat({
@@ -50,11 +64,12 @@ StyleDictionary.registerFormat({
 });
 
 const sd = new StyleDictionary({
-  source: ['tokens.json', 'tokens/**/*.json'],
+  source,
   preprocessors: ['tokens-studio'],
   platforms: {
     css: {
       transformGroup: 'tokens-studio',
+      // Append name/kebab after tokens-studio's name/camel — last name transform wins
       transforms: ['name/kebab'],
       buildPath: 'src/styles/generated/',
       files: [
