@@ -3,6 +3,42 @@
  */
 
 :root {
+  --primitives-color-ink-default: #3d2e1f; /** Base ink color — 100% opacity */
+  --primitives-color-ink-muted: rgba(61, 46, 31, 0.7); /** Ink at 70% opacity */
+  --primitives-color-ink-faded: rgba(61, 46, 31, 0.5); /** Ink at 50% opacity */
+  --primitives-color-accent-default: #e63434; /** Primary accent red — 100% opacity */
+  --primitives-color-accent-subtle: rgba(230, 52, 52, 0.2); /** Accent red at 20% opacity */
+  --primitives-color-surface-canvas: #e4ded5; /** Page background parchment */
+  --primitives-color-surface-card: #f3ede3; /** Card background parchment */
+  --primitives-color-surface-muted: #ede6d8; /** Secondary surface — chevron circles, disabled fills */
+  --primitives-color-surface-overlay: rgba(243, 237, 227, 0.8); /** Card surface at 80% opacity — image overlays */
+  --primitives-font-family-display: 'Playfair Display', serif; /** Heading typeface */
+  --primitives-font-family-body: 'DM Sans', sans-serif; /** Body text typeface */
+  --primitives-font-family-accent: 'Dancing Script', cursive; /** Decorative separator typeface */
+  --primitives-font-family-ui: Inter, system-ui, sans-serif; /** System UI typeface */
+  --primitives-font-weight-regular: 400; /** Regular weight */
+  --primitives-font-weight-semibold: 600; /** Semibold weight */
+  --primitives-font-weight-bold: 700; /** Bold weight */
+  --primitives-spacing-0: 0; /** Zero spacing */
+  --primitives-spacing-2: 2px; /** 2px spacing */
+  --primitives-spacing-4: 4px; /** 4px spacing */
+  --primitives-spacing-6: 6px; /** 6px spacing */
+  --primitives-spacing-8: 8px; /** 8px spacing */
+  --primitives-spacing-10: 10px; /** 10px spacing */
+  --primitives-spacing-16: 16px; /** 16px spacing */
+  --primitives-spacing-20: 20px; /** 20px spacing */
+  --primitives-spacing-24: 24px; /** 24px spacing */
+  --primitives-spacing-36: 36px; /** 36px spacing */
+  --primitives-icon-16: 16px; /** Status and metadata icon size */
+  --primitives-icon-18: 18px; /** Chevron icon size */
+  --primitives-icon-22: 22px; /** UI action icon size */
+  --primitives-icon-30: 30px; /** Card and header icon size */
+  --primitives-icon-60: 60px; /** Loader icon size */
+  --primitives-radius-1: 1px; /** Battery level and underlines */
+  --primitives-radius-3: 3px; /** Battery outline */
+  --primitives-radius-12: 12px; /** Search bar */
+  --primitives-radius-16: 16px; /** Verse and testimony cards */
+  --primitives-radius-22: 22px; /** Chevron circles */
   --color-ink-default: #3d2e1f; /** Base ink color — 100% opacity */
   --color-ink-muted: rgba(61, 46, 31, 0.7); /** Ink at 70% opacity */
   --color-ink-faded: rgba(61, 46, 31, 0.5); /** Ink at 50% opacity */
@@ -39,6 +75,32 @@
   --radius-12: 12px; /** Search bar */
   --radius-16: 16px; /** Verse and testimony cards */
   --radius-22: 22px; /** Chevron circles */
+  --semantic-surface-default: var(--color-surface-card); /** Primary surface — card backgrounds */
+  --semantic-surface-canvas: var(--color-surface-canvas); /** Page background */
+  --semantic-surface-elevated: var(--color-surface-card); /** Elevated card surfaces */
+  --semantic-surface-muted: var(--color-surface-muted); /** Disabled or secondary fills — chevron circles */
+  --semantic-surface-overlay: var(--color-surface-overlay); /** Semi-transparent overlay on verse card images */
+  --semantic-text-primary: var(--color-ink-default); /** Primary text color — headings, body, icons */
+  --semantic-text-secondary: var(--color-ink-muted); /** Secondary text — metadata, subtitles */
+  --semantic-text-disabled: var(--color-ink-faded); /** Disabled text and inactive tab labels */
+  --semantic-text-accent: var(--color-accent-default); /** Accent-colored text — active tab labels, counters */
+  --semantic-interactive-default: var(--color-accent-default); /** Default interactive element color — active states, CTAs */
+  --semantic-interactive-subtle: var(--color-accent-subtle); /** Subtle interactive borders — search bar focus ring */
+  --semantic-icon-active: var(--color-accent-default); /** Active icon color — selected tabs, tapped hearts, interactive elements */
+  --semantic-icon-inactive: var(--color-ink-faded); /** Inactive icon color — unselected tabs, disabled actions */
+  --semantic-border-default: var(--color-ink-faded); /** Default border color — dividers, separators */
+  --semantic-border-accent: var(--color-accent-subtle); /** Accent border — search bar */
+  --typography-heading-display: normal var(--font-weight-bold) 22px var(--font-family-display); /** Main page heading — 'Aspects of Love' */
+  --typography-heading-section: normal var(--font-weight-semibold) 18px var(--font-family-display); /** Section headings — 'Explore Topics' */
+  --typography-heading-card: italic var(--font-weight-semibold) 16px var(--font-family-display); /** Card title text — italic serif */
+  --typography-heading-toggle-active: normal var(--font-weight-semibold) 16px var(--font-family-display); /** Active toggle tab label — Articles / Videos */
+  --typography-heading-toggle-inactive: normal var(--font-weight-regular) 16px var(--font-family-body); /** Inactive toggle tab label */
+  --typography-system-status: normal var(--font-weight-bold) 15px var(--font-family-ui); /** Status bar time display */
+  --typography-body-default: normal var(--font-weight-regular) 14px/1.5 var(--font-family-body); /** Default body text — descriptions, paragraphs */
+  --typography-body-counter: normal var(--font-weight-semibold) 12px var(--font-family-body); /** Numeric counters — article/video counts */
+  --typography-body-caption: normal var(--font-weight-regular) 12px var(--font-family-body); /** Caption text — timestamps, metadata */
+  --typography-body-separator: normal var(--font-weight-regular) 12px var(--font-family-accent); /** Decorative separator text — 'in Christ' */
+  --typography-body-label: normal var(--font-weight-semibold) 10px var(--font-family-body); /** Uppercase labels — nav items, metadata tags */
   --icon-active: var(--color-accent-default); /** Active icon color — selected tabs, tapped hearts, interactive elements */
   --icon-inactive: var(--color-ink-faded); /** Inactive icon color — unselected tabs, disabled actions */
   --surface-default: var(--color-surface-card); /** Primary surface — card backgrounds */
