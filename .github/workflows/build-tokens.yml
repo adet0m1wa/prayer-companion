@@ -5,6 +5,12 @@ on:
     branches: [main]
     paths:
       - 'tokens/**'
+      - 'tokens.json'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'tokens/**'
+      - 'tokens.json'
 
 jobs:
   build:

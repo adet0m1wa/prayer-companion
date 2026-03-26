@@ -50,7 +50,7 @@ StyleDictionary.registerFormat({
 });
 
 const sd = new StyleDictionary({
-  source: ['tokens/**/*.json'],
+  source: ['tokens.json', 'tokens/**/*.json'],
   preprocessors: ['tokens-studio'],
   platforms: {
     css: {
