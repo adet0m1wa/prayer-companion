@@ -3,7 +3,7 @@
  */
 
 :root {
-  --color-ink-default: #6b21a8; /** Base ink color — 100% opacity */
+  --color-ink-default: #3d2e1f; /** Base ink color — 100% opacity */
   --color-ink-muted: rgba(61, 46, 31, 0.7); /** Ink at 70% opacity */
   --color-ink-faded: rgba(61, 46, 31, 0.5); /** Ink at 50% opacity */
   --color-accent-default: #e63434; /** Primary accent red — 100% opacity */
