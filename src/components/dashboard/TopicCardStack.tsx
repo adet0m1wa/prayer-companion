@@ -229,7 +229,7 @@ export function TopicCardStack({ onCardClick }: TopicCardStackProps) {
           onChange={(e) => handleQueryChange(e.target.value)}
           placeholder="Search for an aspect"
           className="flex-1 bg-transparent font-body font-normal text-ink-default leading-[1.5] outline-none placeholder:text-ink-default placeholder:opacity-70"
-          style={{ fontSize: "var(--card-body-size)" }}
+          style={{ fontSize: "max(16px, var(--card-body-size))" }}
         />
         {isSearching && (
           <button
