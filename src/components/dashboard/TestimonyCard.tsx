@@ -21,7 +21,7 @@ export function TestimonyCard({
           className="w-[40px] h-[40px] rounded-full object-cover"
         />
         <div className="flex flex-col gap-[2px]">
-          <span className="font-heading text-[16px] font-semibold italic text-ink-default">
+          <span className="font-heading font-semibold italic text-ink-default" style={{ fontSize: "var(--card-title-size)" }}>
             {name}
           </span>
           <span className="font-body text-[12px] font-normal text-ink-default opacity-70">
