@@ -1,0 +1,68 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --color-ink-default: #3d2e1f; /** Base ink color — 100% opacity */
+  --color-ink-muted: rgba(61, 46, 31, 0.7); /** Ink at 70% opacity */
+  --color-ink-faded: rgba(61, 46, 31, 0.5); /** Ink at 50% opacity */
+  --color-accent-default: #e63434; /** Primary accent red — 100% opacity */
+  --color-accent-subtle: rgba(230, 52, 52, 0.2); /** Accent red at 20% opacity */
+  --color-surface-canvas: #e4ded5; /** Page background parchment */
+  --color-surface-card: #f3ede3; /** Card background parchment */
+  --color-surface-muted: #ede6d8; /** Secondary surface — chevron circles, disabled fills */
+  --color-surface-overlay: rgba(243, 237, 227, 0.8); /** Card surface at 80% opacity — image overlays */
+  --font-family-display: 'Playfair Display', serif; /** Heading typeface */
+  --font-family-body: 'DM Sans', sans-serif; /** Body text typeface */
+  --font-family-accent: 'Dancing Script', cursive; /** Decorative separator typeface */
+  --font-family-ui: Inter, system-ui, sans-serif; /** System UI typeface */
+  --font-weight-regular: 400; /** Regular weight */
+  --font-weight-semibold: 600; /** Semibold weight */
+  --font-weight-bold: 700; /** Bold weight */
+  --spacing-0: 0; /** Zero spacing */
+  --spacing-2: 2px; /** 2px spacing */
+  --spacing-4: 4px; /** 4px spacing */
+  --spacing-6: 6px; /** 6px spacing */
+  --spacing-8: 8px; /** 8px spacing */
+  --spacing-10: 10px; /** 10px spacing */
+  --spacing-16: 16px; /** 16px spacing */
+  --spacing-20: 20px; /** 20px spacing */
+  --spacing-24: 24px; /** 24px spacing */
+  --spacing-36: 36px; /** 36px spacing */
+  --icon-16: 16px; /** Status and metadata icon size */
+  --icon-18: 18px; /** Chevron icon size */
+  --icon-22: 22px; /** UI action icon size */
+  --icon-30: 30px; /** Card and header icon size */
+  --icon-60: 60px; /** Loader icon size */
+  --radius-1: 1px; /** Battery level and underlines */
+  --radius-3: 3px; /** Battery outline */
+  --radius-12: 12px; /** Search bar */
+  --radius-16: 16px; /** Verse and testimony cards */
+  --radius-22: 22px; /** Chevron circles */
+  --icon-active: var(--color-accent-default); /** Active icon color — selected tabs, tapped hearts, interactive elements */
+  --icon-inactive: var(--color-ink-faded); /** Inactive icon color — unselected tabs, disabled actions */
+  --surface-default: var(--color-surface-card); /** Primary surface — card backgrounds */
+  --surface-canvas: var(--color-surface-canvas); /** Page background */
+  --surface-elevated: var(--color-surface-card); /** Elevated card surfaces */
+  --surface-muted: var(--color-surface-muted); /** Disabled or secondary fills — chevron circles */
+  --surface-overlay: var(--color-surface-overlay); /** Semi-transparent overlay on verse card images */
+  --text-primary: var(--color-ink-default); /** Primary text color — headings, body, icons */
+  --text-secondary: var(--color-ink-muted); /** Secondary text — metadata, subtitles */
+  --text-disabled: var(--color-ink-faded); /** Disabled text and inactive tab labels */
+  --text-accent: var(--color-accent-default); /** Accent-colored text — active tab labels, counters */
+  --interactive-default: var(--color-accent-default); /** Default interactive element color — active states, CTAs */
+  --interactive-subtle: var(--color-accent-subtle); /** Subtle interactive borders — search bar focus ring */
+  --border-default: var(--color-ink-faded); /** Default border color — dividers, separators */
+  --border-accent: var(--color-accent-subtle); /** Accent border — search bar */
+  --heading-display: normal var(--font-weight-bold) 22px var(--font-family-display); /** Main page heading — 'Aspects of Love' */
+  --heading-section: normal var(--font-weight-semibold) 18px var(--font-family-display); /** Section headings — 'Explore Topics' */
+  --heading-card: italic var(--font-weight-semibold) 16px var(--font-family-display); /** Card title text — italic serif */
+  --heading-toggle-active: normal var(--font-weight-semibold) 16px var(--font-family-display); /** Active toggle tab label — Articles / Videos */
+  --heading-toggle-inactive: normal var(--font-weight-regular) 16px var(--font-family-body); /** Inactive toggle tab label */
+  --system-status: normal var(--font-weight-bold) 15px var(--font-family-ui); /** Status bar time display */
+  --body-default: normal var(--font-weight-regular) 14px/1.5 var(--font-family-body); /** Default body text — descriptions, paragraphs */
+  --body-counter: normal var(--font-weight-semibold) 12px var(--font-family-body); /** Numeric counters — article/video counts */
+  --body-caption: normal var(--font-weight-regular) 12px var(--font-family-body); /** Caption text — timestamps, metadata */
+  --body-separator: normal var(--font-weight-regular) 12px var(--font-family-accent); /** Decorative separator text — 'in Christ' */
+  --body-label: normal var(--font-weight-semibold) 10px var(--font-family-body); /** Uppercase labels — nav items, metadata tags */
+}
