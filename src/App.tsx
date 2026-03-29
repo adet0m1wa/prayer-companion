@@ -122,7 +122,7 @@ export function App() {
     );
     observer.observe(el);
     return () => observer.disconnect();
-  }, [screen]);
+  }, [screen, allImagesLoaded]);
 
   const showShadow = !sentinelVisible;
 

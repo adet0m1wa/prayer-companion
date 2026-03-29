@@ -36,7 +36,7 @@ export function BottomNav({ showShadow = false }: BottomNavProps) {
         animate={{ opacity: showShadow ? 1 : 0 }}
         transition={{ duration: 0.2, ease: "easeOut" }}
       />
-      <div className="w-full h-[70px] flex items-center justify-between" style={{ paddingLeft: "var(--app-px)", paddingRight: "var(--app-px)" }}>
+      <div className="w-full h-[52px] flex items-center justify-between" style={{ paddingLeft: "var(--app-px)", paddingRight: "var(--app-px)" }}>
       {TABS.map((tab) => (
         <button
           key={tab.label}

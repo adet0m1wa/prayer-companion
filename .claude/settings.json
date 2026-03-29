@@ -18,7 +18,26 @@
       "Bash(sed -i '' 's|textures/texture 1\\\\.\\\\\\([0-7]\\\\\\)\\\\.png|textures/texture 1.\\\\1.webp|g' src/App.tsx src/components/dashboard/TopicCardStack.tsx)",
       "Bash(sed -i '' 's|no shadow texture/ns texture 1\\\\.\\\\\\([0-7]\\\\\\)\\\\.png|no shadow texture/ns texture 1.\\\\1.webp|g' src/components/screens/TopicDetailPage.tsx)",
       "Bash(npm run:*)",
-      "Edit(/.claude/skills/prayer-companion-design-system/**)"
+      "Edit(/.claude/skills/prayer-companion-design-system/**)",
+      "Edit(/.claude/skills/tokens-studio-migration/**)",
+      "Bash(node -e \"JSON.parse\\(require\\(''fs''\\).readFileSync\\(''tokens/primitives.json'',''utf8''\\)\\); console.log\\(''primitives.json: valid''\\)\")",
+      "Bash(node -e \"JSON.parse\\(require\\(''fs''\\).readFileSync\\(''tokens/semantic.json'',''utf8''\\)\\); console.log\\(''semantic.json: valid''\\)\")",
+      "Bash(node -e \"JSON.parse\\(require\\(''fs''\\).readFileSync\\(''tokens/typography.json'',''utf8''\\)\\); console.log\\(''typography.json: valid''\\)\")",
+      "Bash(grep -r outputReferences '/Users/mac/Documents/Projects/Coding Lifestyle/prayer-companion/node_modules/style-dictionary/lib' --include=*.js -l)",
+      "Bash(grep -rn outputReferences '/Users/mac/Documents/Projects/Coding Lifestyle/prayer-companion/node_modules/style-dictionary/types' --include=*.d.ts)",
+      "Bash(node build-tokens.js)",
+      "Bash(rm -rf ~/.claude/skills/design-audit/)",
+      "Bash(mkdir -p ~/.claude/skills/design-audit/)",
+      "Edit(~/.claude/skills/design-audit/**)",
+      "Read(//Users/mac/.claude/skills/design-audit/**)",
+      "Edit(~/.claude/skills/design-system-builder/**)",
+      "Edit(~/.claude/skills/component-generation/**)",
+      "Edit(~/.claude/skills/accessibility-checker/**)",
+      "Edit(~/.claude/skills/animation-patterns/**)"
+    ],
+    "additionalDirectories": [
+      "/Users/mac/Documents/Projects/Coding Lifestyle/prayer-companion/.claude/skills",
+      "/Users/mac/.claude/skills"
     ]
   }
 }

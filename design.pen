@@ -189,7 +189,7 @@
               "id": "o7USz",
               "name": "toggle-group",
               "width": "fill_container",
-              "gap": 10,
+              "gap": 22,
               "children": [
                 {
                   "type": "text",
@@ -292,7 +292,7 @@
                           "fill": "#3d2e1f",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Understanding God's Love",
+                          "content": "Understanding God's Unconditional Love for..",
                           "fontFamily": "Playfair Display",
                           "fontSize": 16,
                           "fontWeight": "600",
@@ -652,7 +652,7 @@
                           "fill": "#3d2e1f",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "How to Love When It's Hard",
+                          "content": "How to Love When It's Hard: A Biblical Persp...",
                           "fontFamily": "Playfair Display",
                           "fontSize": 16,
                           "fontWeight": "600",
@@ -769,7 +769,7 @@
                                   "fill": "#3d2e1f",
                                   "content": "2 weeks ago",
                                   "fontFamily": "DM Sans",
-                                  "fontSize": 12,
+                                  "fontSize": 14,
                                   "fontWeight": "normal"
                                 }
                               ]
@@ -832,7 +832,7 @@
                           "fill": "#3d2e1f",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "The Parable of the Prodigal Son",
+                          "content": "The Parable of the Prodigal Son: A Father...",
                           "fontFamily": "Playfair Display",
                           "fontSize": 16,
                           "fontWeight": "600",
@@ -1154,7 +1154,7 @@
               "id": "3p4U9",
               "name": "toggle-group",
               "width": "fill_container",
-              "gap": 10,
+              "gap": 22,
               "children": [
                 {
                   "type": "frame",
@@ -1727,7 +1727,8 @@
                               "fill": "#3d2e1f",
                               "content": "10 min read",
                               "fontFamily": "DM Sans",
-                              "fontSize": 12
+                              "fontSize": 12,
+                              "fontWeight": "normal"
                             },
                             {
                               "type": "frame",
@@ -1775,7 +1776,8 @@
                                   "fill": "#3d2e1f",
                                   "content": "3.1k",
                                   "fontFamily": "DM Sans",
-                                  "fontSize": 12
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
@@ -1812,7 +1814,8 @@
                                   "fill": "#3d2e1f",
                                   "content": "267",
                                   "fontFamily": "DM Sans",
-                                  "fontSize": 12
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             },
@@ -1862,7 +1865,8 @@
                                   "fill": "#3d2e1f",
                                   "content": "2 days ago",
                                   "fontFamily": "DM Sans",
-                                  "fontSize": 12
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
                                 }
                               ]
                             }
