@@ -28,6 +28,16 @@ import sinVideo2 from "../images/sin/videos/sin-video-2.png";
 import sinVideo3 from "../images/sin/videos/sin-video-3.png";
 import sinVideo4 from "../images/sin/videos/sin-video-4.png";
 
+// Mercy thumbnails
+import mercyArticle1 from "../images/mercy/articles/mercy-article-1.png";
+import mercyArticle2 from "../images/mercy/articles/mercy-article-2.png";
+import mercyArticle3 from "../images/mercy/articles/mercy-article-3.png";
+import mercyArticle4 from "../images/mercy/articles/mercy-article-4.png";
+import mercyVideo1 from "../images/mercy/videos/mercy-video-1.png";
+import mercyVideo2 from "../images/mercy/videos/mercy-video-2.png";
+import mercyVideo3 from "../images/mercy/videos/mercy-video-3.png";
+import mercyVideo4 from "../images/mercy/videos/mercy-video-4.png";
+
 // Hope thumbnails
 import hopeArticle1 from "../images/hope/articles/hope-article-1.png";
 import hopeArticle2 from "../images/hope/articles/hope-article-2.png";
@@ -152,6 +162,10 @@ const TOPIC_VERSES: Record<string, TopicVerse> = {
     verse: "But those who hope in the Lord will renew their strength. They will soar on wings like eagles.",
     reference: "Isaiah 40:31",
   },
+  mercy: {
+    verse: "The Lord is gracious and compassionate, slow to anger and rich in love.",
+    reference: "Psalm 145:8",
+  },
 };
 
 const TOPIC_CONTENT: Record<string, TopicContent> = {
@@ -265,6 +279,20 @@ const TOPIC_CONTENT: Record<string, TopicContent> = {
       { thumbnailSrc: hopeVideo2, textureSrc: nsTexture6, title: "Job's Hope: Worshipping Through the Worst", views: "4.4k", likes: "308", date: "5 days ago" },
       { thumbnailSrc: hopeVideo3, textureSrc: nsTexture7, title: "The Hope of the Resurrection Explained", views: "6.9k", likes: "467", date: "3 days ago" },
       { thumbnailSrc: hopeVideo4, textureSrc: nsTexture2, title: "How to Keep Hope Alive in Suffering", views: "3.8k", likes: "254", date: "6 days ago" },
+    ],
+  },
+  mercy: {
+    articles: [
+      { thumbnailSrc: mercyArticle1, textureSrc: nsTexture1, title: "Mercy vs Justice: How God Holds Both", readTime: "8 min read", views: "3.4k", likes: "251", date: "2 days ago" },
+      { thumbnailSrc: mercyArticle2, textureSrc: nsTexture2, title: "The Good Samaritan: A Lesson in Showing Mercy", readTime: "7 min read", views: "2.8k", likes: "198", date: "5 days ago" },
+      { thumbnailSrc: mercyArticle3, textureSrc: nsTexture3, title: "Why God's Mercy Is New Every Morning", readTime: "6 min read", views: "2.2k", likes: "162", date: "1 week ago" },
+      { thumbnailSrc: mercyArticle4, textureSrc: nsTexture2, title: "Blessed Are the Merciful: Living the Beatitudes", readTime: "9 min read", views: "3.1k", likes: "234", date: "3 days ago" },
+    ],
+    videos: [
+      { thumbnailSrc: mercyVideo1, textureSrc: nsTexture1, title: "The Prodigal Son: A Father's Mercy", views: "6.3k", likes: "432", date: "1 day ago" },
+      { thumbnailSrc: mercyVideo2, textureSrc: nsTexture6, title: "David and Mephibosheth: Mercy to the Forgotten", views: "4.5k", likes: "311", date: "4 days ago" },
+      { thumbnailSrc: mercyVideo3, textureSrc: nsTexture7, title: "How Mercy and Truth Meet Together", views: "5.1k", likes: "356", date: "6 days ago" },
+      { thumbnailSrc: mercyVideo4, textureSrc: nsTexture2, title: "Showing Mercy When It's Not Deserved", views: "3.9k", likes: "267", date: "3 days ago" },
     ],
   },
 };
