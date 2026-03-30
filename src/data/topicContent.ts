@@ -144,56 +144,143 @@ export interface TopicContent {
   videos: VideoData[];
 }
 
-const DEFAULT_VERSE: TopicVerse = {
-  verse: "Trust in the Lord with all your heart and lean not on your own understanding.",
-  reference: "Proverbs 3:5",
-};
+const DEFAULT_VERSES: TopicVerse[] = [
+  { verse: "Trust in the Lord with all your heart and lean not on your own understanding.", reference: "Proverbs 3:5" },
+];
 
-const TOPIC_VERSES: Record<string, TopicVerse> = {
-  love: {
-    verse: "And now these three remain: faith, hope and love. But the greatest of these is love.",
-    reference: "1 Corinthians 13:13",
-  },
-  faith: {
-    verse: "Now faith is confidence in what we hope for and assurance about what we do not see.",
-    reference: "Hebrews 11:1",
-  },
-  sin: {
-    verse: "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.",
-    reference: "Romans 6:23",
-  },
-  theology: {
-    verse: "All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness.",
-    reference: "2 Timothy 3:16",
-  },
-  grace: {
-    verse: "For it is by grace you have been saved, through faith — and this is not from yourselves, it is the gift of God.",
-    reference: "Ephesians 2:8",
-  },
-  prayer: {
-    verse: "Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God.",
-    reference: "Philippians 4:6",
-  },
-  forgiveness: {
-    verse: "Bear with each other and forgive one another if any of you has a grievance against someone. Forgive as the Lord forgave you.",
-    reference: "Colossians 3:13",
-  },
-  hope: {
-    verse: "But those who hope in the Lord will renew their strength. They will soar on wings like eagles.",
-    reference: "Isaiah 40:31",
-  },
-  mercy: {
-    verse: "The Lord is gracious and compassionate, slow to anger and rich in love.",
-    reference: "Psalm 145:8",
-  },
-  wisdom: {
-    verse: "If any of you lacks wisdom, you should ask God, who gives generously to all without finding fault, and it will be given to you.",
-    reference: "James 1:5",
-  },
-  redemption: {
-    verse: "In him we have redemption through his blood, the forgiveness of sins, in accordance with the riches of God's grace.",
-    reference: "Ephesians 1:7",
-  },
+const TOPIC_VERSES: Record<string, TopicVerse[]> = {
+  love: [
+    { verse: "And now these three remain: faith, hope and love. But the greatest of these is love.", reference: "1 Corinthians 13:13" },
+    { verse: "Above all, love each other deeply, because love covers over a multitude of sins.", reference: "1 Peter 4:8" },
+    { verse: "Dear friends, let us love one another, for love comes from God.", reference: "1 John 4:7" },
+    { verse: "Love is patient, love is kind. It does not envy, it does not boast.", reference: "1 Corinthians 13:4" },
+    { verse: "We love because he first loved us.", reference: "1 John 4:19" },
+    { verse: "There is no fear in love. But perfect love drives out fear.", reference: "1 John 4:18" },
+    { verse: "Greater love has no one than this: to lay down one's life for one's friends.", reference: "John 15:13" },
+    { verse: "For God so loved the world that he gave his one and only Son.", reference: "John 3:16" },
+    { verse: "Let all that you do be done in love.", reference: "1 Corinthians 16:14" },
+    { verse: "Husbands, love your wives, just as Christ loved the church and gave himself up for her.", reference: "Ephesians 5:25" },
+  ],
+  faith: [
+    { verse: "Now faith is confidence in what we hope for and assurance about what we do not see.", reference: "Hebrews 11:1" },
+    { verse: "For we walk by faith, not by sight.", reference: "2 Corinthians 5:7" },
+    { verse: "Without faith it is impossible to please God.", reference: "Hebrews 11:6" },
+    { verse: "I have been crucified with Christ and I no longer live, but Christ lives in me. The life I now live in the body, I live by faith in the Son of God.", reference: "Galatians 2:20" },
+    { verse: "So then faith comes by hearing, and hearing by the word of God.", reference: "Romans 10:17" },
+    { verse: "Be on your guard; stand firm in the faith; be courageous; be strong.", reference: "1 Corinthians 16:13" },
+    { verse: "He replied, 'If you have faith as small as a mustard seed, you can say to this mountain, move from here to there, and it will move.'", reference: "Matthew 17:20" },
+    { verse: "Consider it pure joy, my brothers and sisters, whenever you face trials of many kinds, because you know that the testing of your faith produces perseverance.", reference: "James 1:2-3" },
+    { verse: "For everyone born of God overcomes the world. This is the victory that has overcome the world, even our faith.", reference: "1 John 5:4" },
+    { verse: "Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight.", reference: "Proverbs 3:5-6" },
+  ],
+  sin: [
+    { verse: "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.", reference: "Romans 6:23" },
+    { verse: "If we confess our sins, he is faithful and just and will forgive us our sins and purify us from all unrighteousness.", reference: "1 John 1:9" },
+    { verse: "All have sinned and fall short of the glory of God.", reference: "Romans 3:23" },
+    { verse: "No temptation has overtaken you except what is common to mankind. And God is faithful; he will not let you be tempted beyond what you can bear.", reference: "1 Corinthians 10:13" },
+    { verse: "Therefore, just as sin entered the world through one man, and death through sin, and in this way death came to all people, because all sinned.", reference: "Romans 5:12" },
+    { verse: "Whoever conceals their sins does not prosper, but the one who confesses and renounces them finds mercy.", reference: "Proverbs 28:13" },
+    { verse: "Create in me a pure heart, O God, and renew a steadfast spirit within me.", reference: "Psalm 51:10" },
+    { verse: "For sin shall no longer be your master, because you are not under the law, but under grace.", reference: "Romans 6:14" },
+    { verse: "Against you, you only, have I sinned and done what is evil in your sight.", reference: "Psalm 51:4" },
+    { verse: "He himself bore our sins in his body on the cross, so that we might die to sins and live for righteousness.", reference: "1 Peter 2:24" },
+  ],
+  theology: [
+    { verse: "All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness.", reference: "2 Timothy 3:16" },
+    { verse: "In the beginning was the Word, and the Word was with God, and the Word was God.", reference: "John 1:1" },
+    { verse: "For the invisible things of him from the creation of the world are clearly seen, being understood by the things that are made.", reference: "Romans 1:20" },
+    { verse: "The heavens declare the glory of God; the skies proclaim the work of his hands.", reference: "Psalm 19:1" },
+    { verse: "Great is the Lord and most worthy of praise; his greatness no one can fathom.", reference: "Psalm 145:3" },
+    { verse: "For my thoughts are not your thoughts, neither are your ways my ways, declares the Lord.", reference: "Isaiah 55:8" },
+    { verse: "Have you not known? Have you not heard? The Lord is the everlasting God, the Creator of the ends of the earth.", reference: "Isaiah 40:28" },
+    { verse: "The Lord our God, the Lord is one.", reference: "Deuteronomy 6:4" },
+    { verse: "Oh, the depth of the riches of the wisdom and knowledge of God! How unsearchable his judgments, and his paths beyond tracing out!", reference: "Romans 11:33" },
+    { verse: "He is before all things, and in him all things hold together.", reference: "Colossians 1:17" },
+  ],
+  grace: [
+    { verse: "For it is by grace you have been saved, through faith — and this is not from yourselves, it is the gift of God.", reference: "Ephesians 2:8" },
+    { verse: "But he said to me, 'My grace is sufficient for you, for my power is made perfect in weakness.'", reference: "2 Corinthians 12:9" },
+    { verse: "From his fullness we have all received, grace upon grace.", reference: "John 1:16" },
+    { verse: "God is able to bless you abundantly, so that in all things at all times, having all that you need, you will abound in every good work.", reference: "2 Corinthians 9:8" },
+    { verse: "Let us then approach God's throne of grace with confidence, so that we may receive mercy and find grace to help us in our time of need.", reference: "Hebrews 4:16" },
+    { verse: "For the grace of God has appeared that offers salvation to all people.", reference: "Titus 2:11" },
+    { verse: "But because of his great love for us, God, who is rich in mercy, made us alive with Christ even when we were dead in transgressions — it is by grace you have been saved.", reference: "Ephesians 2:4-5" },
+    { verse: "Where sin increased, grace increased all the more.", reference: "Romans 5:20" },
+    { verse: "Each of you should use whatever gift you have received to serve others, as faithful stewards of God's grace in its various forms.", reference: "1 Peter 4:10" },
+    { verse: "The grace of the Lord Jesus Christ be with your spirit.", reference: "Philippians 4:23" },
+  ],
+  prayer: [
+    { verse: "Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God.", reference: "Philippians 4:6" },
+    { verse: "Call to me and I will answer you and tell you great and unsearchable things you do not know.", reference: "Jeremiah 33:3" },
+    { verse: "The Lord is near to all who call on him, to all who call on him in truth.", reference: "Psalm 145:18" },
+    { verse: "Rejoice always, pray continually, give thanks in all circumstances; for this is God's will for you in Christ Jesus.", reference: "1 Thessalonians 5:16-18" },
+    { verse: "And when you pray, do not keep on babbling like pagans, for they think they will be heard because of their many words.", reference: "Matthew 6:7" },
+    { verse: "Very early in the morning, while it was still dark, Jesus got up, left the house and went off to a solitary place, where he prayed.", reference: "Mark 1:35" },
+    { verse: "The prayer of a righteous person is powerful and effective.", reference: "James 5:16" },
+    { verse: "If my people, who are called by my name, will humble themselves and pray and seek my face and turn from their wicked ways, then I will hear from heaven.", reference: "2 Chronicles 7:14" },
+    { verse: "In the same way, the Spirit helps us in our weakness. We do not know what we ought to pray for, but the Spirit himself intercedes for us.", reference: "Romans 8:26" },
+    { verse: "Ask and it will be given to you; seek and you will find; knock and the door will be opened to you.", reference: "Matthew 7:7" },
+  ],
+  forgiveness: [
+    { verse: "Bear with each other and forgive one another if any of you has a grievance against someone. Forgive as the Lord forgave you.", reference: "Colossians 3:13" },
+    { verse: "If you forgive other people when they sin against you, your heavenly Father will also forgive you.", reference: "Matthew 6:14" },
+    { verse: "As far as the east is from the west, so far has he removed our transgressions from us.", reference: "Psalm 103:12" },
+    { verse: "Be kind and compassionate to one another, forgiving each other, just as in Christ God forgave you.", reference: "Ephesians 4:32" },
+    { verse: "Then Peter came to Jesus and asked, 'Lord, how many times shall I forgive my brother or sister who sins against me? Up to seven times?' Jesus answered, 'I tell you, not seven times, but seventy-seven times.'", reference: "Matthew 18:21-22" },
+    { verse: "Who is a God like you, who pardons sin and forgives the transgression of the remnant of his inheritance?", reference: "Micah 7:18" },
+    { verse: "I, even I, am he who blots out your transgressions, for my own sake, and remembers your sins no more.", reference: "Isaiah 43:25" },
+    { verse: "Blessed is the one whose transgressions are forgiven, whose sins are covered.", reference: "Psalm 32:1" },
+    { verse: "The Lord our God is merciful and forgiving, even though we have rebelled against him.", reference: "Daniel 9:9" },
+    { verse: "For if you forgive other people when they sin against you, your heavenly Father will also forgive you. But if you do not forgive others their sins, your Father will not forgive your sins.", reference: "Matthew 6:14-15" },
+  ],
+  hope: [
+    { verse: "But those who hope in the Lord will renew their strength. They will soar on wings like eagles.", reference: "Isaiah 40:31" },
+    { verse: "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you a hope and a future.", reference: "Jeremiah 29:11" },
+    { verse: "May the God of hope fill you with all joy and peace as you trust in him, so that you may overflow with hope by the power of the Holy Spirit.", reference: "Romans 15:13" },
+    { verse: "Be strong and take heart, all you who hope in the Lord.", reference: "Psalm 31:24" },
+    { verse: "We have this hope as an anchor for the soul, firm and secure.", reference: "Hebrews 6:19" },
+    { verse: "And we know that in all things God works for the good of those who love him, who have been called according to his purpose.", reference: "Romans 8:28" },
+    { verse: "The Lord is good to those whose hope is in him, to the one who seeks him.", reference: "Lamentations 3:25" },
+    { verse: "Why, my soul, are you downcast? Why so disturbed within me? Put your hope in God, for I will yet praise him, my Savior and my God.", reference: "Psalm 42:11" },
+    { verse: "Blessed is the one who trusts in the Lord, whose confidence is in him.", reference: "Jeremiah 17:7" },
+    { verse: "I wait for the Lord, my whole being waits, and in his word I put my hope.", reference: "Psalm 130:5" },
+  ],
+  mercy: [
+    { verse: "The Lord is gracious and compassionate, slow to anger and rich in love.", reference: "Psalm 145:8" },
+    { verse: "But God, being rich in mercy, because of the great love with which he loved us, made us alive together with Christ.", reference: "Ephesians 2:4-5" },
+    { verse: "Have mercy on me, O God, according to your unfailing love; according to your great compassion blot out my transgressions.", reference: "Psalm 51:1" },
+    { verse: "Let us then approach God's throne of grace with confidence, so that we may receive mercy and find grace to help us in our time of need.", reference: "Hebrews 4:16" },
+    { verse: "Speak and act as those who are going to be judged by the law that gives freedom, because judgment without mercy will be shown to anyone who has not been merciful. Mercy triumphs over judgment.", reference: "James 2:12-13" },
+    { verse: "The Lord is full of compassion and mercy.", reference: "James 5:11" },
+    { verse: "Because of the Lord's great love we are not consumed, for his compassions never fail. They are new every morning; great is your faithfulness.", reference: "Lamentations 3:22-23" },
+    { verse: "He has shown you, O mortal, what is good. And what does the Lord require of you? To act justly and to love mercy and to walk humbly with your God.", reference: "Micah 6:8" },
+    { verse: "For he says to Moses, 'I will have mercy on whom I have mercy, and I will have compassion on whom I have compassion.'", reference: "Romans 9:15" },
+    { verse: "Praise be to the God and Father of our Lord Jesus Christ! In his great mercy he has given us new birth into a living hope.", reference: "1 Peter 1:3" },
+  ],
+  wisdom: [
+    { verse: "If any of you lacks wisdom, you should ask God, who gives generously to all without finding fault, and it will be given to you.", reference: "James 1:5" },
+    { verse: "The fear of the Lord is the beginning of wisdom, and knowledge of the Holy One is understanding.", reference: "Proverbs 9:10" },
+    { verse: "For the Lord gives wisdom; from his mouth come knowledge and understanding.", reference: "Proverbs 2:6" },
+    { verse: "But the wisdom that comes from heaven is first of all pure; then peace-loving, considerate, submissive, full of mercy and good fruit, impartial and sincere.", reference: "James 3:17" },
+    { verse: "How much better to get wisdom than gold, to get insight rather than silver!", reference: "Proverbs 16:16" },
+    { verse: "The wise in heart accept commands, but a chattering fool comes to ruin.", reference: "Proverbs 10:8" },
+    { verse: "Plans fail for lack of counsel, but with many advisers they succeed.", reference: "Proverbs 15:22" },
+    { verse: "Get wisdom, get understanding; do not forget my words or turn away from them.", reference: "Proverbs 4:5" },
+    { verse: "Teach us to number our days, that we may gain a heart of wisdom.", reference: "Psalm 90:12" },
+    { verse: "For with much wisdom comes much sorrow; the more knowledge, the more grief.", reference: "Ecclesiastes 1:18" },
+  ],
+  redemption: [
+    { verse: "In him we have redemption through his blood, the forgiveness of sins, in accordance with the riches of God's grace.", reference: "Ephesians 1:7" },
+    { verse: "For you know that it was not with perishable things such as silver or gold that you were redeemed, but with the precious blood of Christ.", reference: "1 Peter 1:18-19" },
+    { verse: "Christ redeemed us from the curse of the law by becoming a curse for us.", reference: "Galatians 3:13" },
+    { verse: "You were bought at a price. Therefore honor God with your bodies.", reference: "1 Corinthians 6:20" },
+    { verse: "I will ransom them from the power of the grave; I will redeem them from death.", reference: "Hosea 13:14" },
+    { verse: "He sent redemption to his people; he ordained his covenant forever. Holy and awesome is his name.", reference: "Psalm 111:9" },
+    { verse: "But now, this is what the Lord says — he who created you: Fear not, for I have redeemed you; I have summoned you by name; you are mine.", reference: "Isaiah 43:1" },
+    { verse: "Let the redeemed of the Lord tell their story — those he redeemed from the hand of the foe.", reference: "Psalm 107:2" },
+    { verse: "I know that my redeemer lives, and that in the end he will stand on the earth.", reference: "Job 19:25" },
+    { verse: "And they sang a new song, saying: You are worthy because you were slain, and with your blood you purchased for God persons from every tribe and language and people and nation.", reference: "Revelation 5:9" },
+  ],
 };
 
 const TOPIC_CONTENT: Record<string, TopicContent> = {
@@ -358,7 +445,8 @@ export function getTopicContent(topicId: string): TopicContent {
   return TOPIC_CONTENT[topicId] ?? TOPIC_CONTENT.love;
 }
 
-/** Returns the verse for the given topic, falling back to default */
+/** Returns a random verse for the given topic, falling back to default */
 export function getTopicVerse(topicId: string): TopicVerse {
-  return TOPIC_VERSES[topicId] ?? DEFAULT_VERSE;
+  const verses = TOPIC_VERSES[topicId] ?? DEFAULT_VERSES;
+  return verses[Math.floor(Math.random() * verses.length)];
 }
