@@ -8,22 +8,21 @@ interface SharedTopicIconProps {
 
 export function SharedTopicIcon({ src, size, topicId }: SharedTopicIconProps) {
   return (
-    <motion.img
+    <motion.div
       layoutId={`topic-icon-${topicId}`}
       layout="position"
-      src={src}
-      alt=""
-      animate={{ opacity: 1 }}
-      style={{
-        width: size,
-        height: size,
-        objectFit: "contain",
-        borderRadius: 0,
-      }}
+      style={{ width: size, height: size, flexShrink: 0 }}
       transition={{
         layout: { duration: 0.4, ease: [0.25, 0.1, 0.25, 1] },
-        opacity: { duration: 0 },
       }}
-    />
+    >
+      <img
+        src={src}
+        alt=""
+        width={size}
+        height={size}
+        style={{ display: "block", width: size, height: size, objectFit: "contain" }}
+      />
+    </motion.div>
   );
 }

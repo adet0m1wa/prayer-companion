@@ -152,7 +152,7 @@ export function TopicCardStack({ onCardClick }: TopicCardStackProps) {
           swipingRef.current = false;
           isDraggingRef.current = false;
           setIsAnimating(false);
-          setTimeout(() => setRecycledCardId(null), 500);
+          setTimeout(() => setRecycledCardId(null), 100);
         },
       });
     },
@@ -189,7 +189,7 @@ export function TopicCardStack({ onCardClick }: TopicCardStackProps) {
   const handleCardClick = () => {
     if (isDraggingRef.current || isAnimating) return;
     const topCard = allPageCards[safePage]?.[0];
-    if (topCard?.id === "love") {
+    if (topCard) {
       setIsTransitioning(true);
       onCardClick?.(topCard.id);
     }
@@ -327,6 +327,7 @@ export function TopicCardStack({ onCardClick }: TopicCardStackProps) {
                             right: "var(--app-px)",
                             x: isActivePage ? dragX : 0,
                             transformOrigin: "top center",
+                            willChange: "auto",
                           }}
                           drag={isActivePage ? "x" : false}
                           dragConstraints={{ left: 0, right: 0 }}
@@ -351,21 +352,21 @@ export function TopicCardStack({ onCardClick }: TopicCardStackProps) {
                         className="absolute"
                         initial={false}
                         animate={isRecycled
-                          ? {
-                              opacity: [0, 0, 1],
-                              scale: [scale - 0.05, scale - 0.05, scale],
-                              y: yOffset,
-                              zIndex,
-                            }
+                          ? { scale, y: yOffset, zIndex }
                           : { y: yOffset, scale, zIndex }
                         }
                         transition={isRecycled
-                          ? { duration: 0.35, ease: "easeOut", times: [0, 0.1, 1] }
+                          ? { duration: 0.45, ease: "easeOut", times: [0, 0.6, 0.95, 1] }
                           : glideTransition
                         }
-                        style={{ left: "var(--app-px)", right: "var(--app-px)", transformOrigin: "top center", pointerEvents: "none" }}
+                        style={{ left: "var(--app-px)", right: "var(--app-px)", transformOrigin: "top center", pointerEvents: "none", willChange: "auto" }}
                       >
-                        <TopicCard {...card} isTransitioning={isTransitioning} />
+                        <div style={{
+                          opacity: isRecycled ? 0 : 1,
+                          transition: isRecycled ? 'none' : 'opacity 50ms ease-out',
+                        }}>
+                          <TopicCard {...card} isTransitioning={isTransitioning} />
+                        </div>
                       </motion.div>
                     );
                   })}

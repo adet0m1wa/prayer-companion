@@ -32,7 +32,7 @@ export function VideoCard({
         src={thumbnailSrc}
         alt=""
         className="shrink-0 self-center"
-        style={{ width: "120px", height: "100px" }}
+        style={{ width: "120px", height: "100px", display: "block" }}
       />
 
       {/* Content */}

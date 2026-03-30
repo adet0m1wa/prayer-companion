@@ -90,6 +90,7 @@ export function App() {
   const [screen, setScreen] = useState<Screen>("dashboard");
   const [selectedTopic, setSelectedTopic] = useState("love");
   const [dashboardHidden, setDashboardHidden] = useState(false);
+  const [stackKey, setStackKey] = useState(0);
   const [sentinelVisible, setSentinelVisible] = useState(true);
   const sentinelRef = useRef<HTMLDivElement>(null);
   const prefersReducedMotion = useReducedMotion();
@@ -149,6 +150,7 @@ export function App() {
   const handleBack = useCallback(() => {
     setScreen("dashboard");
     setDashboardHidden(false);
+    setStackKey(k => k + 1);
   }, []);
 
   const selectedIconSrc = TOPIC_ICONS[selectedTopic] ?? TOPIC_ICONS.love;
@@ -176,7 +178,7 @@ export function App() {
                 >
                   <GreetingHeader />
                   <VerseCard />
-                  <TopicCardStack onCardClick={handleCardClick} />
+                  <TopicCardStack key={stackKey} onCardClick={handleCardClick} />
                   <TestimoniesSection />
                 </div>
                 <div ref={sentinelRef} className="h-px w-full shrink-0" />

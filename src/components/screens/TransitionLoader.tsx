@@ -1,22 +1,20 @@
 import { useEffect } from "react";
 import { motion, useAnimate, usePresence, useReducedMotion } from "framer-motion";
 import { SharedTopicIcon } from "../shared/SharedTopicIcon";
+import { getTopicVerse } from "../../data/topicContent";
 
 interface TransitionLoaderProps {
   topicId: string;
   iconSrc: string;
-  verse?: string;
-  reference?: string;
   onComplete: () => void;
 }
 
 export function TransitionLoader({
   topicId,
   iconSrc,
-  verse = "And now these three remain: faith, hope and love. But the greatest of these is love.",
-  reference = "1 Corinthians 13:13",
   onComplete,
 }: TransitionLoaderProps) {
+  const { verse, reference } = getTopicVerse(topicId);
   const [scope, animate] = useAnimate();
   const [isPresent, safeToRemove] = usePresence();
   const prefersReducedMotion = useReducedMotion();
@@ -54,7 +52,7 @@ export function TransitionLoader({
       if (cancelled) return;
 
       // Hold for 1 second
-      await new Promise<void>((resolve) => setTimeout(resolve, 1000));
+      await new Promise<void>((resolve) => setTimeout(resolve, 1500));
       if (cancelled) return;
 
       // Exit — staggered upward cascade: heart → verse → reference

@@ -1,4 +1,4 @@
-import { SharedTopicIcon } from "../shared/SharedTopicIcon";
+import { motion } from "framer-motion";
 
 interface TopicCardProps {
   id?: string;
@@ -29,10 +29,19 @@ export function TopicCard({
     >
       {/* Icon + title row */}
       <div className="flex items-center gap-[2px]">
-        {id === "love" && isTransitioning ? (
-          <SharedTopicIcon src={iconSrc} size={30} topicId={id} />
+        {id && isTransitioning ? (
+          <motion.div
+            layoutId={`topic-icon-${id}`}
+            layout="position"
+            style={{ width: 30, height: 30, flexShrink: 0 }}
+            transition={{ layout: { duration: 0.4, ease: [0.25, 0.1, 0.25, 1] } }}
+          >
+            <img src={iconSrc} alt="" width={30} height={30} style={{ display: "block", width: 30, height: 30, objectFit: "contain" }} />
+          </motion.div>
         ) : (
-          <img src={iconSrc} alt="" className="w-[30px] h-[30px] object-contain" />
+          <div style={{ width: 30, height: 30, flexShrink: 0 }}>
+            <img src={iconSrc} alt="" width={30} height={30} style={{ display: "block", width: 30, height: 30, objectFit: "contain" }} />
+          </div>
         )}
         <span
           className="font-heading font-semibold italic text-ink-default line-clamp-2"
