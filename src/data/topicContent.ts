@@ -28,6 +28,16 @@ import sinVideo2 from "../images/sin/videos/sin-video-2.png";
 import sinVideo3 from "../images/sin/videos/sin-video-3.png";
 import sinVideo4 from "../images/sin/videos/sin-video-4.png";
 
+// Redemption thumbnails
+import redemptionArticle1 from "../images/redemption/articles/redemption-article-1.png";
+import redemptionArticle2 from "../images/redemption/articles/redemption-article-2.png";
+import redemptionArticle3 from "../images/redemption/articles/redemption-article-3.png";
+import redemptionArticle4 from "../images/redemption/articles/redemption-article-4.png";
+import redemptionVideo1 from "../images/redemption/videos/redemption-video-1.png";
+import redemptionVideo2 from "../images/redemption/videos/redemption-video-2.png";
+import redemptionVideo3 from "../images/redemption/videos/redemption-video-3.png";
+import redemptionVideo4 from "../images/redemption/videos/redemption-video-4.png";
+
 // Wisdom thumbnails
 import wisdomArticle1 from "../images/wisdom/articles/wisdom-article-1.png";
 import wisdomArticle2 from "../images/wisdom/articles/wisdom-article-2.png";
@@ -180,6 +190,10 @@ const TOPIC_VERSES: Record<string, TopicVerse> = {
     verse: "If any of you lacks wisdom, you should ask God, who gives generously to all without finding fault, and it will be given to you.",
     reference: "James 1:5",
   },
+  redemption: {
+    verse: "In him we have redemption through his blood, the forgiveness of sins, in accordance with the riches of God's grace.",
+    reference: "Ephesians 1:7",
+  },
 };
 
 const TOPIC_CONTENT: Record<string, TopicContent> = {
@@ -321,6 +335,20 @@ const TOPIC_CONTENT: Record<string, TopicContent> = {
       { thumbnailSrc: wisdomVideo2, textureSrc: nsTexture6, title: "James on Wisdom: Two Kinds, Two Sources", views: "4.2k", likes: "294", date: "5 days ago" },
       { thumbnailSrc: wisdomVideo3, textureSrc: nsTexture7, title: "How Jesus Displayed Perfect Wisdom", views: "6.4k", likes: "441", date: "3 days ago" },
       { thumbnailSrc: wisdomVideo4, textureSrc: nsTexture2, title: "Seeking Godly Counsel: Who Should You Listen To?", views: "3.5k", likes: "238", date: "6 days ago" },
+    ],
+  },
+  redemption: {
+    articles: [
+      { thumbnailSrc: redemptionArticle1, textureSrc: nsTexture1, title: "What Does Redemption Actually Mean in the Bible?", readTime: "7 min read", views: "3.2k", likes: "237", date: "2 days ago" },
+      { thumbnailSrc: redemptionArticle2, textureSrc: nsTexture2, title: "Ruth and Boaz: A Love Story of Redemption", readTime: "9 min read", views: "4.0k", likes: "298", date: "5 days ago" },
+      { thumbnailSrc: redemptionArticle3, textureSrc: nsTexture3, title: "From Slave to Son: The Theology of Redemption", readTime: "8 min read", views: "2.6k", likes: "191", date: "1 week ago" },
+      { thumbnailSrc: redemptionArticle4, textureSrc: nsTexture2, title: "Can God Redeem the Worst Mistakes?", readTime: "6 min read", views: "3.5k", likes: "264", date: "3 days ago" },
+    ],
+    videos: [
+      { thumbnailSrc: redemptionVideo1, textureSrc: nsTexture1, title: "The Kinsman Redeemer Explained", views: "5.3k", likes: "367", date: "1 day ago" },
+      { thumbnailSrc: redemptionVideo2, textureSrc: nsTexture6, title: "How God Redeemed Joseph's Suffering", views: "6.7k", likes: "458", date: "4 days ago" },
+      { thumbnailSrc: redemptionVideo3, textureSrc: nsTexture7, title: "The Exodus: Israel's Story of Redemption", views: "4.8k", likes: "329", date: "3 days ago" },
+      { thumbnailSrc: redemptionVideo4, textureSrc: nsTexture2, title: "Your Story Isn't Over: Redemption in Real Life", views: "7.4k", likes: "501", date: "6 days ago" },
     ],
   },
 };
