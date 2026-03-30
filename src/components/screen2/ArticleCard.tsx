@@ -34,7 +34,7 @@ export function ArticleCard({
         src={thumbnailSrc}
         alt=""
         className="object-cover shrink-0 self-center"
-        style={{ width: "var(--article-thumb)", height: "var(--article-thumb)" }}
+        style={{ width: "100px", height: "100px" }}
       />
 
       {/* Content */}
