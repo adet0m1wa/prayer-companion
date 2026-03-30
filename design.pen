@@ -6,7 +6,7 @@
       "id": "2GEI8",
       "x": 213,
       "y": 2270,
-      "name": "screen-2-video",
+      "name": "love-screen-2-video",
       "clip": true,
       "width": 402,
       "height": 874,
@@ -250,7 +250,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.5.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.5.webp",
                     "mode": "fill"
                   },
                   "stroke": {
@@ -429,7 +429,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.6.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.6.webp",
                     "mode": "fill"
                   },
                   "stroke": {
@@ -609,7 +609,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.7.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.7.webp",
                     "mode": "fill"
                   },
                   "stroke": {
@@ -789,7 +789,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.0.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.0.webp",
                     "mode": "fill"
                   },
                   "stroke": {
@@ -971,7 +971,7 @@
       "id": "clPKH",
       "x": -231,
       "y": 2270,
-      "name": "screen-2-article",
+      "name": "love-screen-2-article",
       "clip": true,
       "width": 402,
       "height": 874,
@@ -1225,7 +1225,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.1.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.1.webp",
                     "mode": "fill"
                   },
                   "stroke": {
@@ -1445,7 +1445,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.2.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.2.webp",
                     "mode": "fill"
                   },
                   "stroke": {
@@ -1665,7 +1665,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.3.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.3.webp",
                     "mode": "fill"
                   },
                   "stroke": {
@@ -1885,7 +1885,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.4.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.4.webp",
                     "mode": "fill"
                   },
                   "stroke": {
@@ -2105,7 +2105,7 @@
     {
       "type": "frame",
       "id": "0NDqh",
-      "x": -1192,
+      "x": -1177,
       "y": 2270,
       "name": "screen-1-dashboard",
       "clip": true,
@@ -2654,7 +2654,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "./src/images/textures/texture 1.1.png",
+                            "url": "./src/images/textures/texture 1.1.webp",
                             "mode": "fill"
                           },
                           "effect": {
@@ -2732,7 +2732,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "./src/images/textures/texture 1.2.png",
+                            "url": "./src/images/textures/texture 1.2.webp",
                             "mode": "fill"
                           },
                           "effect": {
@@ -2810,7 +2810,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "./src/images/textures/texture 1.3.png",
+                            "url": "./src/images/textures/texture 1.3.webp",
                             "mode": "fill"
                           },
                           "effect": {
@@ -2888,7 +2888,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "./src/images/textures/texture 1.0.png",
+                            "url": "./src/images/textures/texture 1.0.webp",
                             "mode": "fill"
                           },
                           "effect": {
@@ -2976,7 +2976,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "./src/images/textures/texture 1.5.png",
+                            "url": "./src/images/textures/texture 1.5.webP",
                             "mode": "fill"
                           },
                           "effect": {
@@ -3054,7 +3054,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "./src/images/textures/texture 1.6.png",
+                            "url": "./src/images/textures/texture 1.6.webP",
                             "mode": "fill"
                           },
                           "effect": {
@@ -3132,7 +3132,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "./src/images/textures/texture 1.7.png",
+                            "url": "./src/images/textures/texture 1.7.webP",
                             "mode": "fill"
                           },
                           "effect": {
@@ -3210,7 +3210,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "./src/images/textures/texture 1.4.png",
+                            "url": "./src/images/textures/texture 1.4.webP",
                             "mode": "fill"
                           },
                           "effect": {
@@ -3298,7 +3298,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "./src/images/textures/texture 1.5.png",
+                            "url": "./src/images/textures/texture 1.5.webP",
                             "mode": "fill"
                           },
                           "effect": {
@@ -3376,7 +3376,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "./src/images/textures/texture 1.0.png",
+                            "url": "./src/images/textures/texture 1.0.webP",
                             "mode": "fill"
                           },
                           "effect": {
@@ -3454,7 +3454,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "./src/images/textures/texture 1.7.png",
+                            "url": "./src/images/textures/texture 1.7.webP",
                             "mode": "fill"
                           },
                           "effect": {
@@ -3532,7 +3532,7 @@
                           "fill": {
                             "type": "image",
                             "enabled": true,
-                            "url": "./src/images/textures/texture 1.2.png",
+                            "url": "./src/images/textures/texture 1.2.webP",
                             "mode": "fill"
                           },
                           "effect": {
@@ -4453,7 +4453,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.5.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.5.webp",
                     "mode": "fill"
                   },
                   "cornerRadius": 12,
@@ -4467,49 +4467,17 @@
                   "children": [
                     {
                       "type": "frame",
-                      "id": "MBkVw",
-                      "name": "video-thumbnail",
-                      "clip": true,
+                      "id": "4XgnH",
+                      "name": "video-thumbnail-1",
                       "width": 90,
-                      "height": 100,
+                      "height": 75,
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "./src/images/video thumbnails/video image 1.png",
-                        "mode": "fit"
+                        "url": "./src/images/video thumbnails/video image 1.5.png",
+                        "mode": "fill"
                       },
-                      "cornerRadius": 8,
-                      "layout": "none",
-                      "children": [
-                        {
-                          "type": "frame",
-                          "id": "wAFEb",
-                          "x": 0,
-                          "y": 106,
-                          "name": "Frame 7",
-                          "fill": "#e4ded5",
-                          "cornerRadius": 8,
-                          "padding": [
-                            4,
-                            6
-                          ],
-                          "justifyContent": "center",
-                          "alignItems": "center",
-                          "children": [
-                            {
-                              "type": "text",
-                              "id": "lHf7Z",
-                              "name": "meta-read-time",
-                              "rotation": -0.019961217324092603,
-                              "fill": "#3d2e1fb3",
-                              "content": "15 min",
-                              "fontFamily": "DM Sans",
-                              "fontSize": 12,
-                              "fontWeight": "normal"
-                            }
-                          ]
-                        }
-                      ]
+                      "layout": "none"
                     },
                     {
                       "type": "frame",
@@ -4733,7 +4701,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.6.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.6.webp",
                     "mode": "fill"
                   },
                   "cornerRadius": 12,
@@ -4747,17 +4715,17 @@
                   "children": [
                     {
                       "type": "frame",
-                      "id": "hpjGN",
-                      "name": "video-thumbnail",
+                      "id": "0Sq3p",
+                      "name": "video-thumbnail-2",
+                      "clip": true,
                       "width": 90,
-                      "height": 100,
+                      "height": 75,
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "./src/images/video thumbnails/video image 2.png",
+                        "url": "./src/images/video thumbnails/video image 2.5.png",
                         "mode": "fill"
                       },
-                      "cornerRadius": 8,
                       "layout": "none"
                     },
                     {
@@ -4982,7 +4950,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.7.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.7.webp",
                     "mode": "fill"
                   },
                   "cornerRadius": 12,
@@ -4996,18 +4964,17 @@
                   "children": [
                     {
                       "type": "frame",
-                      "id": "WJRh9",
-                      "name": "video-thumbnail",
+                      "id": "JhjQP",
+                      "name": "video-thumbnail-3",
                       "clip": true,
                       "width": 90,
-                      "height": 100,
+                      "height": 75,
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "./src/images/video thumbnails/video image 3.png",
+                        "url": "./src/images/video thumbnails/video image 3.5.png",
                         "mode": "fill"
                       },
-                      "cornerRadius": 8,
                       "layout": "none"
                     },
                     {
@@ -5232,7 +5199,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.0.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.0.webp",
                     "mode": "fill"
                   },
                   "cornerRadius": 12,
@@ -5246,17 +5213,17 @@
                   "children": [
                     {
                       "type": "frame",
-                      "id": "XRhXz",
-                      "name": "video-thumbnail",
+                      "id": "RY3oM",
+                      "name": "video-thumbnail-4",
+                      "clip": true,
                       "width": 90,
-                      "height": 100,
+                      "height": 75,
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "./src/images/video thumbnails/video image 4.png",
+                        "url": "./src/images/video thumbnails/video image 4.5.png",
                         "mode": "fill"
                       },
-                      "cornerRadius": 8,
                       "layout": "none"
                     },
                     {
@@ -5754,7 +5721,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.1.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.1.webp",
                     "mode": "fill"
                   },
                   "cornerRadius": 12,
@@ -5774,7 +5741,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "./src/images/article thumbnails/article image 1.png",
+                        "url": "./src/images/article thumbnails/article image 1.1.png",
                         "mode": "fill"
                       },
                       "width": 90,
@@ -6002,7 +5969,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.2.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.2.webp",
                     "mode": "fill"
                   },
                   "cornerRadius": 12,
@@ -6016,16 +5983,15 @@
                   "children": [
                     {
                       "type": "rectangle",
-                      "cornerRadius": 8,
-                      "id": "Ao7BP",
-                      "name": "article-thumbnail",
+                      "id": "YyDqk",
+                      "name": "article-thumbnail-2",
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "./src/images/article thumbnails/article image 2.png",
+                        "url": "./src/images/article thumbnails/article image 2.1.png",
                         "mode": "fill"
                       },
-                      "width": 90,
+                      "width": 100,
                       "height": 100
                     },
                     {
@@ -6250,7 +6216,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.3.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.3.webp",
                     "mode": "fill"
                   },
                   "cornerRadius": 12,
@@ -6264,16 +6230,15 @@
                   "children": [
                     {
                       "type": "rectangle",
-                      "cornerRadius": 8,
-                      "id": "vauYk",
-                      "name": "article-thumbnail",
+                      "id": "zvcVy",
+                      "name": "article-thumbnail-3",
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "./src/images/article thumbnails/article image 3.png",
+                        "url": "./src/images/article thumbnails/article image 3.1.png",
                         "mode": "fill"
                       },
-                      "width": 90,
+                      "width": 100,
                       "height": 100
                     },
                     {
@@ -6498,7 +6463,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.4.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.4.webp",
                     "mode": "fill"
                   },
                   "cornerRadius": 12,
@@ -6512,16 +6477,15 @@
                   "children": [
                     {
                       "type": "rectangle",
-                      "cornerRadius": 8,
-                      "id": "V8CAc",
-                      "name": "article-thumbnail",
+                      "id": "SZDy8",
+                      "name": "article-thumbnail-4",
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "./src/images/article thumbnails/article image 4.png",
+                        "url": "./src/images/article thumbnails/article image 4.1.png",
                         "mode": "fill"
                       },
-                      "width": 90,
+                      "width": 100,
                       "height": 100
                     },
                     {
@@ -6994,7 +6958,7 @@
             },
             {
               "type": "frame",
-              "id": "VExnc",
+              "id": "0fbxm",
               "name": "video-cards-view",
               "width": "fill_container",
               "layout": "vertical",
@@ -7002,14 +6966,14 @@
               "children": [
                 {
                   "type": "frame",
-                  "id": "iK2UX",
+                  "id": "lzr89",
                   "name": "video-card-1",
                   "width": "fill_container",
                   "height": 142,
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.5.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.5.webp",
                     "mode": "fill"
                   },
                   "cornerRadius": 12,
@@ -7023,22 +6987,21 @@
                   "children": [
                     {
                       "type": "frame",
-                      "id": "a0WiK",
-                      "name": "video-thumbnail",
+                      "id": "3v8lH",
+                      "name": "video-thumbnail-1",
                       "width": 90,
-                      "height": 100,
+                      "height": 75,
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "./src/images/video thumbnails/video image 1.1.png",
+                        "url": "./src/images/video thumbnails/video image 1.5.png",
                         "mode": "fill"
                       },
-                      "cornerRadius": 8,
                       "layout": "none"
                     },
                     {
                       "type": "frame",
-                      "id": "EwY0z",
+                      "id": "aWwnw",
                       "name": "article-content-1",
                       "rotation": -0.019961217324092603,
                       "width": "fill_container",
@@ -7049,7 +7012,7 @@
                       "children": [
                         {
                           "type": "text",
-                          "id": "RgxE6",
+                          "id": "70lOp",
                           "name": "video-title",
                           "fill": "#3D2E1Fff",
                           "textGrowth": "fixed-width",
@@ -7062,7 +7025,7 @@
                         },
                         {
                           "type": "text",
-                          "id": "B1ZLL",
+                          "id": "l8lNB",
                           "x": 0,
                           "y": 0,
                           "name": "video-description-hidden",
@@ -7077,7 +7040,7 @@
                         },
                         {
                           "type": "frame",
-                          "id": "3fO2P",
+                          "id": "ZgjIk",
                           "name": "Frame 7",
                           "rotation": 0.019961217324092603,
                           "fill": "#e4ded5",
@@ -7092,7 +7055,7 @@
                           "children": [
                             {
                               "type": "text",
-                              "id": "UoucJ",
+                              "id": "sZCVm",
                               "name": "meta-read-time",
                               "rotation": -0.019961217324092603,
                               "fill": "#3d2e1fb3",
@@ -7105,22 +7068,21 @@
                         },
                         {
                           "type": "frame",
-                          "id": "JkONM",
+                          "id": "2qzda",
                           "name": "article-metadata",
-                          "width": "fill_container",
                           "gap": 8,
                           "alignItems": "center",
                           "children": [
                             {
                               "type": "frame",
-                              "id": "2bFwN",
+                              "id": "4Q77M",
                               "name": "Frame 3",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "2tTmt",
+                                  "id": "fvYqY",
                                   "name": "meta-eye-icon",
                                   "width": 16,
                                   "height": 16,
@@ -7130,7 +7092,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "6DEEs",
+                                  "id": "ON8PP",
                                   "name": "meta-views",
                                   "fill": "#3d2e1fb3",
                                   "content": "5.2k",
@@ -7142,7 +7104,7 @@
                             },
                             {
                               "type": "frame",
-                              "id": "2QpUP",
+                              "id": "zZSm4",
                               "name": "Frame 7",
                               "rotation": 0.019961217324092603,
                               "cornerRadius": 4,
@@ -7152,7 +7114,7 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "WbQB9",
+                                  "id": "H589k",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
                                   "fill": "#3d2e1f80",
@@ -7165,14 +7127,14 @@
                             },
                             {
                               "type": "frame",
-                              "id": "Fjlu5",
+                              "id": "VygvM",
                               "name": "Frame 4",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "FeYIa",
+                                  "id": "LMda3",
                                   "name": "meta-heart-icon",
                                   "width": 16,
                                   "height": 16,
@@ -7182,7 +7144,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "IX6Xv",
+                                  "id": "NV15t",
                                   "name": "meta-likes",
                                   "fill": "#3d2e1fb3",
                                   "content": "340",
@@ -7194,7 +7156,7 @@
                             },
                             {
                               "type": "frame",
-                              "id": "cUZyj",
+                              "id": "s3tMz",
                               "name": "Frame 7",
                               "rotation": 0.019961217324092603,
                               "cornerRadius": 4,
@@ -7204,7 +7166,7 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "AcCmn",
+                                  "id": "UNa9t",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
                                   "fill": "#3d2e1f80",
@@ -7217,14 +7179,14 @@
                             },
                             {
                               "type": "frame",
-                              "id": "6brNy",
+                              "id": "8WSe2",
                               "name": "Frame 4",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "GHrQa",
+                                  "id": "FSwkA",
                                   "name": "meta-heart-icon",
                                   "width": 16,
                                   "height": 16,
@@ -7234,7 +7196,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "RwIG8",
+                                  "id": "a6qlK",
                                   "name": "meta-likes",
                                   "fill": "#3d2e1fb3",
                                   "content": "1 day ago",
@@ -7252,14 +7214,14 @@
                 },
                 {
                   "type": "frame",
-                  "id": "sXP1N",
+                  "id": "Kfm5l",
                   "name": "video-card-2",
                   "width": "fill_container",
                   "height": 142,
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.6.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.6.webp",
                     "mode": "fill"
                   },
                   "cornerRadius": 12,
@@ -7273,23 +7235,22 @@
                   "children": [
                     {
                       "type": "frame",
-                      "id": "h9ZUE",
-                      "name": "video-thumbnail",
+                      "id": "wQVdp",
+                      "name": "video-thumbnail-2",
                       "clip": true,
                       "width": 90,
-                      "height": 100,
+                      "height": 75,
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "./src/images/video thumbnails/video image 2.1.png",
+                        "url": "./src/images/video thumbnails/video image 2.5.png",
                         "mode": "fill"
                       },
-                      "cornerRadius": 8,
                       "layout": "none"
                     },
                     {
                       "type": "frame",
-                      "id": "7iHK5",
+                      "id": "ov93X",
                       "name": "article-content-1",
                       "rotation": -0.019961217324092603,
                       "width": "fill_container",
@@ -7300,7 +7261,7 @@
                       "children": [
                         {
                           "type": "text",
-                          "id": "GtwCx",
+                          "id": "yAfHm",
                           "name": "video-title",
                           "fill": "#3D2E1Fff",
                           "textGrowth": "fixed-width",
@@ -7313,7 +7274,7 @@
                         },
                         {
                           "type": "text",
-                          "id": "Qox9c",
+                          "id": "6KQvr",
                           "x": 0,
                           "y": 0,
                           "name": "video-description-hidden",
@@ -7328,7 +7289,7 @@
                         },
                         {
                           "type": "frame",
-                          "id": "oUoI1",
+                          "id": "fAEf1",
                           "name": "Frame 7",
                           "rotation": 0.019961217324092603,
                           "fill": "#e4ded5",
@@ -7343,7 +7304,7 @@
                           "children": [
                             {
                               "type": "text",
-                              "id": "zLCX3",
+                              "id": "HKoAc",
                               "name": "meta-read-time",
                               "rotation": -0.019961217324092603,
                               "fill": "#3d2e1fb3",
@@ -7356,22 +7317,21 @@
                         },
                         {
                           "type": "frame",
-                          "id": "CJooy",
+                          "id": "oOzZE",
                           "name": "article-metadata",
-                          "width": "fill_container",
                           "gap": 8,
                           "alignItems": "center",
                           "children": [
                             {
                               "type": "frame",
-                              "id": "43Tsl",
+                              "id": "QQmeE",
                               "name": "Frame 3",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "V2kK3",
+                                  "id": "KzN0V",
                                   "name": "meta-eye-icon",
                                   "width": 16,
                                   "height": 16,
@@ -7381,7 +7341,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "BjBGh",
+                                  "id": "yKkHO",
                                   "name": "meta-views",
                                   "fill": "#3d2e1fb3",
                                   "content": "5.2k",
@@ -7393,7 +7353,7 @@
                             },
                             {
                               "type": "frame",
-                              "id": "2A13m",
+                              "id": "CQquM",
                               "name": "Frame 7",
                               "rotation": 0.019961217324092603,
                               "cornerRadius": 4,
@@ -7403,7 +7363,7 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "RYBgx",
+                                  "id": "QCnCS",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
                                   "fill": "#3d2e1f80",
@@ -7416,14 +7376,14 @@
                             },
                             {
                               "type": "frame",
-                              "id": "DakJH",
+                              "id": "AvBt4",
                               "name": "Frame 4",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "CDuE7",
+                                  "id": "Y3dJA",
                                   "name": "meta-heart-icon",
                                   "width": 16,
                                   "height": 16,
@@ -7433,7 +7393,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "8hbR5",
+                                  "id": "vYUd7",
                                   "name": "meta-likes",
                                   "fill": "#3d2e1fb3",
                                   "content": "340",
@@ -7445,7 +7405,7 @@
                             },
                             {
                               "type": "frame",
-                              "id": "mvwR2",
+                              "id": "eltfC",
                               "name": "Frame 7",
                               "rotation": 0.019961217324092603,
                               "cornerRadius": 4,
@@ -7455,7 +7415,7 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "i3szk",
+                                  "id": "FSow1",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
                                   "fill": "#3d2e1f80",
@@ -7468,14 +7428,14 @@
                             },
                             {
                               "type": "frame",
-                              "id": "H8R0e",
+                              "id": "07V6l",
                               "name": "Frame 4",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "DodNE",
+                                  "id": "PQg79",
                                   "name": "meta-heart-icon",
                                   "width": 16,
                                   "height": 16,
@@ -7485,7 +7445,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "WTIfO",
+                                  "id": "pNSXA",
                                   "name": "meta-likes",
                                   "fill": "#3d2e1fb3",
                                   "content": "1 day ago",
@@ -7503,14 +7463,14 @@
                 },
                 {
                   "type": "frame",
-                  "id": "nylD3",
+                  "id": "uJ0kk",
                   "name": "video-card-3",
                   "width": "fill_container",
                   "height": 142,
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.7.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.7.webp",
                     "mode": "fill"
                   },
                   "cornerRadius": 12,
@@ -7524,23 +7484,22 @@
                   "children": [
                     {
                       "type": "frame",
-                      "id": "53qYi",
-                      "name": "video-thumbnail",
+                      "id": "3u1In",
+                      "name": "video-thumbnail-3",
                       "clip": true,
                       "width": 90,
-                      "height": 100,
+                      "height": 75,
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "./src/images/video thumbnails/video image 3.1.png",
+                        "url": "./src/images/video thumbnails/video image 3.5.png",
                         "mode": "fill"
                       },
-                      "cornerRadius": 8,
                       "layout": "none"
                     },
                     {
                       "type": "frame",
-                      "id": "TkJJC",
+                      "id": "rN8k7",
                       "name": "article-content-1",
                       "rotation": -0.019961217324092603,
                       "width": "fill_container",
@@ -7551,7 +7510,7 @@
                       "children": [
                         {
                           "type": "text",
-                          "id": "sNOQ2",
+                          "id": "NgBxn",
                           "name": "video-title",
                           "fill": "#3D2E1Fff",
                           "textGrowth": "fixed-width",
@@ -7564,7 +7523,7 @@
                         },
                         {
                           "type": "text",
-                          "id": "n4C8k",
+                          "id": "2egn1",
                           "x": 0,
                           "y": 0,
                           "name": "video-description-hidden",
@@ -7579,7 +7538,7 @@
                         },
                         {
                           "type": "frame",
-                          "id": "U39zw",
+                          "id": "bGgx3",
                           "name": "Frame 7",
                           "rotation": 0.019961217324092603,
                           "fill": "#e4ded5",
@@ -7594,11 +7553,11 @@
                           "children": [
                             {
                               "type": "text",
-                              "id": "VDECE",
+                              "id": "1YDn9",
                               "name": "meta-read-time",
                               "rotation": -0.019961217324092603,
                               "fill": "#3d2e1fb3",
-                              "content": "15:02",
+                              "content": "15:02 ",
                               "fontFamily": "DM Sans",
                               "fontSize": 12,
                               "fontWeight": "normal"
@@ -7607,22 +7566,21 @@
                         },
                         {
                           "type": "frame",
-                          "id": "Y9gYO",
+                          "id": "GwLig",
                           "name": "article-metadata",
-                          "width": "fill_container",
                           "gap": 8,
                           "alignItems": "center",
                           "children": [
                             {
                               "type": "frame",
-                              "id": "lD0sx",
+                              "id": "I7gSH",
                               "name": "Frame 3",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "tjveY",
+                                  "id": "xRKBC",
                                   "name": "meta-eye-icon",
                                   "width": 16,
                                   "height": 16,
@@ -7632,7 +7590,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "vdbbS",
+                                  "id": "krHyA",
                                   "name": "meta-views",
                                   "fill": "#3d2e1fb3",
                                   "content": "5.2k",
@@ -7644,7 +7602,7 @@
                             },
                             {
                               "type": "frame",
-                              "id": "9Bg8a",
+                              "id": "Uj6ov",
                               "name": "Frame 7",
                               "rotation": 0.019961217324092603,
                               "cornerRadius": 4,
@@ -7654,7 +7612,7 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "V9mrV",
+                                  "id": "xqy1Q",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
                                   "fill": "#3d2e1f80",
@@ -7667,14 +7625,14 @@
                             },
                             {
                               "type": "frame",
-                              "id": "GUjxE",
+                              "id": "QvvDP",
                               "name": "Frame 4",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "Z2Ugf",
+                                  "id": "F4QHX",
                                   "name": "meta-heart-icon",
                                   "width": 16,
                                   "height": 16,
@@ -7684,7 +7642,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "0VZMP",
+                                  "id": "2La87",
                                   "name": "meta-likes",
                                   "fill": "#3d2e1fb3",
                                   "content": "340",
@@ -7696,7 +7654,7 @@
                             },
                             {
                               "type": "frame",
-                              "id": "xg5k2",
+                              "id": "Lp0ll",
                               "name": "Frame 7",
                               "rotation": 0.019961217324092603,
                               "cornerRadius": 4,
@@ -7706,7 +7664,7 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "LJFA3",
+                                  "id": "8mfwq",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
                                   "fill": "#3d2e1f80",
@@ -7719,14 +7677,14 @@
                             },
                             {
                               "type": "frame",
-                              "id": "wAoNI",
+                              "id": "cecaO",
                               "name": "Frame 4",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "bO4mM",
+                                  "id": "D7bS4",
                                   "name": "meta-heart-icon",
                                   "width": 16,
                                   "height": 16,
@@ -7736,7 +7694,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "LBw24",
+                                  "id": "CRkqe",
                                   "name": "meta-likes",
                                   "fill": "#3d2e1fb3",
                                   "content": "1 day ago",
@@ -7754,14 +7712,14 @@
                 },
                 {
                   "type": "frame",
-                  "id": "Xpby0",
+                  "id": "RCdhp",
                   "name": "video-card-4",
                   "width": "fill_container",
                   "height": 142,
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.0.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.0.webp",
                     "mode": "fill"
                   },
                   "cornerRadius": 12,
@@ -7775,23 +7733,22 @@
                   "children": [
                     {
                       "type": "frame",
-                      "id": "hEfnl",
-                      "name": "video-thumbnail",
+                      "id": "b1csL",
+                      "name": "video-thumbnail-4",
                       "clip": true,
                       "width": 90,
-                      "height": 100,
+                      "height": 75,
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "./src/images/video thumbnails/video image 4.1.png",
+                        "url": "./src/images/video thumbnails/video image 4.5.png",
                         "mode": "fill"
                       },
-                      "cornerRadius": 8,
                       "layout": "none"
                     },
                     {
                       "type": "frame",
-                      "id": "Ty4Kw",
+                      "id": "OwuwZ",
                       "name": "article-content-1",
                       "rotation": -0.019961217324092603,
                       "width": "fill_container",
@@ -7802,7 +7759,7 @@
                       "children": [
                         {
                           "type": "text",
-                          "id": "KqazO",
+                          "id": "1F7Ho",
                           "name": "video-title",
                           "fill": "#3D2E1Fff",
                           "textGrowth": "fixed-width",
@@ -7815,7 +7772,7 @@
                         },
                         {
                           "type": "text",
-                          "id": "bVwro",
+                          "id": "XQjOU",
                           "x": 0,
                           "y": 0,
                           "name": "video-description-hidden",
@@ -7830,7 +7787,7 @@
                         },
                         {
                           "type": "frame",
-                          "id": "LcT8v",
+                          "id": "T1FTg",
                           "name": "Frame 7",
                           "rotation": 0.019961217324092603,
                           "fill": "#e4ded5",
@@ -7845,11 +7802,11 @@
                           "children": [
                             {
                               "type": "text",
-                              "id": "0AvID",
+                              "id": "C7fJ1",
                               "name": "meta-read-time",
                               "rotation": -0.019961217324092603,
                               "fill": "#3d2e1fb3",
-                              "content": "15:02",
+                              "content": "15:02 ",
                               "fontFamily": "DM Sans",
                               "fontSize": 12,
                               "fontWeight": "normal"
@@ -7858,22 +7815,21 @@
                         },
                         {
                           "type": "frame",
-                          "id": "9LfiO",
+                          "id": "6cJwp",
                           "name": "article-metadata",
-                          "width": "fill_container",
                           "gap": 8,
                           "alignItems": "center",
                           "children": [
                             {
                               "type": "frame",
-                              "id": "oWIvP",
+                              "id": "4l7I3",
                               "name": "Frame 3",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "ik8oX",
+                                  "id": "JBmVH",
                                   "name": "meta-eye-icon",
                                   "width": 16,
                                   "height": 16,
@@ -7883,7 +7839,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "DKYgw",
+                                  "id": "n0xpV",
                                   "name": "meta-views",
                                   "fill": "#3d2e1fb3",
                                   "content": "5.2k",
@@ -7895,7 +7851,7 @@
                             },
                             {
                               "type": "frame",
-                              "id": "oGpFA",
+                              "id": "ktkue",
                               "name": "Frame 7",
                               "rotation": 0.019961217324092603,
                               "cornerRadius": 4,
@@ -7905,7 +7861,7 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "CXaqB",
+                                  "id": "OyZZ3",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
                                   "fill": "#3d2e1f80",
@@ -7918,14 +7874,14 @@
                             },
                             {
                               "type": "frame",
-                              "id": "0mHMz",
+                              "id": "a1XDp",
                               "name": "Frame 4",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "HDEcZ",
+                                  "id": "sTKk5",
                                   "name": "meta-heart-icon",
                                   "width": 16,
                                   "height": 16,
@@ -7935,7 +7891,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "0igxW",
+                                  "id": "4quNs",
                                   "name": "meta-likes",
                                   "fill": "#3d2e1fb3",
                                   "content": "340",
@@ -7947,7 +7903,7 @@
                             },
                             {
                               "type": "frame",
-                              "id": "TFj2y",
+                              "id": "jem6t",
                               "name": "Frame 7",
                               "rotation": 0.019961217324092603,
                               "cornerRadius": 4,
@@ -7957,7 +7913,7 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "pwc1t",
+                                  "id": "lIVOx",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
                                   "fill": "#3d2e1f80",
@@ -7970,14 +7926,14 @@
                             },
                             {
                               "type": "frame",
-                              "id": "mnEgG",
+                              "id": "Z2oYf",
                               "name": "Frame 4",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "nNGcx",
+                                  "id": "UYdRc",
                                   "name": "meta-heart-icon",
                                   "width": 16,
                                   "height": 16,
@@ -7987,7 +7943,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "tGOkJ",
+                                  "id": "lRGIC",
                                   "name": "meta-likes",
                                   "fill": "#3d2e1fb3",
                                   "content": "1 day ago",
@@ -8270,7 +8226,7 @@
             },
             {
               "type": "frame",
-              "id": "2G167",
+              "id": "5CKQx",
               "name": "article-cards-view",
               "width": "fill_container",
               "layout": "vertical",
@@ -8278,14 +8234,14 @@
               "children": [
                 {
                   "type": "frame",
-                  "id": "4DkQo",
+                  "id": "idypS",
                   "name": "article-card-1",
                   "width": "fill_container",
                   "height": 142,
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.1.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.1.webp",
                     "mode": "fill"
                   },
                   "cornerRadius": 12,
@@ -8300,7 +8256,7 @@
                     {
                       "type": "rectangle",
                       "cornerRadius": 8,
-                      "id": "mow3N",
+                      "id": "h6ml8",
                       "name": "article-thumbnail",
                       "fill": {
                         "type": "image",
@@ -8313,7 +8269,7 @@
                     },
                     {
                       "type": "frame",
-                      "id": "VWphD",
+                      "id": "xF1fd",
                       "name": "article-content-1",
                       "rotation": -0.019961217324092603,
                       "width": "fill_container",
@@ -8324,7 +8280,7 @@
                       "children": [
                         {
                           "type": "text",
-                          "id": "6uCSP",
+                          "id": "tY5c0",
                           "name": "article-title",
                           "fill": "#3D2E1Fff",
                           "textGrowth": "fixed-width",
@@ -8337,7 +8293,7 @@
                         },
                         {
                           "type": "text",
-                          "id": "Hn6JU",
+                          "id": "xJJ4B",
                           "x": 0,
                           "y": 0,
                           "name": "article-description",
@@ -8352,7 +8308,7 @@
                         },
                         {
                           "type": "frame",
-                          "id": "ps9JA",
+                          "id": "Nuedt",
                           "name": "Frame 7",
                           "rotation": 0.019961217324092603,
                           "fill": "#e4ded5",
@@ -8367,7 +8323,7 @@
                           "children": [
                             {
                               "type": "text",
-                              "id": "52laX",
+                              "id": "TktTQ",
                               "name": "meta-read-time",
                               "rotation": -0.019961217324092603,
                               "fill": "#3d2e1fb3",
@@ -8380,21 +8336,21 @@
                         },
                         {
                           "type": "frame",
-                          "id": "0qpjs",
+                          "id": "r7s0v",
                           "name": "article-metadata",
                           "gap": 8,
                           "alignItems": "center",
                           "children": [
                             {
                               "type": "frame",
-                              "id": "e5Vu7",
+                              "id": "xZCvj",
                               "name": "Frame 3",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "pBS7Y",
+                                  "id": "uDfon",
                                   "name": "meta-eye-icon",
                                   "width": 16,
                                   "height": 16,
@@ -8404,7 +8360,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "4DsiD",
+                                  "id": "JHRr8",
                                   "name": "meta-views",
                                   "fill": "#3d2e1fb3",
                                   "content": "5.2k",
@@ -8416,7 +8372,7 @@
                             },
                             {
                               "type": "frame",
-                              "id": "DnH3P",
+                              "id": "8OwvY",
                               "name": "Frame 7",
                               "rotation": 0.019961217324092603,
                               "cornerRadius": 4,
@@ -8426,7 +8382,7 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "v1SE4",
+                                  "id": "ovZZP",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
                                   "fill": "#3d2e1f80",
@@ -8439,14 +8395,14 @@
                             },
                             {
                               "type": "frame",
-                              "id": "KwLwT",
+                              "id": "xwNYB",
                               "name": "Frame 4",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "r9o3f",
+                                  "id": "l15Vh",
                                   "name": "meta-heart-icon",
                                   "width": 16,
                                   "height": 16,
@@ -8456,7 +8412,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "CTKDa",
+                                  "id": "DK5GB",
                                   "name": "meta-likes",
                                   "fill": "#3d2e1fb3",
                                   "content": "340",
@@ -8468,7 +8424,7 @@
                             },
                             {
                               "type": "frame",
-                              "id": "rxVDz",
+                              "id": "ol7sl",
                               "name": "Frame 7",
                               "rotation": 0.019961217324092603,
                               "cornerRadius": 4,
@@ -8478,7 +8434,7 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "IHTYf",
+                                  "id": "j2Dut",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
                                   "fill": "#3d2e1f80",
@@ -8491,14 +8447,14 @@
                             },
                             {
                               "type": "frame",
-                              "id": "jOA04",
+                              "id": "ulSGa",
                               "name": "Frame 4",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "ky6bK",
+                                  "id": "zi1r1",
                                   "name": "meta-heart-icon",
                                   "width": 16,
                                   "height": 16,
@@ -8508,7 +8464,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "hlQpn",
+                                  "id": "YTbq2",
                                   "name": "meta-likes",
                                   "fill": "#3d2e1fb3",
                                   "content": "1 day ago",
@@ -8526,14 +8482,14 @@
                 },
                 {
                   "type": "frame",
-                  "id": "0EB1l",
+                  "id": "RBgv6",
                   "name": "article-card-2",
                   "width": "fill_container",
                   "height": 142,
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.2.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.2.webp",
                     "mode": "fill"
                   },
                   "cornerRadius": 12,
@@ -8547,21 +8503,20 @@
                   "children": [
                     {
                       "type": "rectangle",
-                      "cornerRadius": 8,
-                      "id": "R89Zv",
-                      "name": "article-thumbnail",
+                      "id": "BXHNP",
+                      "name": "article-thumbnail-2",
                       "fill": {
                         "type": "image",
                         "enabled": true,
                         "url": "./src/images/article thumbnails/article image 2.1.png",
                         "mode": "fill"
                       },
-                      "width": 80,
-                      "height": 80
+                      "width": 100,
+                      "height": 100
                     },
                     {
                       "type": "frame",
-                      "id": "0uS7q",
+                      "id": "38UY2",
                       "name": "article-content-1",
                       "rotation": -0.019961217324092603,
                       "width": "fill_container",
@@ -8572,7 +8527,7 @@
                       "children": [
                         {
                           "type": "text",
-                          "id": "fmOU2",
+                          "id": "iIxAT",
                           "name": "article-title",
                           "fill": "#3D2E1Fff",
                           "textGrowth": "fixed-width",
@@ -8585,7 +8540,7 @@
                         },
                         {
                           "type": "text",
-                          "id": "7Xaym",
+                          "id": "pi6fh",
                           "x": 0,
                           "y": 0,
                           "name": "article-description",
@@ -8600,7 +8555,7 @@
                         },
                         {
                           "type": "frame",
-                          "id": "s5WXO",
+                          "id": "bviDK",
                           "name": "Frame 7",
                           "rotation": 0.019961217324092603,
                           "fill": "#e4ded5",
@@ -8615,7 +8570,7 @@
                           "children": [
                             {
                               "type": "text",
-                              "id": "FiUbT",
+                              "id": "njGcE",
                               "name": "meta-read-time",
                               "rotation": -0.019961217324092603,
                               "fill": "#3d2e1fb3",
@@ -8628,21 +8583,21 @@
                         },
                         {
                           "type": "frame",
-                          "id": "DvauG",
+                          "id": "ThF7d",
                           "name": "article-metadata",
                           "gap": 8,
                           "alignItems": "center",
                           "children": [
                             {
                               "type": "frame",
-                              "id": "dYSVn",
+                              "id": "uDFhd",
                               "name": "Frame 3",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "wvMM8",
+                                  "id": "Hf6cB",
                                   "name": "meta-eye-icon",
                                   "width": 16,
                                   "height": 16,
@@ -8652,7 +8607,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "EirTC",
+                                  "id": "SHhL3",
                                   "name": "meta-views",
                                   "fill": "#3d2e1fb3",
                                   "content": "5.2k",
@@ -8664,7 +8619,7 @@
                             },
                             {
                               "type": "frame",
-                              "id": "pJTol",
+                              "id": "xDk1B",
                               "name": "Frame 7",
                               "rotation": 0.019961217324092603,
                               "cornerRadius": 4,
@@ -8674,7 +8629,7 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "UWvSr",
+                                  "id": "nGo5C",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
                                   "fill": "#3d2e1f80",
@@ -8687,14 +8642,14 @@
                             },
                             {
                               "type": "frame",
-                              "id": "SPsAo",
+                              "id": "5iKK4",
                               "name": "Frame 4",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "XZY0h",
+                                  "id": "Bbm8x",
                                   "name": "meta-heart-icon",
                                   "width": 16,
                                   "height": 16,
@@ -8704,7 +8659,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "P0Hln",
+                                  "id": "gFNoo",
                                   "name": "meta-likes",
                                   "fill": "#3d2e1fb3",
                                   "content": "340",
@@ -8716,7 +8671,7 @@
                             },
                             {
                               "type": "frame",
-                              "id": "n1Q9h",
+                              "id": "szZiH",
                               "name": "Frame 7",
                               "rotation": 0.019961217324092603,
                               "cornerRadius": 4,
@@ -8726,7 +8681,7 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "pcMC0",
+                                  "id": "lLML7",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
                                   "fill": "#3d2e1f80",
@@ -8739,14 +8694,14 @@
                             },
                             {
                               "type": "frame",
-                              "id": "QvOFr",
+                              "id": "ffYml",
                               "name": "Frame 4",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "tgsz4",
+                                  "id": "ZCoso",
                                   "name": "meta-heart-icon",
                                   "width": 16,
                                   "height": 16,
@@ -8756,7 +8711,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "IX0TH",
+                                  "id": "hUybA",
                                   "name": "meta-likes",
                                   "fill": "#3d2e1fb3",
                                   "content": "1 day ago",
@@ -8774,14 +8729,14 @@
                 },
                 {
                   "type": "frame",
-                  "id": "T4JKN",
+                  "id": "vtgaS",
                   "name": "article-card-3",
                   "width": "fill_container",
                   "height": 142,
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.3.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.3.webp",
                     "mode": "fill"
                   },
                   "cornerRadius": 12,
@@ -8795,21 +8750,20 @@
                   "children": [
                     {
                       "type": "rectangle",
-                      "cornerRadius": 8,
-                      "id": "FMQZQ",
-                      "name": "article-thumbnail",
+                      "id": "8kOJf",
+                      "name": "article-thumbnail-3",
                       "fill": {
                         "type": "image",
                         "enabled": true,
                         "url": "./src/images/article thumbnails/article image 3.1.png",
                         "mode": "fill"
                       },
-                      "width": 90,
+                      "width": 100,
                       "height": 100
                     },
                     {
                       "type": "frame",
-                      "id": "jMXcr",
+                      "id": "MsGfq",
                       "name": "article-content-1",
                       "rotation": -0.019961217324092603,
                       "width": "fill_container",
@@ -8820,7 +8774,7 @@
                       "children": [
                         {
                           "type": "text",
-                          "id": "t5tMa",
+                          "id": "Fjs3b",
                           "name": "article-title",
                           "fill": "#3D2E1Fff",
                           "textGrowth": "fixed-width",
@@ -8833,7 +8787,7 @@
                         },
                         {
                           "type": "text",
-                          "id": "raZ0m",
+                          "id": "lX2mS",
                           "x": 0,
                           "y": 0,
                           "name": "article-description",
@@ -8848,7 +8802,7 @@
                         },
                         {
                           "type": "frame",
-                          "id": "zdw9X",
+                          "id": "pbBiW",
                           "name": "Frame 7",
                           "rotation": 0.019961217324092603,
                           "fill": "#e4ded5",
@@ -8863,7 +8817,7 @@
                           "children": [
                             {
                               "type": "text",
-                              "id": "fdVBX",
+                              "id": "jeJdF",
                               "name": "meta-read-time",
                               "rotation": -0.019961217324092603,
                               "fill": "#3d2e1fb3",
@@ -8876,21 +8830,21 @@
                         },
                         {
                           "type": "frame",
-                          "id": "0HdJU",
+                          "id": "7xpww",
                           "name": "article-metadata",
                           "gap": 8,
                           "alignItems": "center",
                           "children": [
                             {
                               "type": "frame",
-                              "id": "5P5fp",
+                              "id": "DYvwM",
                               "name": "Frame 3",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "d3Dh1",
+                                  "id": "9fsmY",
                                   "name": "meta-eye-icon",
                                   "width": 16,
                                   "height": 16,
@@ -8900,7 +8854,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "TN3oT",
+                                  "id": "gteLJ",
                                   "name": "meta-views",
                                   "fill": "#3d2e1fb3",
                                   "content": "5.2k",
@@ -8912,7 +8866,7 @@
                             },
                             {
                               "type": "frame",
-                              "id": "PBier",
+                              "id": "83dWN",
                               "name": "Frame 7",
                               "rotation": 0.019961217324092603,
                               "cornerRadius": 4,
@@ -8922,7 +8876,7 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "WgSLe",
+                                  "id": "gg17v",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
                                   "fill": "#3d2e1f80",
@@ -8935,14 +8889,14 @@
                             },
                             {
                               "type": "frame",
-                              "id": "yKVqV",
+                              "id": "y4QPj",
                               "name": "Frame 4",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "De7Rr",
+                                  "id": "WGOeW",
                                   "name": "meta-heart-icon",
                                   "width": 16,
                                   "height": 16,
@@ -8952,7 +8906,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "3ZXHS",
+                                  "id": "HPRH4",
                                   "name": "meta-likes",
                                   "fill": "#3d2e1fb3",
                                   "content": "340",
@@ -8964,7 +8918,7 @@
                             },
                             {
                               "type": "frame",
-                              "id": "0Nuva",
+                              "id": "bVCi9",
                               "name": "Frame 7",
                               "rotation": 0.019961217324092603,
                               "cornerRadius": 4,
@@ -8974,7 +8928,7 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "KRWGb",
+                                  "id": "PV4lJ",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
                                   "fill": "#3d2e1f80",
@@ -8987,14 +8941,14 @@
                             },
                             {
                               "type": "frame",
-                              "id": "0pNn8",
+                              "id": "hZmJV",
                               "name": "Frame 4",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "bh8lw",
+                                  "id": "bRbfO",
                                   "name": "meta-heart-icon",
                                   "width": 16,
                                   "height": 16,
@@ -9004,7 +8958,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "6yd2c",
+                                  "id": "3miA2",
                                   "name": "meta-likes",
                                   "fill": "#3d2e1fb3",
                                   "content": "1 day ago",
@@ -9022,14 +8976,14 @@
                 },
                 {
                   "type": "frame",
-                  "id": "cE39w",
+                  "id": "pNtEA",
                   "name": "article-card-4",
                   "width": "fill_container",
                   "height": 142,
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./src/images/no shadow texture/ns texture 1.4.png",
+                    "url": "./src/images/no shadow texture/ns texture 1.4.webp",
                     "mode": "fill"
                   },
                   "cornerRadius": 12,
@@ -9043,21 +8997,20 @@
                   "children": [
                     {
                       "type": "rectangle",
-                      "cornerRadius": 8,
-                      "id": "ufb2W",
-                      "name": "article-thumbnail",
+                      "id": "aynHI",
+                      "name": "article-thumbnail-4",
                       "fill": {
                         "type": "image",
                         "enabled": true,
                         "url": "./src/images/article thumbnails/article image 4.1.png",
                         "mode": "fill"
                       },
-                      "width": 90,
+                      "width": 100,
                       "height": 100
                     },
                     {
                       "type": "frame",
-                      "id": "rxQSW",
+                      "id": "mIJhX",
                       "name": "article-content-1",
                       "rotation": -0.019961217324092603,
                       "width": "fill_container",
@@ -9068,7 +9021,7 @@
                       "children": [
                         {
                           "type": "text",
-                          "id": "Y8Bz8",
+                          "id": "UWEvW",
                           "name": "article-title",
                           "fill": "#3D2E1Fff",
                           "textGrowth": "fixed-width",
@@ -9081,7 +9034,7 @@
                         },
                         {
                           "type": "text",
-                          "id": "tfaFJ",
+                          "id": "z4rkD",
                           "x": 0,
                           "y": 0,
                           "name": "article-description",
@@ -9096,7 +9049,7 @@
                         },
                         {
                           "type": "frame",
-                          "id": "vk42u",
+                          "id": "ZuOqh",
                           "name": "Frame 7",
                           "rotation": 0.019961217324092603,
                           "fill": "#e4ded5",
@@ -9111,7 +9064,7 @@
                           "children": [
                             {
                               "type": "text",
-                              "id": "QhGLT",
+                              "id": "7moUE",
                               "name": "meta-read-time",
                               "rotation": -0.019961217324092603,
                               "fill": "#3d2e1fb3",
@@ -9124,21 +9077,21 @@
                         },
                         {
                           "type": "frame",
-                          "id": "Jz8ci",
+                          "id": "k7ogp",
                           "name": "article-metadata",
                           "gap": 8,
                           "alignItems": "center",
                           "children": [
                             {
                               "type": "frame",
-                              "id": "yY34h",
+                              "id": "1uApo",
                               "name": "Frame 3",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "VGIe8",
+                                  "id": "Gz0nq",
                                   "name": "meta-eye-icon",
                                   "width": 16,
                                   "height": 16,
@@ -9148,7 +9101,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "0DRqG",
+                                  "id": "yHtcQ",
                                   "name": "meta-views",
                                   "fill": "#3d2e1fb3",
                                   "content": "5.2k",
@@ -9160,7 +9113,7 @@
                             },
                             {
                               "type": "frame",
-                              "id": "HB5uN",
+                              "id": "EyFq9",
                               "name": "Frame 7",
                               "rotation": 0.019961217324092603,
                               "cornerRadius": 4,
@@ -9170,7 +9123,7 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "y66rx",
+                                  "id": "C3BKH",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
                                   "fill": "#3d2e1f80",
@@ -9183,14 +9136,14 @@
                             },
                             {
                               "type": "frame",
-                              "id": "AdFRY",
+                              "id": "TR7Sa",
                               "name": "Frame 4",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "qEqB3",
+                                  "id": "Deepp",
                                   "name": "meta-heart-icon",
                                   "width": 16,
                                   "height": 16,
@@ -9200,7 +9153,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "xKOWZ",
+                                  "id": "nhMPt",
                                   "name": "meta-likes",
                                   "fill": "#3d2e1fb3",
                                   "content": "340",
@@ -9212,7 +9165,7 @@
                             },
                             {
                               "type": "frame",
-                              "id": "cwjnH",
+                              "id": "ZrVvE",
                               "name": "Frame 7",
                               "rotation": 0.019961217324092603,
                               "cornerRadius": 4,
@@ -9222,7 +9175,7 @@
                               "children": [
                                 {
                                   "type": "text",
-                                  "id": "z3hiJ",
+                                  "id": "8ip1B",
                                   "name": "meta-read-time",
                                   "rotation": -0.019961217324092603,
                                   "fill": "#3d2e1f80",
@@ -9235,14 +9188,14 @@
                             },
                             {
                               "type": "frame",
-                              "id": "NCCjk",
+                              "id": "LOPum",
                               "name": "Frame 4",
                               "gap": 4,
                               "alignItems": "center",
                               "children": [
                                 {
                                   "type": "icon_font",
-                                  "id": "JgeaW",
+                                  "id": "HbT7I",
                                   "name": "meta-heart-icon",
                                   "width": 16,
                                   "height": 16,
@@ -9252,7 +9205,7 @@
                                 },
                                 {
                                   "type": "text",
-                                  "id": "5oDTA",
+                                  "id": "cqves",
                                   "name": "meta-likes",
                                   "fill": "#3d2e1fb3",
                                   "content": "1 day ago",
@@ -10781,6 +10734,981 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Kq4nR",
+                  "name": "aspects-pages",
+                  "clip": true,
+                  "width": "fill_container",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "G1fer",
+                      "name": "topic-card-stack",
+                      "width": 354,
+                      "height": 176,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "hUdUv",
+                          "x": 0,
+                          "y": 36,
+                          "name": "topic-card-faith",
+                          "width": "fill_container(354)",
+                          "height": 146,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./src/images/textures/texture 1.1.webp",
+                            "mode": "fill"
+                          },
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "enabled": false,
+                            "color": "#3d2e1f1a",
+                            "offset": {
+                              "x": 0,
+                              "y": -2
+                            },
+                            "blur": 7
+                          },
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": 20,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "ABsFe",
+                              "name": "faith-content",
+                              "gap": 2,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "SXdYX",
+                                  "name": "faith-icon",
+                                  "width": 30,
+                                  "height": 30,
+                                  "fill": {
+                                    "type": "image",
+                                    "enabled": true,
+                                    "url": "./src/images/images for understanding aspect/faith.png",
+                                    "mode": "fill"
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "Mreqy",
+                                  "name": "faith-title",
+                                  "fill": "#3d2e1f",
+                                  "content": "Faith",
+                                  "fontFamily": "Playfair Display",
+                                  "fontSize": 16,
+                                  "fontWeight": "600",
+                                  "fontStyle": "italic"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "r9rbG",
+                              "name": "faith-preview",
+                              "fill": "#3d2e1f",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 60,
+                              "content": "Discover what it means to trust God through uncertainty, build unshakeable belief, and walk by faith not by sight.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "DM Sans",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Ao5TC",
+                          "x": 0,
+                          "y": 24,
+                          "name": "topic-card-sin",
+                          "width": "fill_container(354)",
+                          "height": 146,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./src/images/textures/texture 1.2.webp",
+                            "mode": "fill"
+                          },
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "enabled": false,
+                            "color": "#3d2e1f1a",
+                            "offset": {
+                              "x": 0,
+                              "y": -2
+                            },
+                            "blur": 7
+                          },
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": 20,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "uEx6y",
+                              "name": "sin-content",
+                              "gap": 2,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "6mcgC",
+                                  "name": "sin-icon",
+                                  "width": 30,
+                                  "height": 30,
+                                  "fill": {
+                                    "type": "image",
+                                    "enabled": true,
+                                    "url": "./src/images/images for understanding aspect/sin.png",
+                                    "mode": "fill"
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "z1EYY",
+                                  "name": "sin-title",
+                                  "fill": "#3d2e1f",
+                                  "content": "Sin",
+                                  "fontFamily": "Playfair Display",
+                                  "fontSize": 16,
+                                  "fontWeight": "600",
+                                  "fontStyle": "italic"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "Y4RNN",
+                              "name": "sin-preview",
+                              "fill": "#3d2e1f",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 60,
+                              "content": "Understand the nature of sin, its impact on our lives, and the freedom found through repentance and God's grace.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "DM Sans",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "BafzB",
+                          "x": 0,
+                          "y": 12,
+                          "name": "topic-card-theology",
+                          "width": "fill_container(354)",
+                          "height": 146,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./src/images/textures/texture 1.3.webp",
+                            "mode": "fill"
+                          },
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "enabled": false,
+                            "color": "#3d2e1f1a",
+                            "offset": {
+                              "x": 0,
+                              "y": -2
+                            },
+                            "blur": 7
+                          },
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": 20,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "hzvYn",
+                              "name": "theology-content",
+                              "gap": 2,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "GwfVX",
+                                  "name": "theology-icon",
+                                  "width": 30,
+                                  "height": 30,
+                                  "fill": {
+                                    "type": "image",
+                                    "enabled": true,
+                                    "url": "./src/images/images for understanding aspect/theology.png",
+                                    "mode": "fill"
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "lK8N7",
+                                  "name": "theology-title",
+                                  "fill": "#3d2e1f",
+                                  "content": "Theology",
+                                  "fontFamily": "Playfair Display",
+                                  "fontSize": 16,
+                                  "fontWeight": "600",
+                                  "fontStyle": "italic"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "qX7dj",
+                              "name": "theology-preview",
+                              "fill": "#3d2e1f",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 60,
+                              "content": "Dive into the foundational truths about God's character, His sovereignty, and how doctrine shapes everyday faith.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "DM Sans",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "LxEm0",
+                          "x": 0,
+                          "y": 0,
+                          "name": "topic-card-love",
+                          "width": "fill_container(354)",
+                          "height": 146,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./src/images/textures/texture 1.0.webp",
+                            "mode": "fill"
+                          },
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "enabled": false,
+                            "color": "#3D2E1F18",
+                            "offset": {
+                              "x": 0,
+                              "y": 2
+                            },
+                            "blur": 8
+                          },
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": 20,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "6rcqH",
+                              "name": "love-content",
+                              "gap": 2,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "Z8aLH",
+                                  "name": "love-icon",
+                                  "width": 30,
+                                  "height": 30,
+                                  "fill": {
+                                    "type": "image",
+                                    "enabled": true,
+                                    "url": "./src/images/images for understanding aspect/love.png",
+                                    "mode": "fill"
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "YOZSf",
+                                  "name": "love-title",
+                                  "fill": "#3d2e1f",
+                                  "content": "Love",
+                                  "fontFamily": "Playfair Display",
+                                  "fontSize": 16,
+                                  "fontWeight": "600",
+                                  "fontStyle": "italic"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "kRjx0",
+                              "name": "love-preview",
+                              "fill": "#3d2e1f",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 60,
+                              "content": "Explore how God's love transforms relationships, heals brokenness, and calls us to love others as He first loved us.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "DM Sans",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "sX5un",
+                      "name": "topic-card-stack-2",
+                      "width": 354,
+                      "height": 176,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "QX6ZA",
+                          "x": 0,
+                          "y": 36,
+                          "name": "topic-card-prayer",
+                          "width": "fill_container(354)",
+                          "height": 146,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./src/images/textures/texture 1.5.webP",
+                            "mode": "fill"
+                          },
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "enabled": false,
+                            "color": "#3d2e1f1a",
+                            "offset": {
+                              "x": 0,
+                              "y": -2
+                            },
+                            "blur": 7
+                          },
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": 20,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "71sgw",
+                              "name": "prayer-content",
+                              "gap": 6,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "ghSdE",
+                                  "name": "prayer-icon",
+                                  "width": 30,
+                                  "height": 30,
+                                  "fill": {
+                                    "type": "image",
+                                    "enabled": true,
+                                    "url": "./src/images/images for understanding aspect/prayer.png",
+                                    "mode": "fill"
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "7gVEp",
+                                  "name": "prayer-title",
+                                  "fill": "#3d2e1f",
+                                  "content": "Prayer",
+                                  "fontFamily": "Playfair Display",
+                                  "fontSize": 16,
+                                  "fontWeight": "600",
+                                  "fontStyle": "italic"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "wNQtJ",
+                              "name": "prayer-preview",
+                              "fill": "#3d2e1f",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 60,
+                              "content": "Grow your prayer life through biblical patterns, honest conversation with God, and learning to listen for His voice.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "DM Sans",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "CCfB5",
+                          "x": 0,
+                          "y": 24,
+                          "name": "topic-card-forgiveness",
+                          "width": "fill_container(354)",
+                          "height": 146,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./src/images/textures/texture 1.6.webP",
+                            "mode": "fill"
+                          },
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "enabled": false,
+                            "color": "#3d2e1f1a",
+                            "offset": {
+                              "x": 0,
+                              "y": -2
+                            },
+                            "blur": 7
+                          },
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": 20,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "1KQtD",
+                              "name": "forgiveness-content",
+                              "gap": 2,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "FBu3N",
+                                  "name": "forgiveness-icon",
+                                  "width": 30,
+                                  "height": 30,
+                                  "fill": {
+                                    "type": "image",
+                                    "enabled": true,
+                                    "url": "./src/images/images for understanding aspect/forgiveness.png",
+                                    "mode": "fill"
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "hbEcG",
+                                  "name": "forgiveness-title",
+                                  "fill": "#3d2e1f",
+                                  "content": "Forgiveness",
+                                  "fontFamily": "Playfair Display",
+                                  "fontSize": 16,
+                                  "fontWeight": "600",
+                                  "fontStyle": "italic"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "xe316",
+                              "name": "forgiveness-preview",
+                              "fill": "#3d2e1f",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 60,
+                              "content": "Discover the power of releasing offense, receiving God's forgiveness, and the freedom that comes from letting go.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "DM Sans",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "pthDd",
+                          "x": 0,
+                          "y": 12,
+                          "name": "topic-card-hope",
+                          "width": "fill_container(354)",
+                          "height": 146,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./src/images/textures/texture 1.7.webP",
+                            "mode": "fill"
+                          },
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "enabled": false,
+                            "color": "#3d2e1f1a",
+                            "offset": {
+                              "x": 0,
+                              "y": -2
+                            },
+                            "blur": 7
+                          },
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": 20,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "I5tec",
+                              "name": "hope-content",
+                              "gap": 2,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "m8lk2",
+                                  "name": "hope-icon",
+                                  "width": 30,
+                                  "height": 30,
+                                  "fill": {
+                                    "type": "image",
+                                    "enabled": true,
+                                    "url": "./src/images/images for understanding aspect/hope.png",
+                                    "mode": "fill"
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "5VHEs",
+                                  "name": "hope-title",
+                                  "fill": "#3d2e1f",
+                                  "content": "Hope",
+                                  "fontFamily": "Playfair Display",
+                                  "fontSize": 16,
+                                  "fontWeight": "600",
+                                  "fontStyle": "italic"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "sm3qN",
+                              "name": "hope-preview",
+                              "fill": "#3d2e1f",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 60,
+                              "content": "Find anchored hope in God's promises, even through suffering, and learn to hold onto eternal perspective.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "DM Sans",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "kX9k5",
+                          "x": 0,
+                          "y": 0,
+                          "name": "topic-card-grace",
+                          "width": "fill_container(354)",
+                          "height": 146,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./src/images/textures/texture 1.4.webP",
+                            "mode": "fill"
+                          },
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "enabled": false,
+                            "color": "#3D2E1F18",
+                            "offset": {
+                              "x": 0,
+                              "y": 2
+                            },
+                            "blur": 8
+                          },
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": 20,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "cxjPn",
+                              "name": "grace-content",
+                              "gap": 2,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "XKoTz",
+                                  "name": "grace-icon",
+                                  "width": 30,
+                                  "height": 30,
+                                  "fill": {
+                                    "type": "image",
+                                    "enabled": true,
+                                    "url": "./src/images/images for understanding aspect/grace.png",
+                                    "mode": "fill"
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "hBVc6",
+                                  "name": "grace-title",
+                                  "fill": "#3d2e1f",
+                                  "content": "Grace",
+                                  "fontFamily": "Playfair Display",
+                                  "fontSize": 16,
+                                  "fontWeight": "600",
+                                  "fontStyle": "italic"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "e9nZg",
+                              "name": "grace-preview",
+                              "fill": "#3d2e1f",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 60,
+                              "content": "Learn how unmerited favor changes everything — from salvation to daily living, and how to extend grace to others.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "DM Sans",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "5YhEK",
+                      "name": "topic-card-stack-3",
+                      "width": 354,
+                      "height": 176,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Rt66q",
+                          "x": 0,
+                          "y": 36,
+                          "name": "topic-card-wisdom",
+                          "width": "fill_container(354)",
+                          "height": 146,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./src/images/textures/texture 1.5.webP",
+                            "mode": "fill"
+                          },
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "enabled": false,
+                            "color": "#3d2e1f1a",
+                            "offset": {
+                              "x": 0,
+                              "y": -2
+                            },
+                            "blur": 7
+                          },
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": 20,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "TEmVe",
+                              "name": "wisdom-content",
+                              "gap": 2,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "FG1Qi",
+                                  "name": "wisdom-icon",
+                                  "width": 30,
+                                  "height": 30,
+                                  "fill": {
+                                    "type": "image",
+                                    "enabled": true,
+                                    "url": "./src/images/images for understanding aspect/wisdom.png",
+                                    "mode": "fill"
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "T70wg",
+                                  "name": "wisdom-title",
+                                  "fill": "#3d2e1f",
+                                  "content": "Wisdom",
+                                  "fontFamily": "Playfair Display",
+                                  "fontSize": 16,
+                                  "fontWeight": "600",
+                                  "fontStyle": "italic"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "5IicZ",
+                              "name": "wisdom-preview",
+                              "fill": "#3d2e1f",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 60,
+                              "content": "Gain biblical wisdom for decisions, relationships, and life through the fear of the Lord and the study of His Word.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "DM Sans",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "OPjtG",
+                          "x": 0,
+                          "y": 24,
+                          "name": "topic-card-redemption",
+                          "width": "fill_container(354)",
+                          "height": 146,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./src/images/textures/texture 1.0.webP",
+                            "mode": "fill"
+                          },
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "enabled": false,
+                            "color": "#3d2e1f1a",
+                            "offset": {
+                              "x": 0,
+                              "y": -2
+                            },
+                            "blur": 7
+                          },
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": 20,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "oXskm",
+                              "name": "redemption-content",
+                              "gap": 2,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "JSamp",
+                                  "name": "redemption-icon",
+                                  "width": 30,
+                                  "height": 30,
+                                  "fill": {
+                                    "type": "image",
+                                    "enabled": true,
+                                    "url": "./src/images/images for understanding aspect/redemption.png",
+                                    "mode": "fill"
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "8vjnf",
+                                  "name": "redemption-title",
+                                  "fill": "#3d2e1f",
+                                  "content": "Redemption",
+                                  "fontFamily": "Playfair Display",
+                                  "fontSize": 16,
+                                  "fontWeight": "600",
+                                  "fontStyle": "italic"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "VvJqm",
+                              "name": "redemption-preview",
+                              "fill": "#3d2e1f",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 60,
+                              "content": "Trace God's redemption story from Genesis to Revelation and discover how He restores what was lost.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "DM Sans",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "mYkJJ",
+                          "x": 0,
+                          "y": 12,
+                          "name": "topic-card-worship",
+                          "width": "fill_container(354)",
+                          "height": 146,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./src/images/textures/texture 1.7.webP",
+                            "mode": "fill"
+                          },
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "enabled": false,
+                            "color": "#3d2e1f1a",
+                            "offset": {
+                              "x": 0,
+                              "y": -2
+                            },
+                            "blur": 7
+                          },
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": 20,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "c44Xu",
+                              "name": "worship-content",
+                              "gap": 2,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "c3pCA",
+                                  "name": "worship-icon",
+                                  "width": 30,
+                                  "height": 30,
+                                  "fill": {
+                                    "type": "image",
+                                    "enabled": true,
+                                    "url": "./src/images/images for understanding aspect/worship.png",
+                                    "mode": "fill"
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "dy4lw",
+                                  "name": "worship-title",
+                                  "fill": "#3d2e1f",
+                                  "content": "Worship",
+                                  "fontFamily": "Playfair Display",
+                                  "fontSize": 16,
+                                  "fontWeight": "600",
+                                  "fontStyle": "italic"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "WJg7B",
+                              "name": "worship-preview",
+                              "fill": "#3d2e1f",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 60,
+                              "content": "Learn what it means to worship in spirit and truth — beyond music, into a lifestyle of surrender and adoration.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "DM Sans",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "6lfdl",
+                          "x": 0,
+                          "y": 0,
+                          "name": "topic-card-mercy",
+                          "width": "fill_container(354)",
+                          "height": 146,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "./src/images/textures/texture 1.2.webP",
+                            "mode": "fill"
+                          },
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "enabled": false,
+                            "color": "#3D2E1F18",
+                            "offset": {
+                              "x": 0,
+                              "y": 2
+                            },
+                            "blur": 8
+                          },
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": 20,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "VKQZ0",
+                              "name": "mercy-content",
+                              "gap": 2,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "zzu5B",
+                                  "name": "mercy-icon",
+                                  "width": 30,
+                                  "height": 30,
+                                  "fill": {
+                                    "type": "image",
+                                    "enabled": true,
+                                    "url": "./src/images/images for understanding aspect/mercy.png",
+                                    "mode": "fill"
+                                  }
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "V0BzG",
+                                  "name": "mercy-title",
+                                  "fill": "#3d2e1f",
+                                  "content": "Mercy",
+                                  "fontFamily": "Playfair Display",
+                                  "fontSize": 16,
+                                  "fontWeight": "600",
+                                  "fontStyle": "italic"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "B981C",
+                              "name": "mercy-preview",
+                              "fill": "#3d2e1f",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 60,
+                              "content": "Understand God's compassion toward the broken, and how showing mercy reflects His heart to a hurting world.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "DM Sans",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -11799,7 +12727,7 @@
                         {
                           "type": "image",
                           "enabled": true,
-                          "url": "./src/images/textures/texture 1.1.png",
+                          "url": "./src/images/textures/texture 1.1.webP",
                           "mode": "fill"
                         }
                       ],
@@ -11885,7 +12813,7 @@
                         {
                           "type": "image",
                           "enabled": true,
-                          "url": "./src/images/textures/texture 1.4.png",
+                          "url": "./src/images/textures/texture 1.4.webP",
                           "mode": "fill"
                         }
                       ],
@@ -11970,7 +12898,7 @@
                         {
                           "type": "image",
                           "enabled": true,
-                          "url": "./src/images/textures/texture 1.6.png",
+                          "url": "./src/images/textures/texture 1.6.webP",
                           "mode": "fill"
                         }
                       ],
@@ -12055,7 +12983,7 @@
                         {
                           "type": "image",
                           "enabled": true,
-                          "url": "./src/images/textures/texture 1.7.png",
+                          "url": "./src/images/textures/texture 1.7.webP",
                           "mode": "fill"
                         }
                       ],
@@ -12814,7 +13742,7 @@
                         {
                           "type": "image",
                           "enabled": true,
-                          "url": "./src/images/textures/texture 1.0.png",
+                          "url": "./src/images/textures/texture 1.0.webP",
                           "mode": "fill"
                         }
                       ],
@@ -12900,7 +13828,7 @@
                         {
                           "type": "image",
                           "enabled": true,
-                          "url": "./src/images/textures/texture 1.3.png",
+                          "url": "./src/images/textures/texture 1.3.webP",
                           "mode": "fill"
                         }
                       ],
@@ -12985,7 +13913,7 @@
                         {
                           "type": "image",
                           "enabled": true,
-                          "url": "./src/images/textures/texture 1.5.png",
+                          "url": "./src/images/textures/texture 1.5.webP",
                           "mode": "fill"
                         }
                       ],
@@ -13070,7 +13998,7 @@
                         {
                           "type": "image",
                           "enabled": true,
-                          "url": "./src/images/textures/texture 1.2.png",
+                          "url": "./src/images/textures/texture 1.2.webp",
                           "mode": "fill"
                         }
                       ],
@@ -14257,9 +15185,9 @@
     {
       "type": "frame",
       "id": "bMxDA",
-      "x": -710,
+      "x": -715,
       "y": 2270,
-      "name": "screen-transition-loader",
+      "name": "love-screen-transition-loader",
       "clip": true,
       "width": 402,
       "height": 874,

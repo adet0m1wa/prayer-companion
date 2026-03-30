@@ -28,6 +28,16 @@ import sinVideo2 from "../images/sin/videos/sin-video-2.png";
 import sinVideo3 from "../images/sin/videos/sin-video-3.png";
 import sinVideo4 from "../images/sin/videos/sin-video-4.png";
 
+// Hope thumbnails
+import hopeArticle1 from "../images/hope/articles/hope-article-1.png";
+import hopeArticle2 from "../images/hope/articles/hope-article-2.png";
+import hopeArticle3 from "../images/hope/articles/hope-article-3.png";
+import hopeArticle4 from "../images/hope/articles/hope-article-4.png";
+import hopeVideo1 from "../images/hope/videos/hope-video-1.png";
+import hopeVideo2 from "../images/hope/videos/hope-video-2.png";
+import hopeVideo3 from "../images/hope/videos/hope-video-3.png";
+import hopeVideo4 from "../images/hope/videos/hope-video-4.png";
+
 // Forgiveness thumbnails
 import forgivenessArticle1 from "../images/forgiveness/articles/forgiveness-article-1.png";
 import forgivenessArticle2 from "../images/forgiveness/articles/forgiveness-article-2.png";
@@ -138,6 +148,10 @@ const TOPIC_VERSES: Record<string, TopicVerse> = {
     verse: "Bear with each other and forgive one another if any of you has a grievance against someone. Forgive as the Lord forgave you.",
     reference: "Colossians 3:13",
   },
+  hope: {
+    verse: "But those who hope in the Lord will renew their strength. They will soar on wings like eagles.",
+    reference: "Isaiah 40:31",
+  },
 };
 
 const TOPIC_CONTENT: Record<string, TopicContent> = {
@@ -237,6 +251,20 @@ const TOPIC_CONTENT: Record<string, TopicContent> = {
       { thumbnailSrc: forgivenessVideo2, textureSrc: nsTexture6, title: "The Unforgiving Servant: A Parable for Today", views: "4.9k", likes: "334", date: "4 days ago" },
       { thumbnailSrc: forgivenessVideo3, textureSrc: nsTexture7, title: "How Unforgiveness Destroys You From Within", views: "7.8k", likes: "523", date: "6 days ago" },
       { thumbnailSrc: forgivenessVideo4, textureSrc: nsTexture2, title: "Reconciliation vs Forgiveness: Are They the Same?", views: "3.6k", likes: "241", date: "3 days ago" },
+    ],
+  },
+  hope: {
+    articles: [
+      { thumbnailSrc: hopeArticle1, textureSrc: nsTexture1, title: "Hope in the Darkness: What the Psalms Teach Us", readTime: "7 min read", views: "3.3k", likes: "241", date: "2 days ago" },
+      { thumbnailSrc: hopeArticle2, textureSrc: nsTexture2, title: "The Anchor of the Soul: Hebrews on Hope", readTime: "8 min read", views: "2.8k", likes: "204", date: "1 week ago" },
+      { thumbnailSrc: hopeArticle3, textureSrc: nsTexture3, title: "When Hope Feels Foolish: Trusting God's Timing", readTime: "6 min read", views: "2.1k", likes: "156", date: "4 days ago" },
+      { thumbnailSrc: hopeArticle4, textureSrc: nsTexture2, title: "Eternal Hope vs Earthly Optimism", readTime: "9 min read", views: "3.6k", likes: "269", date: "3 days ago" },
+    ],
+    videos: [
+      { thumbnailSrc: hopeVideo1, textureSrc: nsTexture1, title: "Romans 8:28 — Does Everything Really Work Together for Good?", views: "5.7k", likes: "398", date: "1 day ago" },
+      { thumbnailSrc: hopeVideo2, textureSrc: nsTexture6, title: "Job's Hope: Worshipping Through the Worst", views: "4.4k", likes: "308", date: "5 days ago" },
+      { thumbnailSrc: hopeVideo3, textureSrc: nsTexture7, title: "The Hope of the Resurrection Explained", views: "6.9k", likes: "467", date: "3 days ago" },
+      { thumbnailSrc: hopeVideo4, textureSrc: nsTexture2, title: "How to Keep Hope Alive in Suffering", views: "3.8k", likes: "254", date: "6 days ago" },
     ],
   },
 };
