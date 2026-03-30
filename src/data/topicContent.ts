@@ -18,6 +18,16 @@ import faithVideo2 from "../images/faith/videos/faith-video-2.png";
 import faithVideo3 from "../images/faith/videos/faith-video-3.png";
 import faithVideo4 from "../images/faith/videos/faith-video-4.png";
 
+// Sin thumbnails
+import sinArticle1 from "../images/sin/articles/sin-article-1.png";
+import sinArticle2 from "../images/sin/articles/sin-article-2.png";
+import sinArticle3 from "../images/sin/articles/sin-article-3.png";
+import sinArticle4 from "../images/sin/articles/sin-article-4.png";
+import sinVideo1 from "../images/sin/videos/sin-video-1.png";
+import sinVideo2 from "../images/sin/videos/sin-video-2.png";
+import sinVideo3 from "../images/sin/videos/sin-video-3.png";
+import sinVideo4 from "../images/sin/videos/sin-video-4.png";
+
 // Shared no-shadow textures
 import nsTexture1 from "../images/no shadow texture/ns texture 1.1.webp";
 import nsTexture2 from "../images/no shadow texture/ns texture 1.2.webp";
@@ -68,6 +78,10 @@ const TOPIC_VERSES: Record<string, TopicVerse> = {
     verse: "Now faith is confidence in what we hope for and assurance about what we do not see.",
     reference: "Hebrews 11:1",
   },
+  sin: {
+    verse: "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.",
+    reference: "Romans 6:23",
+  },
 };
 
 const TOPIC_CONTENT: Record<string, TopicContent> = {
@@ -97,6 +111,20 @@ const TOPIC_CONTENT: Record<string, TopicContent> = {
       { thumbnailSrc: faithVideo2, textureSrc: nsTexture6, title: "Hebrews 11: The Hall of Faith Explained", views: "5.1k", likes: "378", date: "1 week ago" },
       { thumbnailSrc: faithVideo3, textureSrc: nsTexture7, title: "Living by Faith in a World That Demands Proof", views: "3.5k", likes: "198", date: "4 days ago" },
       { thumbnailSrc: faithVideo4, textureSrc: nsTexture2, title: "The Difference Between Faith and Belief", views: "6.0k", likes: "425", date: "3 days ago" },
+    ],
+  },
+  sin: {
+    articles: [
+      { thumbnailSrc: sinArticle1, textureSrc: nsTexture1, title: "The Origin of Sin: What Really Happened in Eden", readTime: "8 min read", views: "2.6k", likes: "189", date: "3 days ago" },
+      { thumbnailSrc: sinArticle2, textureSrc: nsTexture2, title: "Why Good People Still Struggle With Sin", readTime: "6 min read", views: "3.2k", likes: "231", date: "1 week ago" },
+      { thumbnailSrc: sinArticle3, textureSrc: nsTexture3, title: "The Difference Between Temptation and Sin", readTime: "7 min read", views: "2.0k", likes: "148", date: "4 days ago" },
+      { thumbnailSrc: sinArticle4, textureSrc: nsTexture2, title: "What Does the Bible Say About Generational Sin?", readTime: "9 min read", views: "2.9k", likes: "212", date: "2 days ago" },
+    ],
+    videos: [
+      { thumbnailSrc: sinVideo1, textureSrc: nsTexture1, title: "The Anatomy of Sin: How It Takes Root", views: "5.4k", likes: "367", date: "1 day ago" },
+      { thumbnailSrc: sinVideo2, textureSrc: nsTexture6, title: "Romans 7 Explained: The War Within", views: "4.2k", likes: "284", date: "5 days ago" },
+      { thumbnailSrc: sinVideo3, textureSrc: nsTexture7, title: "Breaking Free From Habitual Sin", views: "6.8k", likes: "456", date: "3 days ago" },
+      { thumbnailSrc: sinVideo4, textureSrc: nsTexture2, title: "Sin, Guilt, and the Path to Restoration", views: "3.9k", likes: "221", date: "1 week ago" },
     ],
   },
 };
