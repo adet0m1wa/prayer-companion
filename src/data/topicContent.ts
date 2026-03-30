@@ -28,6 +28,16 @@ import sinVideo2 from "../images/sin/videos/sin-video-2.png";
 import sinVideo3 from "../images/sin/videos/sin-video-3.png";
 import sinVideo4 from "../images/sin/videos/sin-video-4.png";
 
+// Wisdom thumbnails
+import wisdomArticle1 from "../images/wisdom/articles/wisdom-article-1.png";
+import wisdomArticle2 from "../images/wisdom/articles/wisdom-article-2.png";
+import wisdomArticle3 from "../images/wisdom/articles/wisdom-article-3.png";
+import wisdomArticle4 from "../images/wisdom/articles/wisdom-article-4.png";
+import wisdomVideo1 from "../images/wisdom/videos/wisdom-video-1.png";
+import wisdomVideo2 from "../images/wisdom/videos/wisdom-video-2.png";
+import wisdomVideo3 from "../images/wisdom/videos/wisdom-video-3.png";
+import wisdomVideo4 from "../images/wisdom/videos/wisdom-video-4.png";
+
 // Mercy thumbnails
 import mercyArticle1 from "../images/mercy/articles/mercy-article-1.png";
 import mercyArticle2 from "../images/mercy/articles/mercy-article-2.png";
@@ -166,6 +176,10 @@ const TOPIC_VERSES: Record<string, TopicVerse> = {
     verse: "The Lord is gracious and compassionate, slow to anger and rich in love.",
     reference: "Psalm 145:8",
   },
+  wisdom: {
+    verse: "If any of you lacks wisdom, you should ask God, who gives generously to all without finding fault, and it will be given to you.",
+    reference: "James 1:5",
+  },
 };
 
 const TOPIC_CONTENT: Record<string, TopicContent> = {
@@ -293,6 +307,20 @@ const TOPIC_CONTENT: Record<string, TopicContent> = {
       { thumbnailSrc: mercyVideo2, textureSrc: nsTexture6, title: "David and Mephibosheth: Mercy to the Forgotten", views: "4.5k", likes: "311", date: "4 days ago" },
       { thumbnailSrc: mercyVideo3, textureSrc: nsTexture7, title: "How Mercy and Truth Meet Together", views: "5.1k", likes: "356", date: "6 days ago" },
       { thumbnailSrc: mercyVideo4, textureSrc: nsTexture2, title: "Showing Mercy When It's Not Deserved", views: "3.9k", likes: "267", date: "3 days ago" },
+    ],
+  },
+  wisdom: {
+    articles: [
+      { thumbnailSrc: wisdomArticle1, textureSrc: nsTexture1, title: "Proverbs 1: Where Wisdom Begins", readTime: "7 min read", views: "3.0k", likes: "218", date: "2 days ago" },
+      { thumbnailSrc: wisdomArticle2, textureSrc: nsTexture2, title: "Solomon's Request: Why He Asked for Wisdom Above All", readTime: "9 min read", views: "3.9k", likes: "289", date: "4 days ago" },
+      { thumbnailSrc: wisdomArticle3, textureSrc: nsTexture3, title: "Wisdom vs Knowledge: The Biblical Difference", readTime: "6 min read", views: "2.4k", likes: "173", date: "1 week ago" },
+      { thumbnailSrc: wisdomArticle4, textureSrc: nsTexture2, title: "Making Wise Decisions When the Bible Doesn't Give a Clear Answer", readTime: "8 min read", views: "2.7k", likes: "201", date: "3 days ago" },
+    ],
+    videos: [
+      { thumbnailSrc: wisdomVideo1, textureSrc: nsTexture1, title: "The Fear of the Lord: The Beginning of Wisdom", views: "5.6k", likes: "387", date: "1 day ago" },
+      { thumbnailSrc: wisdomVideo2, textureSrc: nsTexture6, title: "James on Wisdom: Two Kinds, Two Sources", views: "4.2k", likes: "294", date: "5 days ago" },
+      { thumbnailSrc: wisdomVideo3, textureSrc: nsTexture7, title: "How Jesus Displayed Perfect Wisdom", views: "6.4k", likes: "441", date: "3 days ago" },
+      { thumbnailSrc: wisdomVideo4, textureSrc: nsTexture2, title: "Seeking Godly Counsel: Who Should You Listen To?", views: "3.5k", likes: "238", date: "6 days ago" },
     ],
   },
 };
