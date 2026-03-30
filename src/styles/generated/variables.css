@@ -6,7 +6,7 @@
   --color-ink-default: #3d2e1f; /** Base ink color — 100% opacity */
   --color-ink-muted: rgba(61, 46, 31, 0.7); /** Ink at 70% opacity */
   --color-ink-faded: rgba(61, 46, 31, 0.5); /** Ink at 50% opacity */
-  --color-accent-default: #e63434; /** Primary accent red — 100% opacity */
+  --color-accent-default: #1d00fd; /** Primary accent red — 100% opacity */
   --color-accent-subtle: rgba(230, 52, 52, 0.2); /** Accent red at 20% opacity */
   --color-surface-canvas: #e4ded5; /** Page background parchment */
   --color-surface-card: #f3ede3; /** Card background parchment */
