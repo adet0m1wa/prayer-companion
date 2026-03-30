@@ -28,6 +28,46 @@ import sinVideo2 from "../images/sin/videos/sin-video-2.png";
 import sinVideo3 from "../images/sin/videos/sin-video-3.png";
 import sinVideo4 from "../images/sin/videos/sin-video-4.png";
 
+// Forgiveness thumbnails
+import forgivenessArticle1 from "../images/forgiveness/articles/forgiveness-article-1.png";
+import forgivenessArticle2 from "../images/forgiveness/articles/forgiveness-article-2.png";
+import forgivenessArticle3 from "../images/forgiveness/articles/forgiveness-article-3.png";
+import forgivenessArticle4 from "../images/forgiveness/articles/forgiveness-article-4.png";
+import forgivenessVideo1 from "../images/forgiveness/videos/forgiveness-video-1.png";
+import forgivenessVideo2 from "../images/forgiveness/videos/forgiveness-video-2.png";
+import forgivenessVideo3 from "../images/forgiveness/videos/forgiveness-video-3.png";
+import forgivenessVideo4 from "../images/forgiveness/videos/forgiveness-video-4.png";
+
+// Prayer thumbnails
+import prayerArticle1 from "../images/prayer/articles/prayer-article-1.png";
+import prayerArticle2 from "../images/prayer/articles/prayer-article-2.png";
+import prayerArticle3 from "../images/prayer/articles/prayer-article-3.png";
+import prayerArticle4 from "../images/prayer/articles/prayer-article-4.png";
+import prayerVideo1 from "../images/prayer/videos/prayer-video-1.png";
+import prayerVideo2 from "../images/prayer/videos/prayer-video-2.png";
+import prayerVideo3 from "../images/prayer/videos/prayer-video-3.png";
+import prayerVideo4 from "../images/prayer/videos/prayer-video-4.png";
+
+// Grace thumbnails
+import graceArticle1 from "../images/grace/articles/grace-article-1.png";
+import graceArticle2 from "../images/grace/articles/grace-article-2.png";
+import graceArticle3 from "../images/grace/articles/grace-article-3.png";
+import graceArticle4 from "../images/grace/articles/grace-article-4.png";
+import graceVideo1 from "../images/grace/videos/grace-video-1.png";
+import graceVideo2 from "../images/grace/videos/grace-video-2.png";
+import graceVideo3 from "../images/grace/videos/grace-video-3.png";
+import graceVideo4 from "../images/grace/videos/grace-video-4.png";
+
+// Theology thumbnails
+import theologyArticle1 from "../images/theology/articles/theology-article-1.png";
+import theologyArticle2 from "../images/theology/articles/theology-article-2.png";
+import theologyArticle3 from "../images/theology/articles/theology-article-3.png";
+import theologyArticle4 from "../images/theology/articles/theology-article-4.png";
+import theologyVideo1 from "../images/theology/videos/theology-video-1.png";
+import theologyVideo2 from "../images/theology/videos/theology-video-2.png";
+import theologyVideo3 from "../images/theology/videos/theology-video-3.png";
+import theologyVideo4 from "../images/theology/videos/theology-video-4.png";
+
 // Shared no-shadow textures
 import nsTexture1 from "../images/no shadow texture/ns texture 1.1.webp";
 import nsTexture2 from "../images/no shadow texture/ns texture 1.2.webp";
@@ -82,6 +122,22 @@ const TOPIC_VERSES: Record<string, TopicVerse> = {
     verse: "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.",
     reference: "Romans 6:23",
   },
+  theology: {
+    verse: "All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness.",
+    reference: "2 Timothy 3:16",
+  },
+  grace: {
+    verse: "For it is by grace you have been saved, through faith — and this is not from yourselves, it is the gift of God.",
+    reference: "Ephesians 2:8",
+  },
+  prayer: {
+    verse: "Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God.",
+    reference: "Philippians 4:6",
+  },
+  forgiveness: {
+    verse: "Bear with each other and forgive one another if any of you has a grievance against someone. Forgive as the Lord forgave you.",
+    reference: "Colossians 3:13",
+  },
 };
 
 const TOPIC_CONTENT: Record<string, TopicContent> = {
@@ -125,6 +181,62 @@ const TOPIC_CONTENT: Record<string, TopicContent> = {
       { thumbnailSrc: sinVideo2, textureSrc: nsTexture6, title: "Romans 7 Explained: The War Within", views: "4.2k", likes: "284", date: "5 days ago" },
       { thumbnailSrc: sinVideo3, textureSrc: nsTexture7, title: "Breaking Free From Habitual Sin", views: "6.8k", likes: "456", date: "3 days ago" },
       { thumbnailSrc: sinVideo4, textureSrc: nsTexture2, title: "Sin, Guilt, and the Path to Restoration", views: "3.9k", likes: "221", date: "1 week ago" },
+    ],
+  },
+  theology: {
+    articles: [
+      { thumbnailSrc: theologyArticle1, textureSrc: nsTexture1, title: "Who Is God? Understanding the Trinity", readTime: "10 min read", views: "3.8k", likes: "287", date: "2 days ago" },
+      { thumbnailSrc: theologyArticle2, textureSrc: nsTexture2, title: "Why Theology Matters for Everyday Faith", readTime: "6 min read", views: "2.1k", likes: "154", date: "5 days ago" },
+      { thumbnailSrc: theologyArticle3, textureSrc: nsTexture3, title: "The Sovereignty of God: What It Really Means", readTime: "8 min read", views: "2.9k", likes: "213", date: "1 week ago" },
+      { thumbnailSrc: theologyArticle4, textureSrc: nsTexture2, title: "How to Study the Bible Theologically", readTime: "7 min read", views: "2.4k", likes: "178", date: "3 days ago" },
+    ],
+    videos: [
+      { thumbnailSrc: theologyVideo1, textureSrc: nsTexture1, title: "The Attributes of God Explained", views: "5.8k", likes: "401", date: "1 day ago" },
+      { thumbnailSrc: theologyVideo2, textureSrc: nsTexture6, title: "Systematic vs Biblical Theology: What's the Difference?", views: "3.6k", likes: "245", date: "4 days ago" },
+      { thumbnailSrc: theologyVideo3, textureSrc: nsTexture7, title: "Why Does God Allow Suffering?", views: "7.2k", likes: "512", date: "3 days ago" },
+      { thumbnailSrc: theologyVideo4, textureSrc: nsTexture2, title: "Understanding Covenant Theology", views: "4.1k", likes: "289", date: "6 days ago" },
+    ],
+  },
+  grace: {
+    articles: [
+      { thumbnailSrc: graceArticle1, textureSrc: nsTexture1, title: "What Is Grace? More Than Just Unmerited Favor", readTime: "7 min read", views: "3.1k", likes: "224", date: "2 days ago" },
+      { thumbnailSrc: graceArticle2, textureSrc: nsTexture2, title: "Living Under Grace, Not Under Law", readTime: "8 min read", views: "2.7k", likes: "196", date: "5 days ago" },
+      { thumbnailSrc: graceArticle3, textureSrc: nsTexture3, title: "The Parable of the Workers: Understanding God's Generosity", readTime: "6 min read", views: "1.8k", likes: "131", date: "1 week ago" },
+      { thumbnailSrc: graceArticle4, textureSrc: nsTexture2, title: "Cheap Grace vs Costly Grace: Bonhoeffer's Warning", readTime: "9 min read", views: "3.5k", likes: "267", date: "4 days ago" },
+    ],
+    videos: [
+      { thumbnailSrc: graceVideo1, textureSrc: nsTexture1, title: "How Grace Changes Everything", views: "5.9k", likes: "389", date: "1 day ago" },
+      { thumbnailSrc: graceVideo2, textureSrc: nsTexture6, title: "Paul's Thorn: Grace in Weakness", views: "4.3k", likes: "301", date: "3 days ago" },
+      { thumbnailSrc: graceVideo3, textureSrc: nsTexture7, title: "Amazing Grace: The Story Behind the Hymn", views: "7.1k", likes: "498", date: "6 days ago" },
+      { thumbnailSrc: graceVideo4, textureSrc: nsTexture2, title: "Grace for the Worst of Sinners", views: "3.7k", likes: "256", date: "2 days ago" },
+    ],
+  },
+  prayer: {
+    articles: [
+      { thumbnailSrc: prayerArticle1, textureSrc: nsTexture1, title: "How to Pray When You Don't Know What to Say", readTime: "6 min read", views: "3.5k", likes: "258", date: "1 day ago" },
+      { thumbnailSrc: prayerArticle2, textureSrc: nsTexture2, title: "The Lord's Prayer: A Line-by-Line Breakdown", readTime: "9 min read", views: "4.1k", likes: "312", date: "4 days ago" },
+      { thumbnailSrc: prayerArticle3, textureSrc: nsTexture3, title: "Why Does God Say No? Understanding Unanswered Prayer", readTime: "7 min read", views: "2.3k", likes: "167", date: "1 week ago" },
+      { thumbnailSrc: prayerArticle4, textureSrc: nsTexture2, title: "Building a Prayer Life That Doesn't Feel Like a Chore", readTime: "8 min read", views: "2.9k", likes: "209", date: "3 days ago" },
+    ],
+    videos: [
+      { thumbnailSrc: prayerVideo1, textureSrc: nsTexture1, title: "The Power of Praying Scripture", views: "6.2k", likes: "434", date: "2 days ago" },
+      { thumbnailSrc: prayerVideo2, textureSrc: nsTexture6, title: "Jesus' Prayer Life: What We Can Learn", views: "4.8k", likes: "327", date: "5 days ago" },
+      { thumbnailSrc: prayerVideo3, textureSrc: nsTexture7, title: "Fasting and Prayer: A Forgotten Discipline", views: "3.4k", likes: "213", date: "3 days ago" },
+      { thumbnailSrc: prayerVideo4, textureSrc: nsTexture2, title: "Praying in the Spirit: What Does It Mean?", views: "5.5k", likes: "376", date: "1 week ago" },
+    ],
+  },
+  forgiveness: {
+    articles: [
+      { thumbnailSrc: forgivenessArticle1, textureSrc: nsTexture1, title: "The Hardest Command: Forgiving Those Who Hurt You", readTime: "8 min read", views: "4.2k", likes: "318", date: "1 day ago" },
+      { thumbnailSrc: forgivenessArticle2, textureSrc: nsTexture2, title: "Seventy Times Seven: What Jesus Really Meant", readTime: "7 min read", views: "3.0k", likes: "223", date: "5 days ago" },
+      { thumbnailSrc: forgivenessArticle3, textureSrc: nsTexture3, title: "Forgiving Yourself: What the Bible Actually Says", readTime: "6 min read", views: "2.5k", likes: "187", date: "3 days ago" },
+      { thumbnailSrc: forgivenessArticle4, textureSrc: nsTexture2, title: "When Forgiveness Feels Impossible", readTime: "9 min read", views: "3.7k", likes: "276", date: "1 week ago" },
+    ],
+    videos: [
+      { thumbnailSrc: forgivenessVideo1, textureSrc: nsTexture1, title: "Joseph Forgave His Brothers: The Full Story", views: "6.5k", likes: "445", date: "2 days ago" },
+      { thumbnailSrc: forgivenessVideo2, textureSrc: nsTexture6, title: "The Unforgiving Servant: A Parable for Today", views: "4.9k", likes: "334", date: "4 days ago" },
+      { thumbnailSrc: forgivenessVideo3, textureSrc: nsTexture7, title: "How Unforgiveness Destroys You From Within", views: "7.8k", likes: "523", date: "6 days ago" },
+      { thumbnailSrc: forgivenessVideo4, textureSrc: nsTexture2, title: "Reconciliation vs Forgiveness: Are They the Same?", views: "3.6k", likes: "241", date: "3 days ago" },
     ],
   },
 };
