@@ -28,6 +28,16 @@ import sinVideo2 from "../images/sin/videos/sin-video-2.png";
 import sinVideo3 from "../images/sin/videos/sin-video-3.png";
 import sinVideo4 from "../images/sin/videos/sin-video-4.png";
 
+// Worship thumbnails
+import worshipArticle1 from "../images/worship/articles/worship-article-1.png";
+import worshipArticle2 from "../images/worship/articles/worship-article-2.png";
+import worshipArticle3 from "../images/worship/articles/worship-article-3.png";
+import worshipArticle4 from "../images/worship/articles/worship-article-4.png";
+import worshipVideo1 from "../images/worship/videos/worship-video-1.png";
+import worshipVideo2 from "../images/worship/videos/worship-video-2.png";
+import worshipVideo3 from "../images/worship/videos/worship-video-3.png";
+import worshipVideo4 from "../images/worship/videos/worship-video-4.png";
+
 // Redemption thumbnails
 import redemptionArticle1 from "../images/redemption/articles/redemption-article-1.png";
 import redemptionArticle2 from "../images/redemption/articles/redemption-article-2.png";
@@ -281,6 +291,18 @@ const TOPIC_VERSES: Record<string, TopicVerse[]> = {
     { verse: "I know that my redeemer lives, and that in the end he will stand on the earth.", reference: "Job 19:25" },
     { verse: "And they sang a new song, saying: You are worthy because you were slain, and with your blood you purchased for God persons from every tribe and language and people and nation.", reference: "Revelation 5:9" },
   ],
+  worship: [
+    { verse: "God is spirit, and his worshipers must worship in the Spirit and in truth.", reference: "John 4:24" },
+    { verse: "Come, let us bow down in worship, let us kneel before the Lord our Maker.", reference: "Psalm 95:6" },
+    { verse: "Shout for joy to the Lord, all the earth. Worship the Lord with gladness; come before him with joyful songs.", reference: "Psalm 100:1-2" },
+    { verse: "Ascribe to the Lord the glory due his name; worship the Lord in the splendor of his holiness.", reference: "Psalm 29:2" },
+    { verse: "Therefore, I urge you, brothers and sisters, in view of God's mercy, to offer your bodies as a living sacrifice, holy and pleasing to God — this is your true and proper worship.", reference: "Romans 12:1" },
+    { verse: "Let everything that has breath praise the Lord.", reference: "Psalm 150:6" },
+    { verse: "I will praise you, Lord, with all my heart; before the gods I will sing your praise.", reference: "Psalm 138:1" },
+    { verse: "Yet a time is coming and has now come when the true worshipers will worship the Father in the Spirit and in truth, for they are the kind of worshipers the Father seeks.", reference: "John 4:23" },
+    { verse: "Through Jesus, therefore, let us continually offer to God a sacrifice of praise — the fruit of lips that openly profess his name.", reference: "Hebrews 13:15" },
+    { verse: "Praise the Lord. Praise God in his sanctuary; praise him in his mighty heavens.", reference: "Psalm 150:1" },
+  ],
 };
 
 const TOPIC_CONTENT: Record<string, TopicContent> = {
@@ -436,6 +458,20 @@ const TOPIC_CONTENT: Record<string, TopicContent> = {
       { thumbnailSrc: redemptionVideo2, textureSrc: nsTexture6, title: "How God Redeemed Joseph's Suffering", views: "6.7k", likes: "458", date: "4 days ago" },
       { thumbnailSrc: redemptionVideo3, textureSrc: nsTexture7, title: "The Exodus: Israel's Story of Redemption", views: "4.8k", likes: "329", date: "3 days ago" },
       { thumbnailSrc: redemptionVideo4, textureSrc: nsTexture2, title: "Your Story Isn't Over: Redemption in Real Life", views: "7.4k", likes: "501", date: "6 days ago" },
+    ],
+  },
+  worship: {
+    articles: [
+      { thumbnailSrc: worshipArticle1, textureSrc: nsTexture1, title: "What Does It Mean to Worship in Spirit and Truth?", readTime: "7 min read", views: "3.6k", likes: "264", date: "1 day ago" },
+      { thumbnailSrc: worshipArticle2, textureSrc: nsTexture2, title: "Worship Is More Than Singing: A Biblical Perspective", readTime: "8 min read", views: "2.9k", likes: "211", date: "5 days ago" },
+      { thumbnailSrc: worshipArticle3, textureSrc: nsTexture3, title: "The Psalms as a Guide to Personal Worship", readTime: "6 min read", views: "2.3k", likes: "168", date: "3 days ago" },
+      { thumbnailSrc: worshipArticle4, textureSrc: nsTexture2, title: "Why Corporate Worship Matters for the Individual", readTime: "9 min read", views: "3.2k", likes: "239", date: "1 week ago" },
+    ],
+    videos: [
+      { thumbnailSrc: worshipVideo1, textureSrc: nsTexture1, title: "David's Dance: Worship Without Restraint", views: "6.1k", likes: "418", date: "2 days ago" },
+      { thumbnailSrc: worshipVideo2, textureSrc: nsTexture6, title: "The Woman With the Alabaster Jar: Extravagant Worship", views: "5.3k", likes: "364", date: "4 days ago" },
+      { thumbnailSrc: worshipVideo3, textureSrc: nsTexture7, title: "How Music Became Central to Christian Worship", views: "4.7k", likes: "321", date: "6 days ago" },
+      { thumbnailSrc: worshipVideo4, textureSrc: nsTexture2, title: "Worship as Warfare: Jehoshaphat's Strategy", views: "7.5k", likes: "509", date: "3 days ago" },
     ],
   },
 };
